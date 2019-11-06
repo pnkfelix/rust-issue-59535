@@ -1,0 +1,21 @@
+[package]
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
+description = "An embedded BLE stack"
+categories = ["embedded", "no-std"]
+keywords = ["arm", "cortex-m", "bluetooth", "low", "energy"]
+repository = "https://github.com/jonas-schievink/rubble/"
+license = "CC-0"
+name = "rubble"
+version = "0.1.0"
+
+[dependencies]
+nrf52810-hal = { path = "../nrf52-hal/nrf52810-hal/" }
+# nrf52810-pac = { path = "../nrf52810-pac/" }
+# panic-semihosting = "0.5.1"
+panic-semihosting = { path = "../panic-semihosting" }
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+opt-level = "s"
