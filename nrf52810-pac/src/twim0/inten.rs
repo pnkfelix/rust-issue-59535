@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::INTEN {
+impl super::INTEN { }
+#[cfg(not_now)] impl super::INTEN {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum STOPPEDR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl STOPPEDR {
+impl STOPPEDR { }
+#[cfg(not_now)] impl STOPPEDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -97,7 +99,8 @@ pub enum ERRORR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl ERRORR {
+impl ERRORR { }
+#[cfg(not_now)] impl ERRORR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -144,7 +147,8 @@ pub enum SUSPENDEDR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl SUSPENDEDR {
+impl SUSPENDEDR { }
+#[cfg(not_now)] impl SUSPENDEDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -191,7 +195,8 @@ pub enum RXSTARTEDR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl RXSTARTEDR {
+impl RXSTARTEDR { }
+#[cfg(not_now)] impl RXSTARTEDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -238,7 +243,8 @@ pub enum TXSTARTEDR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TXSTARTEDR {
+impl TXSTARTEDR { }
+#[cfg(not_now)] impl TXSTARTEDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -285,7 +291,8 @@ pub enum LASTRXR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl LASTRXR {
+impl LASTRXR { }
+#[cfg(not_now)] impl LASTRXR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -332,7 +339,8 @@ pub enum LASTTXR {
     #[doc = "Enable"]
     ENABLED,
 }
-impl LASTTXR {
+impl LASTTXR { }
+#[cfg(not_now)] impl LASTTXR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -378,7 +386,8 @@ pub enum STOPPEDW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl STOPPEDW {
+impl STOPPEDW { }
+#[cfg(not_now)] impl STOPPEDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -393,7 +402,8 @@ impl STOPPEDW {
 pub struct _STOPPEDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _STOPPEDW<'a> {
+impl<'a> _STOPPEDW<'a> { }
+#[cfg(not_now)] impl<'a> _STOPPEDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: STOPPEDW) -> &'a mut W {
@@ -436,7 +446,8 @@ pub enum ERRORW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl ERRORW {
+impl ERRORW { }
+#[cfg(not_now)] impl ERRORW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -451,7 +462,8 @@ impl ERRORW {
 pub struct _ERRORW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ERRORW<'a> {
+impl<'a> _ERRORW<'a> { }
+#[cfg(not_now)] impl<'a> _ERRORW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: ERRORW) -> &'a mut W {
@@ -494,7 +506,8 @@ pub enum SUSPENDEDW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl SUSPENDEDW {
+impl SUSPENDEDW { }
+#[cfg(not_now)] impl SUSPENDEDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -509,7 +522,8 @@ impl SUSPENDEDW {
 pub struct _SUSPENDEDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _SUSPENDEDW<'a> {
+impl<'a> _SUSPENDEDW<'a> { }
+#[cfg(not_now)] impl<'a> _SUSPENDEDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: SUSPENDEDW) -> &'a mut W {
@@ -552,7 +566,8 @@ pub enum RXSTARTEDW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl RXSTARTEDW {
+impl RXSTARTEDW { }
+#[cfg(not_now)] impl RXSTARTEDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -567,7 +582,8 @@ impl RXSTARTEDW {
 pub struct _RXSTARTEDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _RXSTARTEDW<'a> {
+impl<'a> _RXSTARTEDW<'a> { }
+#[cfg(not_now)] impl<'a> _RXSTARTEDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: RXSTARTEDW) -> &'a mut W {
@@ -610,7 +626,8 @@ pub enum TXSTARTEDW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TXSTARTEDW {
+impl TXSTARTEDW { }
+#[cfg(not_now)] impl TXSTARTEDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -625,7 +642,8 @@ impl TXSTARTEDW {
 pub struct _TXSTARTEDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _TXSTARTEDW<'a> {
+impl<'a> _TXSTARTEDW<'a> { }
+#[cfg(not_now)] impl<'a> _TXSTARTEDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TXSTARTEDW) -> &'a mut W {
@@ -668,7 +686,8 @@ pub enum LASTRXW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl LASTRXW {
+impl LASTRXW { }
+#[cfg(not_now)] impl LASTRXW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -683,7 +702,8 @@ impl LASTRXW {
 pub struct _LASTRXW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTRXW<'a> {
+impl<'a> _LASTRXW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTRXW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTRXW) -> &'a mut W {
@@ -726,7 +746,8 @@ pub enum LASTTXW {
     #[doc = "Enable"]
     ENABLED,
 }
-impl LASTTXW {
+impl LASTTXW { }
+#[cfg(not_now)] impl LASTTXW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -741,7 +762,8 @@ impl LASTTXW {
 pub struct _LASTTXW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTTXW<'a> {
+impl<'a> _LASTTXW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTTXW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTTXW) -> &'a mut W {
@@ -777,7 +799,8 @@ impl<'a> _LASTTXW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -847,7 +870,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

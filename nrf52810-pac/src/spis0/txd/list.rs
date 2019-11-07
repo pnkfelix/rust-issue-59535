@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::LIST {
+impl super::LIST { }
+#[cfg(not_now)] impl super::LIST {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -52,7 +53,8 @@ pub enum LISTR {
     #[doc = r" Reserved"]
     _Reserved(u8),
 }
-impl LISTR {
+impl LISTR { }
+#[cfg(not_now)] impl LISTR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u8 {
@@ -90,7 +92,8 @@ pub enum LISTW {
     #[doc = "Use array list"]
     ARRAYLIST,
 }
-impl LISTW {
+impl LISTW { }
+#[cfg(not_now)] impl LISTW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -105,7 +108,8 @@ impl LISTW {
 pub struct _LISTW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LISTW<'a> {
+impl<'a> _LISTW<'a> { }
+#[cfg(not_now)] impl<'a> _LISTW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LISTW) -> &'a mut W {
@@ -131,7 +135,8 @@ impl<'a> _LISTW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -147,7 +152,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

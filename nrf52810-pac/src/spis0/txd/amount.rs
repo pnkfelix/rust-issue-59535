@@ -2,7 +2,8 @@
 pub struct R {
     bits: u32,
 }
-impl super::AMOUNT {
+impl super::AMOUNT { }
+#[cfg(not_now)] impl super::AMOUNT {
     #[doc = r" Reads the contents of the register"]
     #[inline]
     pub fn read(&self) -> R {
@@ -15,14 +16,16 @@ impl super::AMOUNT {
 pub struct AMOUNTR {
     bits: u16,
 }
-impl AMOUNTR {
+impl AMOUNTR { }
+#[cfg(not_now)] impl AMOUNTR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u16 {
         self.bits
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {

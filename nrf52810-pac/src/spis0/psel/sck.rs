@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::SCK {
+impl super::SCK { }
+#[cfg(not_now)] impl super::SCK {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -46,7 +47,8 @@ impl super::SCK {
 pub struct PINR {
     bits: u8,
 }
-impl PINR {
+impl PINR { }
+#[cfg(not_now)] impl PINR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u8 {
@@ -61,7 +63,8 @@ pub enum CONNECTR {
     #[doc = "Connect"]
     CONNECTED,
 }
-impl CONNECTR {
+impl CONNECTR { }
+#[cfg(not_now)] impl CONNECTR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -104,7 +107,8 @@ impl CONNECTR {
 pub struct _PINW<'a> {
     w: &'a mut W,
 }
-impl<'a> _PINW<'a> {
+impl<'a> _PINW<'a> { }
+#[cfg(not_now)] impl<'a> _PINW<'a> {
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -122,7 +126,8 @@ pub enum CONNECTW {
     #[doc = "Connect"]
     CONNECTED,
 }
-impl CONNECTW {
+impl CONNECTW { }
+#[cfg(not_now)] impl CONNECTW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -137,7 +142,8 @@ impl CONNECTW {
 pub struct _CONNECTW<'a> {
     w: &'a mut W,
 }
-impl<'a> _CONNECTW<'a> {
+impl<'a> _CONNECTW<'a> { }
+#[cfg(not_now)] impl<'a> _CONNECTW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: CONNECTW) -> &'a mut W {
@@ -173,7 +179,8 @@ impl<'a> _CONNECTW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -199,7 +206,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

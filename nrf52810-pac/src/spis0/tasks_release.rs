@@ -2,7 +2,8 @@
 pub struct W {
     bits: u32,
 }
-impl super::TASKS_RELEASE {
+impl super::TASKS_RELEASE { }
+#[cfg(not_now)] impl super::TASKS_RELEASE {
     #[doc = r" Writes to the register"]
     #[inline]
     pub fn write<F>(&self, f: F)
@@ -19,7 +20,8 @@ pub enum TASKS_RELEASEW {
     #[doc = "Trigger task"]
     TRIGGER,
 }
-impl TASKS_RELEASEW {
+impl TASKS_RELEASEW { }
+#[cfg(not_now)] impl TASKS_RELEASEW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -33,7 +35,8 @@ impl TASKS_RELEASEW {
 pub struct _TASKS_RELEASEW<'a> {
     w: &'a mut W,
 }
-impl<'a> _TASKS_RELEASEW<'a> {
+impl<'a> _TASKS_RELEASEW<'a> { }
+#[cfg(not_now)] impl<'a> _TASKS_RELEASEW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TASKS_RELEASEW) -> &'a mut W {
@@ -64,7 +67,8 @@ impl<'a> _TASKS_RELEASEW<'a> {
         self.w
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

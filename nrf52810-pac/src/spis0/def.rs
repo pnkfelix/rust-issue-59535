@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::DEF {
+impl super::DEF { }
+#[cfg(not_now)] impl super::DEF {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -46,7 +47,8 @@ impl super::DEF {
 pub struct DEFR {
     bits: u8,
 }
-impl DEFR {
+impl DEFR { }
+#[cfg(not_now)] impl DEFR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u8 {
@@ -57,7 +59,8 @@ impl DEFR {
 pub struct _DEFW<'a> {
     w: &'a mut W,
 }
-impl<'a> _DEFW<'a> {
+impl<'a> _DEFW<'a> { }
+#[cfg(not_now)] impl<'a> _DEFW<'a> {
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -68,7 +71,8 @@ impl<'a> _DEFW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -85,7 +89,8 @@ impl R {
         DEFR { bits }
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

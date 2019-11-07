@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::CONFIG {
+impl super::CONFIG { }
+#[cfg(not_now)] impl super::CONFIG {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum ORDERR {
     #[doc = "Least significant bit shifted out first"]
     LSBFIRST,
 }
-impl ORDERR {
+impl ORDERR { }
+#[cfg(not_now)] impl ORDERR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -97,7 +99,8 @@ pub enum CPHAR {
     #[doc = "Sample on trailing edge of clock, shift serial data on leading edge"]
     TRAILING,
 }
-impl CPHAR {
+impl CPHAR { }
+#[cfg(not_now)] impl CPHAR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -144,7 +147,8 @@ pub enum CPOLR {
     #[doc = "Active low"]
     ACTIVELOW,
 }
-impl CPOLR {
+impl CPOLR { }
+#[cfg(not_now)] impl CPOLR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -190,7 +194,8 @@ pub enum ORDERW {
     #[doc = "Least significant bit shifted out first"]
     LSBFIRST,
 }
-impl ORDERW {
+impl ORDERW { }
+#[cfg(not_now)] impl ORDERW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -205,7 +210,8 @@ impl ORDERW {
 pub struct _ORDERW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ORDERW<'a> {
+impl<'a> _ORDERW<'a> { }
+#[cfg(not_now)] impl<'a> _ORDERW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: ORDERW) -> &'a mut W {
@@ -248,7 +254,8 @@ pub enum CPHAW {
     #[doc = "Sample on trailing edge of clock, shift serial data on leading edge"]
     TRAILING,
 }
-impl CPHAW {
+impl CPHAW { }
+#[cfg(not_now)] impl CPHAW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -263,7 +270,8 @@ impl CPHAW {
 pub struct _CPHAW<'a> {
     w: &'a mut W,
 }
-impl<'a> _CPHAW<'a> {
+impl<'a> _CPHAW<'a> { }
+#[cfg(not_now)] impl<'a> _CPHAW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: CPHAW) -> &'a mut W {
@@ -306,7 +314,8 @@ pub enum CPOLW {
     #[doc = "Active low"]
     ACTIVELOW,
 }
-impl CPOLW {
+impl CPOLW { }
+#[cfg(not_now)] impl CPOLW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -321,7 +330,8 @@ impl CPOLW {
 pub struct _CPOLW<'a> {
     w: &'a mut W,
 }
-impl<'a> _CPOLW<'a> {
+impl<'a> _CPOLW<'a> { }
+#[cfg(not_now)] impl<'a> _CPOLW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: CPOLW) -> &'a mut W {
@@ -357,7 +367,8 @@ impl<'a> _CPOLW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -391,7 +402,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::SHORTS {
+impl super::SHORTS { }
+#[cfg(not_now)] impl super::SHORTS {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum END_ACQUIRER {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl END_ACQUIRER {
+impl END_ACQUIRER { }
+#[cfg(not_now)] impl END_ACQUIRER {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -96,7 +98,8 @@ pub enum END_ACQUIREW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl END_ACQUIREW {
+impl END_ACQUIREW { }
+#[cfg(not_now)] impl END_ACQUIREW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -111,7 +114,8 @@ impl END_ACQUIREW {
 pub struct _END_ACQUIREW<'a> {
     w: &'a mut W,
 }
-impl<'a> _END_ACQUIREW<'a> {
+impl<'a> _END_ACQUIREW<'a> { }
+#[cfg(not_now)] impl<'a> _END_ACQUIREW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: END_ACQUIREW) -> &'a mut W {
@@ -147,7 +151,8 @@ impl<'a> _END_ACQUIREW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -163,7 +168,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

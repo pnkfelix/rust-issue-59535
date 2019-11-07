@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::INTENSET {
+impl super::INTENSET { }
+#[cfg(not_now)] impl super::INTENSET {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum ENDR {
     #[doc = "Read: Enabled"]
     ENABLED,
 }
-impl ENDR {
+impl ENDR { }
+#[cfg(not_now)] impl ENDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -97,7 +99,8 @@ pub enum ENDRXR {
     #[doc = "Read: Enabled"]
     ENABLED,
 }
-impl ENDRXR {
+impl ENDRXR { }
+#[cfg(not_now)] impl ENDRXR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -144,7 +147,8 @@ pub enum ACQUIREDR {
     #[doc = "Read: Enabled"]
     ENABLED,
 }
-impl ACQUIREDR {
+impl ACQUIREDR { }
+#[cfg(not_now)] impl ACQUIREDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -188,7 +192,8 @@ pub enum ENDW {
     #[doc = "Enable"]
     SET,
 }
-impl ENDW {
+impl ENDW { }
+#[cfg(not_now)] impl ENDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -202,7 +207,8 @@ impl ENDW {
 pub struct _ENDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ENDW<'a> {
+impl<'a> _ENDW<'a> { }
+#[cfg(not_now)] impl<'a> _ENDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: ENDW) -> &'a mut W {
@@ -238,7 +244,8 @@ pub enum ENDRXW {
     #[doc = "Enable"]
     SET,
 }
-impl ENDRXW {
+impl ENDRXW { }
+#[cfg(not_now)] impl ENDRXW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -252,7 +259,8 @@ impl ENDRXW {
 pub struct _ENDRXW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ENDRXW<'a> {
+impl<'a> _ENDRXW<'a> { }
+#[cfg(not_now)] impl<'a> _ENDRXW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: ENDRXW) -> &'a mut W {
@@ -288,7 +296,8 @@ pub enum ACQUIREDW {
     #[doc = "Enable"]
     SET,
 }
-impl ACQUIREDW {
+impl ACQUIREDW { }
+#[cfg(not_now)] impl ACQUIREDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -302,7 +311,8 @@ impl ACQUIREDW {
 pub struct _ACQUIREDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ACQUIREDW<'a> {
+impl<'a> _ACQUIREDW<'a> { }
+#[cfg(not_now)] impl<'a> _ACQUIREDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: ACQUIREDW) -> &'a mut W {
@@ -333,7 +343,8 @@ impl<'a> _ACQUIREDW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -367,7 +378,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

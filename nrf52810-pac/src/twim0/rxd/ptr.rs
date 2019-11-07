@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::PTR {
+impl super::PTR { }
+#[cfg(not_now)] impl super::PTR {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -46,7 +47,8 @@ impl super::PTR {
 pub struct PTRR {
     bits: u32,
 }
-impl PTRR {
+impl PTRR { }
+#[cfg(not_now)] impl PTRR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -57,7 +59,8 @@ impl PTRR {
 pub struct _PTRW<'a> {
     w: &'a mut W,
 }
-impl<'a> _PTRW<'a> {
+impl<'a> _PTRW<'a> { }
+#[cfg(not_now)] impl<'a> _PTRW<'a> {
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
@@ -68,7 +71,8 @@ impl<'a> _PTRW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -85,7 +89,8 @@ impl R {
         PTRR { bits }
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::EVENTS_ENDRX {
+impl super::EVENTS_ENDRX { }
+#[cfg(not_now)] impl super::EVENTS_ENDRX {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum EVENTS_ENDRXR {
     #[doc = "Event generated"]
     GENERATED,
 }
-impl EVENTS_ENDRXR {
+impl EVENTS_ENDRXR { }
+#[cfg(not_now)] impl EVENTS_ENDRXR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -96,7 +98,8 @@ pub enum EVENTS_ENDRXW {
     #[doc = "Event generated"]
     GENERATED,
 }
-impl EVENTS_ENDRXW {
+impl EVENTS_ENDRXW { }
+#[cfg(not_now)] impl EVENTS_ENDRXW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -111,7 +114,8 @@ impl EVENTS_ENDRXW {
 pub struct _EVENTS_ENDRXW<'a> {
     w: &'a mut W,
 }
-impl<'a> _EVENTS_ENDRXW<'a> {
+impl<'a> _EVENTS_ENDRXW<'a> { }
+#[cfg(not_now)] impl<'a> _EVENTS_ENDRXW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: EVENTS_ENDRXW) -> &'a mut W {
@@ -147,7 +151,8 @@ impl<'a> _EVENTS_ENDRXW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -163,7 +168,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

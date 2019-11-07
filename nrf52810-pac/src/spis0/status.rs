@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::STATUS {
+impl super::STATUS { }
+#[cfg(not_now)] impl super::STATUS {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum OVERREADR {
     #[doc = "Read: error present"]
     PRESENT,
 }
-impl OVERREADR {
+impl OVERREADR { }
+#[cfg(not_now)] impl OVERREADR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -97,7 +99,8 @@ pub enum OVERFLOWR {
     #[doc = "Read: error present"]
     PRESENT,
 }
-impl OVERFLOWR {
+impl OVERFLOWR { }
+#[cfg(not_now)] impl OVERFLOWR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -141,7 +144,8 @@ pub enum OVERREADW {
     #[doc = "Write: clear error on writing '1'"]
     CLEAR,
 }
-impl OVERREADW {
+impl OVERREADW { }
+#[cfg(not_now)] impl OVERREADW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -155,7 +159,8 @@ impl OVERREADW {
 pub struct _OVERREADW<'a> {
     w: &'a mut W,
 }
-impl<'a> _OVERREADW<'a> {
+impl<'a> _OVERREADW<'a> { }
+#[cfg(not_now)] impl<'a> _OVERREADW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: OVERREADW) -> &'a mut W {
@@ -191,7 +196,8 @@ pub enum OVERFLOWW {
     #[doc = "Write: clear error on writing '1'"]
     CLEAR,
 }
-impl OVERFLOWW {
+impl OVERFLOWW { }
+#[cfg(not_now)] impl OVERFLOWW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -205,7 +211,8 @@ impl OVERFLOWW {
 pub struct _OVERFLOWW<'a> {
     w: &'a mut W,
 }
-impl<'a> _OVERFLOWW<'a> {
+impl<'a> _OVERFLOWW<'a> { }
+#[cfg(not_now)] impl<'a> _OVERFLOWW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: OVERFLOWW) -> &'a mut W {
@@ -236,7 +243,8 @@ impl<'a> _OVERFLOWW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -261,7 +269,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

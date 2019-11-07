@@ -2,7 +2,8 @@
 pub struct W {
     bits: u32,
 }
-impl super::TASKS_ACQUIRE {
+impl super::TASKS_ACQUIRE { }
+#[cfg(not_now)] impl super::TASKS_ACQUIRE {
     #[doc = r" Writes to the register"]
     #[inline]
     pub fn write<F>(&self, f: F)
@@ -19,7 +20,8 @@ pub enum TASKS_ACQUIREW {
     #[doc = "Trigger task"]
     TRIGGER,
 }
-impl TASKS_ACQUIREW {
+impl TASKS_ACQUIREW { }
+#[cfg(not_now)] impl TASKS_ACQUIREW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -33,7 +35,8 @@ impl TASKS_ACQUIREW {
 pub struct _TASKS_ACQUIREW<'a> {
     w: &'a mut W,
 }
-impl<'a> _TASKS_ACQUIREW<'a> {
+impl<'a> _TASKS_ACQUIREW<'a> { }
+#[cfg(not_now)] impl<'a> _TASKS_ACQUIREW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TASKS_ACQUIREW) -> &'a mut W {

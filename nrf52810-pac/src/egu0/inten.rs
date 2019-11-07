@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::INTEN {
+impl super::INTEN { }
+#[cfg(not_now)] impl super::INTEN {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum TRIGGERED0R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED0R {
+impl TRIGGERED0R { }
+#[cfg(not_now)] impl TRIGGERED0R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -97,7 +99,8 @@ pub enum TRIGGERED1R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED1R {
+impl TRIGGERED1R { }
+#[cfg(not_now)] impl TRIGGERED1R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -144,7 +147,8 @@ pub enum TRIGGERED2R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED2R {
+impl TRIGGERED2R { }
+#[cfg(not_now)] impl TRIGGERED2R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -191,7 +195,8 @@ pub enum TRIGGERED3R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED3R {
+impl TRIGGERED3R { }
+#[cfg(not_now)] impl TRIGGERED3R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -238,7 +243,8 @@ pub enum TRIGGERED4R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED4R {
+impl TRIGGERED4R { }
+#[cfg(not_now)] impl TRIGGERED4R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -285,7 +291,8 @@ pub enum TRIGGERED5R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED5R {
+impl TRIGGERED5R { }
+#[cfg(not_now)] impl TRIGGERED5R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -332,7 +339,8 @@ pub enum TRIGGERED6R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED6R {
+impl TRIGGERED6R { }
+#[cfg(not_now)] impl TRIGGERED6R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -379,7 +387,8 @@ pub enum TRIGGERED7R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED7R {
+impl TRIGGERED7R { }
+#[cfg(not_now)] impl TRIGGERED7R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -426,7 +435,8 @@ pub enum TRIGGERED8R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED8R {
+impl TRIGGERED8R { }
+#[cfg(not_now)] impl TRIGGERED8R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -473,7 +483,8 @@ pub enum TRIGGERED9R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED9R {
+impl TRIGGERED9R { }
+#[cfg(not_now)] impl TRIGGERED9R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -520,7 +531,8 @@ pub enum TRIGGERED10R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED10R {
+impl TRIGGERED10R { }
+#[cfg(not_now)] impl TRIGGERED10R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -567,7 +579,8 @@ pub enum TRIGGERED11R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED11R {
+impl TRIGGERED11R { }
+#[cfg(not_now)] impl TRIGGERED11R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -614,7 +627,8 @@ pub enum TRIGGERED12R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED12R {
+impl TRIGGERED12R { }
+#[cfg(not_now)] impl TRIGGERED12R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -661,7 +675,8 @@ pub enum TRIGGERED13R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED13R {
+impl TRIGGERED13R { }
+#[cfg(not_now)] impl TRIGGERED13R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -708,7 +723,8 @@ pub enum TRIGGERED14R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED14R {
+impl TRIGGERED14R { }
+#[cfg(not_now)] impl TRIGGERED14R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -755,7 +771,8 @@ pub enum TRIGGERED15R {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED15R {
+impl TRIGGERED15R { }
+#[cfg(not_now)] impl TRIGGERED15R {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -801,7 +818,8 @@ pub enum TRIGGERED0W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED0W {
+impl TRIGGERED0W { }
+#[cfg(not_now)] impl TRIGGERED0W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -816,7 +834,8 @@ impl TRIGGERED0W {
 pub struct _TRIGGERED0W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED0W<'a> {
+impl<'a> _TRIGGERED0W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED0W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED0W) -> &'a mut W {
@@ -859,7 +878,8 @@ pub enum TRIGGERED1W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED1W {
+impl TRIGGERED1W { }
+#[cfg(not_now)] impl TRIGGERED1W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -874,7 +894,8 @@ impl TRIGGERED1W {
 pub struct _TRIGGERED1W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED1W<'a> {
+impl<'a> _TRIGGERED1W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED1W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED1W) -> &'a mut W {
@@ -917,7 +938,8 @@ pub enum TRIGGERED2W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED2W {
+impl TRIGGERED2W { }
+#[cfg(not_now)] impl TRIGGERED2W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -932,7 +954,8 @@ impl TRIGGERED2W {
 pub struct _TRIGGERED2W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED2W<'a> {
+impl<'a> _TRIGGERED2W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED2W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED2W) -> &'a mut W {
@@ -975,7 +998,8 @@ pub enum TRIGGERED3W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED3W {
+impl TRIGGERED3W { }
+#[cfg(not_now)] impl TRIGGERED3W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -990,7 +1014,8 @@ impl TRIGGERED3W {
 pub struct _TRIGGERED3W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED3W<'a> {
+impl<'a> _TRIGGERED3W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED3W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED3W) -> &'a mut W {
@@ -1033,7 +1058,8 @@ pub enum TRIGGERED4W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED4W {
+impl TRIGGERED4W { }
+#[cfg(not_now)] impl TRIGGERED4W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1048,7 +1074,8 @@ impl TRIGGERED4W {
 pub struct _TRIGGERED4W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED4W<'a> {
+impl<'a> _TRIGGERED4W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED4W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED4W) -> &'a mut W {
@@ -1091,7 +1118,8 @@ pub enum TRIGGERED5W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED5W {
+impl TRIGGERED5W { }
+#[cfg(not_now)] impl TRIGGERED5W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1106,7 +1134,8 @@ impl TRIGGERED5W {
 pub struct _TRIGGERED5W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED5W<'a> {
+impl<'a> _TRIGGERED5W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED5W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED5W) -> &'a mut W {
@@ -1149,7 +1178,8 @@ pub enum TRIGGERED6W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED6W {
+impl TRIGGERED6W { }
+#[cfg(not_now)] impl TRIGGERED6W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1164,7 +1194,8 @@ impl TRIGGERED6W {
 pub struct _TRIGGERED6W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED6W<'a> {
+impl<'a> _TRIGGERED6W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED6W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED6W) -> &'a mut W {
@@ -1207,7 +1238,8 @@ pub enum TRIGGERED7W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED7W {
+impl TRIGGERED7W { }
+#[cfg(not_now)] impl TRIGGERED7W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1222,7 +1254,8 @@ impl TRIGGERED7W {
 pub struct _TRIGGERED7W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED7W<'a> {
+impl<'a> _TRIGGERED7W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED7W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED7W) -> &'a mut W {
@@ -1265,7 +1298,8 @@ pub enum TRIGGERED8W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED8W {
+impl TRIGGERED8W { }
+#[cfg(not_now)] impl TRIGGERED8W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1280,7 +1314,8 @@ impl TRIGGERED8W {
 pub struct _TRIGGERED8W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED8W<'a> {
+impl<'a> _TRIGGERED8W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED8W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED8W) -> &'a mut W {
@@ -1323,7 +1358,8 @@ pub enum TRIGGERED9W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED9W {
+impl TRIGGERED9W { }
+#[cfg(not_now)] impl TRIGGERED9W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1338,7 +1374,8 @@ impl TRIGGERED9W {
 pub struct _TRIGGERED9W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED9W<'a> {
+impl<'a> _TRIGGERED9W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED9W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED9W) -> &'a mut W {
@@ -1381,7 +1418,8 @@ pub enum TRIGGERED10W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED10W {
+impl TRIGGERED10W { }
+#[cfg(not_now)] impl TRIGGERED10W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1396,7 +1434,8 @@ impl TRIGGERED10W {
 pub struct _TRIGGERED10W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED10W<'a> {
+impl<'a> _TRIGGERED10W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED10W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED10W) -> &'a mut W {
@@ -1439,7 +1478,8 @@ pub enum TRIGGERED11W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED11W {
+impl TRIGGERED11W { }
+#[cfg(not_now)] impl TRIGGERED11W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1454,7 +1494,8 @@ impl TRIGGERED11W {
 pub struct _TRIGGERED11W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED11W<'a> {
+impl<'a> _TRIGGERED11W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED11W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED11W) -> &'a mut W {
@@ -1497,7 +1538,8 @@ pub enum TRIGGERED12W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED12W {
+impl TRIGGERED12W { }
+#[cfg(not_now)] impl TRIGGERED12W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1512,7 +1554,8 @@ impl TRIGGERED12W {
 pub struct _TRIGGERED12W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED12W<'a> {
+impl<'a> _TRIGGERED12W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED12W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED12W) -> &'a mut W {
@@ -1555,7 +1598,8 @@ pub enum TRIGGERED13W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED13W {
+impl TRIGGERED13W { }
+#[cfg(not_now)] impl TRIGGERED13W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1570,7 +1614,8 @@ impl TRIGGERED13W {
 pub struct _TRIGGERED13W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED13W<'a> {
+impl<'a> _TRIGGERED13W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED13W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED13W) -> &'a mut W {
@@ -1613,7 +1658,8 @@ pub enum TRIGGERED14W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED14W {
+impl TRIGGERED14W { }
+#[cfg(not_now)] impl TRIGGERED14W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1628,7 +1674,8 @@ impl TRIGGERED14W {
 pub struct _TRIGGERED14W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED14W<'a> {
+impl<'a> _TRIGGERED14W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED14W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED14W) -> &'a mut W {
@@ -1671,7 +1718,8 @@ pub enum TRIGGERED15W {
     #[doc = "Enable"]
     ENABLED,
 }
-impl TRIGGERED15W {
+impl TRIGGERED15W { }
+#[cfg(not_now)] impl TRIGGERED15W {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -1686,7 +1734,8 @@ impl TRIGGERED15W {
 pub struct _TRIGGERED15W<'a> {
     w: &'a mut W,
 }
-impl<'a> _TRIGGERED15W<'a> {
+impl<'a> _TRIGGERED15W<'a> { }
+#[cfg(not_now)] impl<'a> _TRIGGERED15W<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: TRIGGERED15W) -> &'a mut W {
@@ -1722,7 +1771,8 @@ impl<'a> _TRIGGERED15W<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -1873,7 +1923,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

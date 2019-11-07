@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::MAXCNT {
+impl super::MAXCNT { }
+#[cfg(not_now)] impl super::MAXCNT {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -46,7 +47,8 @@ impl super::MAXCNT {
 pub struct MAXCNTR {
     bits: u16,
 }
-impl MAXCNTR {
+impl MAXCNTR { }
+#[cfg(not_now)] impl MAXCNTR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u16 {
@@ -57,7 +59,8 @@ impl MAXCNTR {
 pub struct _MAXCNTW<'a> {
     w: &'a mut W,
 }
-impl<'a> _MAXCNTW<'a> {
+impl<'a> _MAXCNTW<'a> { }
+#[cfg(not_now)] impl<'a> _MAXCNTW<'a> {
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -68,7 +71,8 @@ impl<'a> _MAXCNTW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -85,7 +89,8 @@ impl R {
         MAXCNTR { bits }
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::EVENTS_SUSPENDED {
+impl super::EVENTS_SUSPENDED { }
+#[cfg(not_now)] impl super::EVENTS_SUSPENDED {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum EVENTS_SUSPENDEDR {
     #[doc = "Event generated"]
     GENERATED,
 }
-impl EVENTS_SUSPENDEDR {
+impl EVENTS_SUSPENDEDR { }
+#[cfg(not_now)] impl EVENTS_SUSPENDEDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -96,7 +98,8 @@ pub enum EVENTS_SUSPENDEDW {
     #[doc = "Event generated"]
     GENERATED,
 }
-impl EVENTS_SUSPENDEDW {
+impl EVENTS_SUSPENDEDW { }
+#[cfg(not_now)] impl EVENTS_SUSPENDEDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -111,7 +114,8 @@ impl EVENTS_SUSPENDEDW {
 pub struct _EVENTS_SUSPENDEDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _EVENTS_SUSPENDEDW<'a> {
+impl<'a> _EVENTS_SUSPENDEDW<'a> { }
+#[cfg(not_now)] impl<'a> _EVENTS_SUSPENDEDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: EVENTS_SUSPENDEDW) -> &'a mut W {
@@ -147,7 +151,8 @@ impl<'a> _EVENTS_SUSPENDEDW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -163,7 +168,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

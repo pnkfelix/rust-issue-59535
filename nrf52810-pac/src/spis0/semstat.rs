@@ -2,7 +2,8 @@
 pub struct R {
     bits: u32,
 }
-impl super::SEMSTAT {
+impl super::SEMSTAT { }
+#[cfg(not_now)] impl super::SEMSTAT {
     #[doc = r" Reads the contents of the register"]
     #[inline]
     pub fn read(&self) -> R {
@@ -23,7 +24,8 @@ pub enum SEMSTATR {
     #[doc = "Semaphore is assigned to SPI but a handover to the CPU is pending"]
     CPUPENDING,
 }
-impl SEMSTATR {
+impl SEMSTATR { }
+#[cfg(not_now)] impl SEMSTATR {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u8 {
@@ -67,7 +69,8 @@ impl SEMSTATR {
         *self == SEMSTATR::CPUPENDING
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {

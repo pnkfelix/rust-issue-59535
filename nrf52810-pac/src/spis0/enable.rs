@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::ENABLE {
+impl super::ENABLE { }
+#[cfg(not_now)] impl super::ENABLE {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -52,7 +53,8 @@ pub enum ENABLER {
     #[doc = r" Reserved"]
     _Reserved(u8),
 }
-impl ENABLER {
+impl ENABLER { }
+#[cfg(not_now)] impl ENABLER {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u8 {
@@ -90,7 +92,8 @@ pub enum ENABLEW {
     #[doc = "Enable SPI slave"]
     ENABLED,
 }
-impl ENABLEW {
+impl ENABLEW { }
+#[cfg(not_now)] impl ENABLEW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -105,7 +108,8 @@ impl ENABLEW {
 pub struct _ENABLEW<'a> {
     w: &'a mut W,
 }
-impl<'a> _ENABLEW<'a> {
+impl<'a> _ENABLEW<'a> { }
+#[cfg(not_now)] impl<'a> _ENABLEW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: ENABLEW) -> &'a mut W {
@@ -131,7 +135,8 @@ impl<'a> _ENABLEW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -147,7 +152,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {

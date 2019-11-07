@@ -6,7 +6,8 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::SHORTS {
+impl super::SHORTS { }
+#[cfg(not_now)] impl super::SHORTS {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -50,7 +51,8 @@ pub enum LASTTX_STARTRXR {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTTX_STARTRXR {
+impl LASTTX_STARTRXR { }
+#[cfg(not_now)] impl LASTTX_STARTRXR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -97,7 +99,8 @@ pub enum LASTTX_SUSPENDR {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTTX_SUSPENDR {
+impl LASTTX_SUSPENDR { }
+#[cfg(not_now)] impl LASTTX_SUSPENDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -144,7 +147,8 @@ pub enum LASTTX_STOPR {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTTX_STOPR {
+impl LASTTX_STOPR { }
+#[cfg(not_now)] impl LASTTX_STOPR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -191,7 +195,8 @@ pub enum LASTRX_STARTTXR {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTRX_STARTTXR {
+impl LASTRX_STARTTXR { }
+#[cfg(not_now)] impl LASTRX_STARTTXR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -238,7 +243,8 @@ pub enum LASTRX_SUSPENDR {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTRX_SUSPENDR {
+impl LASTRX_SUSPENDR { }
+#[cfg(not_now)] impl LASTRX_SUSPENDR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -285,7 +291,8 @@ pub enum LASTRX_STOPR {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTRX_STOPR {
+impl LASTRX_STOPR { }
+#[cfg(not_now)] impl LASTRX_STOPR {
     #[doc = r" Returns `true` if the bit is clear (0)"]
     #[inline]
     pub fn bit_is_clear(&self) -> bool {
@@ -331,7 +338,8 @@ pub enum LASTTX_STARTRXW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTTX_STARTRXW {
+impl LASTTX_STARTRXW { }
+#[cfg(not_now)] impl LASTTX_STARTRXW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -346,7 +354,8 @@ impl LASTTX_STARTRXW {
 pub struct _LASTTX_STARTRXW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTTX_STARTRXW<'a> {
+impl<'a> _LASTTX_STARTRXW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTTX_STARTRXW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTTX_STARTRXW) -> &'a mut W {
@@ -389,7 +398,8 @@ pub enum LASTTX_SUSPENDW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTTX_SUSPENDW {
+impl LASTTX_SUSPENDW { }
+#[cfg(not_now)] impl LASTTX_SUSPENDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -404,7 +414,8 @@ impl LASTTX_SUSPENDW {
 pub struct _LASTTX_SUSPENDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTTX_SUSPENDW<'a> {
+impl<'a> _LASTTX_SUSPENDW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTTX_SUSPENDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTTX_SUSPENDW) -> &'a mut W {
@@ -447,7 +458,8 @@ pub enum LASTTX_STOPW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTTX_STOPW {
+impl LASTTX_STOPW { }
+#[cfg(not_now)] impl LASTTX_STOPW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -462,7 +474,8 @@ impl LASTTX_STOPW {
 pub struct _LASTTX_STOPW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTTX_STOPW<'a> {
+impl<'a> _LASTTX_STOPW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTTX_STOPW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTTX_STOPW) -> &'a mut W {
@@ -505,7 +518,8 @@ pub enum LASTRX_STARTTXW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTRX_STARTTXW {
+impl LASTRX_STARTTXW { }
+#[cfg(not_now)] impl LASTRX_STARTTXW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -520,7 +534,8 @@ impl LASTRX_STARTTXW {
 pub struct _LASTRX_STARTTXW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTRX_STARTTXW<'a> {
+impl<'a> _LASTRX_STARTTXW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTRX_STARTTXW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTRX_STARTTXW) -> &'a mut W {
@@ -563,7 +578,8 @@ pub enum LASTRX_SUSPENDW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTRX_SUSPENDW {
+impl LASTRX_SUSPENDW { }
+#[cfg(not_now)] impl LASTRX_SUSPENDW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -578,7 +594,8 @@ impl LASTRX_SUSPENDW {
 pub struct _LASTRX_SUSPENDW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTRX_SUSPENDW<'a> {
+impl<'a> _LASTRX_SUSPENDW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTRX_SUSPENDW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTRX_SUSPENDW) -> &'a mut W {
@@ -621,7 +638,8 @@ pub enum LASTRX_STOPW {
     #[doc = "Enable shortcut"]
     ENABLED,
 }
-impl LASTRX_STOPW {
+impl LASTRX_STOPW { }
+#[cfg(not_now)] impl LASTRX_STOPW {
     #[allow(missing_docs)]
     #[doc(hidden)]
     #[inline]
@@ -636,7 +654,8 @@ impl LASTRX_STOPW {
 pub struct _LASTRX_STOPW<'a> {
     w: &'a mut W,
 }
-impl<'a> _LASTRX_STOPW<'a> {
+impl<'a> _LASTRX_STOPW<'a> { }
+#[cfg(not_now)] impl<'a> _LASTRX_STOPW<'a> {
     #[doc = r" Writes `variant` to the field"]
     #[inline]
     pub fn variant(self, variant: LASTRX_STOPW) -> &'a mut W {
@@ -672,7 +691,8 @@ impl<'a> _LASTRX_STOPW<'a> {
         self.w
     }
 }
-impl R {
+impl R { }
+#[cfg(not_now)] impl R {
     #[doc = r" Value of the register as raw bits"]
     #[inline]
     pub fn bits(&self) -> u32 {
@@ -733,7 +753,8 @@ impl R {
         })
     }
 }
-impl W {
+impl W { }
+#[cfg(not_now)] impl W {
     #[doc = r" Reset value of the register"]
     #[inline]
     pub fn reset_value() -> W {
