@@ -2,15 +2,12 @@
 #![no_std]
 
 extern crate cortex_m_rt;
-extern "C" { fn POWER_CLOCK(); }
 pub struct Vector { _handler: unsafe extern "C" fn(), }
+extern "C" fn power_clock_2() { }
 
 #[link_section = ".vector_table.interrupts"]
 #[no_mangle]
-pub static __INTERRUPTS: [Vector; 1] = [ Vector { _handler: POWER_CLOCK } ];
-
-pub struct Interrupt;
-unsafe impl ::bare_metal::Nr for Interrupt { fn nr(&self) -> u8 { loop { } } }
+pub static __INTERRUPTS: [Vector; 1] = [ Vector { _handler: power_clock_2 } ];
 
 pub struct FICR;pub mod ficr {
     #[repr(C)] pub struct INFO;
@@ -499,58 +496,674 @@ pub struct TWI0;pub mod twi0 {
 pub struct TWIM0;pub mod twim0 {
     #[repr(C)]
     pub struct PSEL;
-    pub mod psel;
+    pub mod psel {
+pub struct SCL;
+        pub mod scl {
+pub struct R;
+pub struct W;
+impl super::SCL { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct SDA;
+        pub mod sda {
+pub struct R;
+pub struct W;
+impl super::SDA { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+    }
     #[repr(C)] pub struct TXD;
-    pub mod txd;
+    pub mod txd {
+pub struct PTR;
+        pub mod ptr {
+pub struct R;
+pub struct W;
+impl super::PTR { } 
+pub struct PTRR;
+impl PTRR { } 
+pub struct _PTRW<'a> { w: &'a mut W, }
+impl<'a> _PTRW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct MAXCNT;
+        pub mod maxcnt {
+pub struct R;
+pub struct W;
+impl super::MAXCNT { } 
+pub struct MAXCNTR;
+impl MAXCNTR { } 
+pub struct _MAXCNTW<'a> { w: &'a mut W, }
+impl<'a> _MAXCNTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct AMOUNT;
+        pub mod amount {
+pub struct R;
+impl super::AMOUNT { } 
+pub struct AMOUNTR;
+impl AMOUNTR { } 
+impl R { } 
+        }
+pub struct LIST;
+        pub mod list {
+pub struct R;
+pub struct W;
+impl super::LIST { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LISTR ;
+impl LISTR { } 
+pub struct LISTW ;
+impl LISTW { } 
+pub struct _LISTW<'a> { w: &'a mut W, }
+impl<'a> _LISTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+    }
     pub struct TASKS_SUSPEND;
-    pub mod tasks_suspend;
+    pub mod tasks_suspend {
+pub struct W;
+impl super::TASKS_SUSPEND { } 
+pub struct TASKS_SUSPENDW ;
+impl TASKS_SUSPENDW { } 
+pub struct _TASKS_SUSPENDW<'a> { w: &'a mut W, }
+impl<'a> _TASKS_SUSPENDW<'a> { } 
+impl W { } 
+    }
     pub struct EVENTS_ERROR;
-    pub mod events_error;
+    pub mod events_error {
+pub struct R;
+pub struct W;
+impl super::EVENTS_ERROR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_ERRORR ;
+impl EVENTS_ERRORR { } 
+pub struct EVENTS_ERRORW ;
+impl EVENTS_ERRORW { } 
+pub struct _EVENTS_ERRORW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_ERRORW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct EVENTS_RXSTARTED;
-    pub mod events_rxstarted;
+    pub mod events_rxstarted {
+pub struct R;
+pub struct W;
+impl super::EVENTS_RXSTARTED { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_RXSTARTEDR ;
+impl EVENTS_RXSTARTEDR { } 
+pub struct EVENTS_RXSTARTEDW ;
+impl EVENTS_RXSTARTEDW { } 
+pub struct _EVENTS_RXSTARTEDW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_RXSTARTEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct EVENTS_LASTRX;
-    pub mod events_lastrx;
+    pub mod events_lastrx {
+pub struct R;
+pub struct W;
+impl super::EVENTS_LASTRX { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_LASTRXR ;
+impl EVENTS_LASTRXR { } 
+pub struct EVENTS_LASTRXW ;
+impl EVENTS_LASTRXW { } 
+pub struct _EVENTS_LASTRXW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_LASTRXW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct SHORTS;
-    pub mod shorts;
+    pub mod shorts {
+pub struct R;
+pub struct W;
+impl super::SHORTS { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTTX_STARTRXR ;
+impl LASTTX_STARTRXR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTTX_SUSPENDR ;
+impl LASTTX_SUSPENDR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTTX_STOPR ;
+impl LASTTX_STOPR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTRX_STARTTXR ;
+impl LASTRX_STARTTXR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTRX_SUSPENDR ;
+impl LASTRX_SUSPENDR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTRX_STOPR ;
+impl LASTRX_STOPR { }
+pub struct LASTTX_STARTRXW ;
+impl LASTTX_STARTRXW { }
+pub struct _LASTTX_STARTRXW<'a> { w: &'a mut W, }
+impl<'a> _LASTTX_STARTRXW<'a> { }
+pub struct LASTTX_SUSPENDW ;
+impl LASTTX_SUSPENDW { }
+pub struct _LASTTX_SUSPENDW<'a> { w: &'a mut W, }
+impl<'a> _LASTTX_SUSPENDW<'a> { }
+pub struct LASTTX_STOPW ;
+impl LASTTX_STOPW { }
+pub struct _LASTTX_STOPW<'a> { w: &'a mut W, }
+impl<'a> _LASTTX_STOPW<'a> { }
+pub struct LASTRX_STARTTXW ;
+impl LASTRX_STARTTXW { }
+pub struct _LASTRX_STARTTXW<'a> { w: &'a mut W, }
+impl<'a> _LASTRX_STARTTXW<'a> { }
+pub struct LASTRX_SUSPENDW ;
+impl LASTRX_SUSPENDW { }
+pub struct _LASTRX_SUSPENDW<'a> { w: &'a mut W, }
+impl<'a> _LASTRX_SUSPENDW<'a> { }
+pub struct LASTRX_STOPW ;
+impl LASTRX_STOPW { }
+pub struct _LASTRX_STOPW<'a> { w: &'a mut W, }
+impl<'a> _LASTRX_STOPW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct INTENSET;
-    pub mod intenset;
+    pub mod intenset {
+pub struct R;
+pub struct W;
+impl super::INTENSET { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct STOPPEDR ;
+impl STOPPEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ERRORR ;
+impl ERRORR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct SUSPENDEDR ;
+impl SUSPENDEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct RXSTARTEDR ;
+impl RXSTARTEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct TXSTARTEDR ;
+impl TXSTARTEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTRXR ;
+impl LASTRXR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LASTTXR ;
+impl LASTTXR { } 
+pub struct STOPPEDW ;
+impl STOPPEDW { } 
+pub struct _STOPPEDW<'a> { w: &'a mut W, }
+impl<'a> _STOPPEDW<'a> { } 
+pub struct ERRORW ;
+impl ERRORW { } 
+pub struct _ERRORW<'a> { w: &'a mut W, }
+impl<'a> _ERRORW<'a> { } 
+pub struct SUSPENDEDW ;
+impl SUSPENDEDW { } 
+pub struct _SUSPENDEDW<'a> { w: &'a mut W, }
+impl<'a> _SUSPENDEDW<'a> { } 
+pub struct RXSTARTEDW ;
+impl RXSTARTEDW { } 
+pub struct _RXSTARTEDW<'a> { w: &'a mut W, }
+impl<'a> _RXSTARTEDW<'a> { } 
+pub struct TXSTARTEDW ;
+impl TXSTARTEDW { } 
+pub struct _TXSTARTEDW<'a> { w: &'a mut W, }
+impl<'a> _TXSTARTEDW<'a> { } 
+pub struct LASTRXW ;
+impl LASTRXW { } 
+pub struct _LASTRXW<'a> { w: &'a mut W, }
+impl<'a> _LASTRXW<'a> { } 
+pub struct LASTTXW ;
+impl LASTTXW { } 
+pub struct _LASTTXW<'a> { w: &'a mut W, }
+impl<'a> _LASTTXW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct ERRORSRC;
-    pub mod errorsrc;
+    pub mod errorsrc {
+pub struct R;
+pub struct W;
+impl super::ERRORSRC { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct OVERRUNR ;
+impl OVERRUNR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ANACKR ;
+impl ANACKR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct DNACKR ;
+impl DNACKR { } 
+pub struct OVERRUNW ;
+impl OVERRUNW { } 
+pub struct _OVERRUNW<'a> { w: &'a mut W, }
+impl<'a> _OVERRUNW<'a> { } 
+pub struct ANACKW ;
+impl ANACKW { } 
+pub struct _ANACKW<'a> { w: &'a mut W, }
+impl<'a> _ANACKW<'a> { } 
+pub struct DNACKW ;
+impl DNACKW { } 
+pub struct _DNACKW<'a> { w: &'a mut W, }
+impl<'a> _DNACKW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct FREQUENCY;
-    pub mod frequency;
+    pub mod frequency {
+pub struct R;
+pub struct W;
+impl super::FREQUENCY { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct FREQUENCYR ;
+impl FREQUENCYR { }
+pub struct FREQUENCYW ;
+impl FREQUENCYW { }
+pub struct _FREQUENCYW<'a> { w: &'a mut W, }
+impl<'a> _FREQUENCYW<'a> { }
+impl R { }
+impl W { }
+    }
 }
 pub struct TWIS0;pub mod twis0 {
     #[repr(C)]
     pub struct PSEL;
-    pub mod psel;
+    pub mod psel {
+pub struct SCL;
+        pub mod scl {
+pub struct R;
+pub struct W;
+impl super::SCL { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct SDA;
+        pub mod sda {
+pub struct R;
+pub struct W;
+impl super::SDA { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+    }
     #[repr(C)]
     pub struct TXD;
-    pub mod txd;
+    pub mod txd {
+pub struct PTR;
+        pub mod ptr{
+pub struct R;
+pub struct W;
+impl super::PTR { } 
+pub struct PTRR;
+impl PTRR { } 
+pub struct _PTRW<'a> { w: &'a mut W, }
+impl<'a> _PTRW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct MAXCNT;
+        pub mod maxcnt {
+pub struct R;
+pub struct W;
+impl super::MAXCNT { } 
+pub struct MAXCNTR;
+impl MAXCNTR { } 
+pub struct _MAXCNTW<'a> { w: &'a mut W, }
+impl<'a> _MAXCNTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct AMOUNT;
+        pub mod amount {
+pub struct R;
+impl super::AMOUNT { } 
+pub struct AMOUNTR;
+impl AMOUNTR { } 
+impl R { } 
+        }
+pub struct LIST;
+        pub mod list {
+pub struct R;
+pub struct W;
+impl super::LIST { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LISTR ;
+impl LISTR { } 
+pub struct LISTW ;
+impl LISTW { } 
+pub struct _LISTW<'a> { w: &'a mut W, }
+impl<'a> _LISTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+    }
     pub struct EVENTS_STOPPED;
-    pub mod events_stopped;
+    pub mod events_stopped {
+pub struct R;
+pub struct W;
+impl super::EVENTS_STOPPED { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_STOPPEDR ;
+impl EVENTS_STOPPEDR { } 
+pub struct EVENTS_STOPPEDW ;
+impl EVENTS_STOPPEDW { } 
+pub struct _EVENTS_STOPPEDW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_STOPPEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct EVENTS_RXSTARTED;
-    pub mod events_rxstarted;
+    pub mod events_rxstarted {
+pub struct R;
+pub struct W;
+impl super::EVENTS_RXSTARTED { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_RXSTARTEDR ;
+impl EVENTS_RXSTARTEDR { } 
+pub struct EVENTS_RXSTARTEDW ;
+impl EVENTS_RXSTARTEDW { } 
+pub struct _EVENTS_RXSTARTEDW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_RXSTARTEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct EVENTS_WRITE;
-    pub mod events_write;
+    pub mod events_write {
+pub struct R;
+pub struct W;
+impl super::EVENTS_WRITE { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_WRITER ;
+impl EVENTS_WRITER { } 
+pub struct EVENTS_WRITEW ;
+impl EVENTS_WRITEW { } 
+pub struct _EVENTS_WRITEW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_WRITEW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct SHORTS;
-    pub mod shorts;
+    pub mod shorts {
+pub struct R;
+pub struct W;
+impl super::SHORTS { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct WRITE_SUSPENDR ;
+impl WRITE_SUSPENDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct READ_SUSPENDR ;
+impl READ_SUSPENDR { } 
+pub struct WRITE_SUSPENDW ;
+impl WRITE_SUSPENDW { } 
+pub struct _WRITE_SUSPENDW<'a> { w: &'a mut W, }
+impl<'a> _WRITE_SUSPENDW<'a> { } 
+pub struct READ_SUSPENDW ;
+impl READ_SUSPENDW { } 
+pub struct _READ_SUSPENDW<'a> { w: &'a mut W, }
+impl<'a> _READ_SUSPENDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct INTENSET;
-    pub mod intenset;
+    pub mod intenset {
+pub struct R;
+pub struct W;
+impl super::INTENSET { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct STOPPEDR ;
+impl STOPPEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ERRORR ;
+impl ERRORR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct RXSTARTEDR ;
+impl RXSTARTEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct TXSTARTEDR ;
+impl TXSTARTEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct WRITER ;
+impl WRITER { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct READR ;
+impl READR { } 
+pub struct STOPPEDW ;
+impl STOPPEDW { } 
+pub struct _STOPPEDW<'a> { w: &'a mut W, }
+impl<'a> _STOPPEDW<'a> { } 
+pub struct ERRORW ;
+impl ERRORW { } 
+pub struct _ERRORW<'a> { w: &'a mut W, }
+impl<'a> _ERRORW<'a> { } 
+pub struct RXSTARTEDW ;
+impl RXSTARTEDW { } 
+pub struct _RXSTARTEDW<'a> { w: &'a mut W, }
+impl<'a> _RXSTARTEDW<'a> { } 
+pub struct TXSTARTEDW ;
+impl TXSTARTEDW { } 
+pub struct _TXSTARTEDW<'a> { w: &'a mut W, }
+impl<'a> _TXSTARTEDW<'a> { } 
+pub struct WRITEW ;
+impl WRITEW { } 
+pub struct _WRITEW<'a> { w: &'a mut W, }
+impl<'a> _WRITEW<'a> { } 
+pub struct READW ;
+impl READW { } 
+pub struct _READW<'a> { w: &'a mut W, }
+impl<'a> _READW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct ERRORSRC;
-    pub mod errorsrc;
+    pub mod errorsrc {
+pub struct R;
+pub struct W;
+impl super::ERRORSRC { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct OVERFLOWR ;
+impl OVERFLOWR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct DNACKR ;
+impl DNACKR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct OVERREADR ;
+impl OVERREADR { } 
+pub struct OVERFLOWW ;
+impl OVERFLOWW { } 
+pub struct _OVERFLOWW<'a> { w: &'a mut W, }
+impl<'a> _OVERFLOWW<'a> { } 
+pub struct DNACKW ;
+impl DNACKW { } 
+pub struct _DNACKW<'a> { w: &'a mut W, }
+impl<'a> _DNACKW<'a> { } 
+pub struct OVERREADW ;
+impl OVERREADW { } 
+pub struct _OVERREADW<'a> { w: &'a mut W, }
+impl<'a> _OVERREADW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct ENABLE;
-    pub mod enable;
+    pub mod enable {
+pub struct R;
+pub struct W;
+impl super::ENABLE { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENABLER ;
+impl ENABLER { } 
+pub struct ENABLEW ;
+impl ENABLEW { } 
+pub struct _ENABLEW<'a> { w: &'a mut W, }
+impl<'a> _ENABLEW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct CONFIG;
-    pub mod config;
+    pub mod config {
+pub struct R;
+pub struct W;
+impl super::CONFIG { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ADDRESS0R ;
+impl ADDRESS0R { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ADDRESS1R ;
+impl ADDRESS1R { } 
+pub struct ADDRESS0W ;
+impl ADDRESS0W { } 
+pub struct _ADDRESS0W<'a> { w: &'a mut W, }
+impl<'a> _ADDRESS0W<'a> { } 
+pub struct ADDRESS1W ;
+impl ADDRESS1W { } 
+pub struct _ADDRESS1W<'a> { w: &'a mut W, }
+impl<'a> _ADDRESS1W<'a> { } 
+impl R { } 
+impl W { } 
+    }
 }
 pub struct SPI0;pub mod spi0 {
     #[repr(C)]
     pub struct PSEL;
-    pub mod psel;
+    pub mod psel {
+pub struct SCK;
+        pub mod sck {
+pub struct R;
+pub struct W;
+impl super::SCK { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+
+        }
+pub struct MOSI;
+        pub mod mosi {
+pub struct R;
+pub struct W;
+impl super::MOSI { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW ;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+        }
+pub struct MISO;
+        pub mod miso {
+pub struct R;
+pub struct W;
+impl super::MISO { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+        }
+    }
     pub struct INTENSET;
-    pub mod intenset;
+    pub mod intenset {
+pub struct R;
+pub struct W;
+impl super::INTENSET { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct READYR;
+impl READYR { }
+pub struct READYW;
+impl READYW { }
+pub struct _READYW<'a> { w: &'a mut W, }
+impl<'a> _READYW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct ENABLE;
-    pub mod enable;
+    pub mod enable {
+pub struct R;
+pub struct W;
+impl super::ENABLE { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENABLER;
+impl ENABLER { }
+pub struct ENABLEW;
+impl ENABLEW { }
+pub struct _ENABLEW<'a> { w: &'a mut W, }
+impl<'a> _ENABLEW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct CONFIG;
     pub mod config {
 pub struct R;
@@ -584,56 +1197,706 @@ impl W { }
 pub struct SPIM0;pub mod spim0 {
     #[repr(C)]
     pub struct PSEL;
-    pub mod psel;
+    pub mod psel {
+pub struct SCK;
+        pub mod sck {
+pub struct R;
+pub struct W;
+impl super::SCK { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct MOSI;
+        pub mod mosi {
+pub struct R;
+pub struct W;
+impl super::MOSI { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct MISO;
+        pub mod miso {
+pub struct R;
+pub struct W;
+impl super::MISO { } 
+pub struct PINR;
+impl PINR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { } 
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { } 
+pub struct CONNECTW ;
+impl CONNECTW { } 
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+    }
     #[repr(C)]
     pub struct TXD;
-    pub mod txd;
+    pub mod txd {
+pub struct PTR;
+        pub mod ptr {
+pub struct R;
+pub struct W;
+impl super::PTR { } 
+pub struct PTRR;
+impl PTRR { } 
+pub struct _PTRW<'a> { w: &'a mut W, }
+impl<'a> _PTRW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct MAXCNT;
+        pub mod maxcnt {
+pub struct R;
+pub struct W;
+impl super::MAXCNT { } 
+pub struct MAXCNTR;
+impl MAXCNTR { } 
+pub struct _MAXCNTW<'a> { w: &'a mut W, }
+impl<'a> _MAXCNTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+pub struct AMOUNT;
+        pub mod amount {
+pub struct R;
+impl super::AMOUNT { } 
+pub struct AMOUNTR;
+impl AMOUNTR { } 
+impl R { } 
+        }
+pub struct LIST;
+        pub mod list {
+pub struct R;
+pub struct W;
+impl super::LIST { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LISTR ;
+impl LISTR { } 
+pub struct LISTW ;
+impl LISTW { } 
+pub struct _LISTW<'a> { w: &'a mut W, }
+impl<'a> _LISTW<'a> { } 
+impl R { } 
+impl W { } 
+        }
+    }
     pub struct TASKS_RESUME;
-    pub mod tasks_resume;
+    pub mod tasks_resume {
+pub struct W;
+impl super::TASKS_RESUME { } 
+pub struct TASKS_RESUMEW ;
+impl TASKS_RESUMEW { } 
+pub struct _TASKS_RESUMEW<'a> { w: &'a mut W, }
+impl<'a> _TASKS_RESUMEW<'a> { } 
+impl W { } 
+    }
     pub struct EVENTS_STOPPED;
-    pub mod events_stopped;
+    pub mod events_stopped {
+pub struct R;
+pub struct W;
+impl super::EVENTS_STOPPED { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_STOPPEDR ;
+impl EVENTS_STOPPEDR { } 
+pub struct EVENTS_STOPPEDW ;
+impl EVENTS_STOPPEDW { } 
+pub struct _EVENTS_STOPPEDW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_STOPPEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct EVENTS_END;
-    pub mod events_end;
+    pub mod events_end {
+pub struct R;
+pub struct W;
+impl super::EVENTS_END { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_ENDR ;
+impl EVENTS_ENDR { } 
+pub struct EVENTS_ENDW ;
+impl EVENTS_ENDW { } 
+pub struct _EVENTS_ENDW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_ENDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct EVENTS_STARTED;
-    pub mod events_started;
+    pub mod events_started {
+pub struct R;
+pub struct W;
+impl super::EVENTS_STARTED { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_STARTEDR ;
+impl EVENTS_STARTEDR { } 
+pub struct EVENTS_STARTEDW ;
+impl EVENTS_STARTEDW { } 
+pub struct _EVENTS_STARTEDW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_STARTEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct INTENSET;
-    pub mod intenset;
+    pub mod intenset {
+pub struct R;
+pub struct W;
+impl super::INTENSET { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct STOPPEDR ;
+impl STOPPEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDRXR ;
+impl ENDRXR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDR ;
+impl ENDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDTXR ;
+impl ENDTXR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct STARTEDR ;
+impl STARTEDR { } 
+pub struct STOPPEDW ;
+impl STOPPEDW { } 
+pub struct _STOPPEDW<'a> { w: &'a mut W, }
+impl<'a> _STOPPEDW<'a> { } 
+pub struct ENDRXW ;
+impl ENDRXW { } 
+pub struct _ENDRXW<'a> { w: &'a mut W, }
+impl<'a> _ENDRXW<'a> { } 
+pub struct ENDW ;
+impl ENDW { } 
+pub struct _ENDW<'a> { w: &'a mut W, }
+impl<'a> _ENDW<'a> { } 
+pub struct ENDTXW ;
+impl ENDTXW { } 
+pub struct _ENDTXW<'a> { w: &'a mut W, }
+impl<'a> _ENDTXW<'a> { } 
+pub struct STARTEDW ;
+impl STARTEDW { } 
+pub struct _STARTEDW<'a> { w: &'a mut W, }
+impl<'a> _STARTEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct INTENCLR;
-    pub mod intenclr;
+    pub mod intenclr {
+pub struct R;
+pub struct W;
+impl super::INTENCLR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct STOPPEDR ;
+impl STOPPEDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDRXR ;
+impl ENDRXR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDR ;
+impl ENDR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDTXR ;
+impl ENDTXR { } 
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct STARTEDR ;
+impl STARTEDR { } 
+pub struct STOPPEDW ;
+impl STOPPEDW { } 
+pub struct _STOPPEDW<'a> { w: &'a mut W, }
+impl<'a> _STOPPEDW<'a> { } 
+pub struct ENDRXW ;
+impl ENDRXW { } 
+pub struct _ENDRXW<'a> { w: &'a mut W, }
+impl<'a> _ENDRXW<'a> { } 
+pub struct ENDW ;
+impl ENDW { } 
+pub struct _ENDW<'a> { w: &'a mut W, }
+impl<'a> _ENDW<'a> { } 
+pub struct ENDTXW ;
+impl ENDTXW { } 
+pub struct _ENDTXW<'a> { w: &'a mut W, }
+impl<'a> _ENDTXW<'a> { } 
+pub struct STARTEDW ;
+impl STARTEDW { } 
+pub struct _STARTEDW<'a> { w: &'a mut W, }
+impl<'a> _STARTEDW<'a> { } 
+impl R { } 
+impl W { } 
+    }
     pub struct FREQUENCY;
-    pub mod frequency;
+    pub mod frequency {
+pub struct R;
+pub struct W;
+impl super::FREQUENCY { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct FREQUENCYR ;
+impl FREQUENCYR { }
+pub struct FREQUENCYW ;
+impl FREQUENCYW { }
+pub struct _FREQUENCYW<'a> { w: &'a mut W, }
+impl<'a> _FREQUENCYW<'a> { }
+impl R { }
+impl W { }
+    }
 }
 pub struct SPIS0;pub mod spis0 {
     #[repr(C)]
     pub struct PSEL;
-    pub mod psel;
+    pub mod psel {
+pub struct SCK;
+        pub mod sck {
+pub struct R;
+pub struct W;
+impl super::SCK { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW ;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+        }
+pub struct MISO;
+        pub mod miso {
+pub struct R;
+pub struct W;
+impl super::MISO { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW ;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+        }
+pub struct MOSI;
+        pub mod mosi {
+pub struct R;
+pub struct W;
+impl super::MOSI { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW ;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+        }
+pub struct CSN;
+        pub mod csn {
+pub struct R;
+pub struct W;
+impl super::CSN { }
+pub struct PINR;
+impl PINR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CONNECTR ;
+impl CONNECTR { }
+pub struct _PINW<'a> { w: &'a mut W, }
+impl<'a> _PINW<'a> { }
+pub struct CONNECTW ;
+impl CONNECTW { }
+pub struct _CONNECTW<'a> { w: &'a mut W, }
+impl<'a> _CONNECTW<'a> { }
+impl R { }
+impl W { }
+        }
+    }
     #[repr(C)]
     pub struct TXD;
-    pub mod txd;
+    pub mod txd {
+pub struct PTR;
+        pub mod ptr {
+pub struct R;
+pub struct W;
+impl super::PTR { }
+pub struct PTRR;
+impl PTRR { }
+pub struct _PTRW<'a> { w: &'a mut W, }
+impl<'a> _PTRW<'a> { }
+impl R { }
+impl W { }
+        }
+pub struct MAXCNT;
+        pub mod maxcnt {
+pub struct R;
+pub struct W;
+impl super::MAXCNT { }
+pub struct MAXCNTR;
+impl MAXCNTR { }
+pub struct _MAXCNTW<'a> { w: &'a mut W, }
+impl<'a> _MAXCNTW<'a> { }
+impl R { }
+impl W { }
+        }
+pub struct AMOUNT;
+        pub mod amount {
+pub struct R;
+impl super::AMOUNT { }
+pub struct AMOUNTR;
+impl AMOUNTR { }
+impl R { }
+        }
+pub struct LIST;
+        pub mod list {
+pub struct R;
+pub struct W;
+impl super::LIST { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct LISTR ;
+impl LISTR { }
+pub struct LISTW ;
+impl LISTW { }
+pub struct _LISTW<'a> { w: &'a mut W, }
+impl<'a> _LISTW<'a> { }
+impl R { }
+impl W { }
+        }
+    }
     pub struct EVENTS_ENDRX;
-    pub mod events_endrx;
+    pub mod events_endrx {
+pub struct R;
+pub struct W;
+impl super::EVENTS_ENDRX { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_ENDRXR ;
+impl EVENTS_ENDRXR { }
+pub struct EVENTS_ENDRXW ;
+impl EVENTS_ENDRXW { }
+pub struct _EVENTS_ENDRXW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_ENDRXW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct SHORTS;
-    pub mod shorts;
+    pub mod shorts {
+pub struct R;
+pub struct W;
+impl super::SHORTS { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct END_ACQUIRER ;
+impl END_ACQUIRER { }
+pub struct END_ACQUIREW ;
+impl END_ACQUIREW { }
+pub struct _END_ACQUIREW<'a> { w: &'a mut W, }
+impl<'a> _END_ACQUIREW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct INTENCLR;
-    pub mod intenclr;
+    pub mod intenclr {
+pub struct R;
+pub struct W;
+impl super::INTENCLR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDR ;
+impl ENDR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ENDRXR ;
+impl ENDRXR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ACQUIREDR ;
+impl ACQUIREDR { }
+pub struct ENDW ;
+impl ENDW { }
+pub struct _ENDW<'a> { w: &'a mut W, }
+impl<'a> _ENDW<'a> { }
+pub struct ENDRXW ;
+impl ENDRXW { }
+pub struct _ENDRXW<'a> { w: &'a mut W, }
+impl<'a> _ENDRXW<'a> { }
+pub struct ACQUIREDW ;
+impl ACQUIREDW { }
+pub struct _ACQUIREDW<'a> { w: &'a mut W, }
+impl<'a> _ACQUIREDW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct STATUS;
-    pub mod status;
+    pub mod status {
+pub struct R;
+pub struct W;
+impl super::STATUS { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct OVERREADR ;
+impl OVERREADR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct OVERFLOWR ;
+impl OVERFLOWR { }
+pub struct OVERREADW ;
+impl OVERREADW { }
+pub struct _OVERREADW<'a> { w: &'a mut W, }
+impl<'a> _OVERREADW<'a> { }
+pub struct OVERFLOWW ;
+impl OVERFLOWW { }
+pub struct _OVERFLOWW<'a> { w: &'a mut W, }
+impl<'a> _OVERFLOWW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct CONFIG;
-    pub mod config;
+    pub mod config {
+pub struct R;
+pub struct W;
+impl super::CONFIG { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct ORDERR;
+impl ORDERR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CPHAR;
+impl CPHAR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct CPOLR ;
+impl CPOLR { }
+pub struct ORDERW ;
+impl ORDERW { }
+pub struct _ORDERW<'a> { w: &'a mut W, }
+impl<'a> _ORDERW<'a> { }
+pub struct CPHAW ;
+impl CPHAW { }
+pub struct _CPHAW<'a> { w: &'a mut W, }
+impl<'a> _CPHAW<'a> { }
+pub struct CPOLW ;
+impl CPOLW { }
+pub struct _CPOLW<'a> { w: &'a mut W, }
+impl<'a> _CPOLW<'a> { }
+impl R { }
+impl W { }
+    }
 }
 pub struct TIMER0;pub mod timer0 {
     pub struct SHORTS;
-    pub mod shorts;
+    pub mod shorts {
+pub struct R;
+pub struct W;
+impl super::SHORTS { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE0_CLEARR;
+impl COMPARE0_CLEARR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE1_CLEARR;
+impl COMPARE1_CLEARR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE2_CLEARR;
+impl COMPARE2_CLEARR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE3_CLEARR;
+impl COMPARE3_CLEARR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE4_CLEARR;
+impl COMPARE4_CLEARR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE5_CLEARR;
+impl COMPARE5_CLEARR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE0_STOPR;
+impl COMPARE0_STOPR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE1_STOPR;
+impl COMPARE1_STOPR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE2_STOPR;
+impl COMPARE2_STOPR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE3_STOPR;
+impl COMPARE3_STOPR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE4_STOPR;
+impl COMPARE4_STOPR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE5_STOPR;
+impl COMPARE5_STOPR { }
+pub struct COMPARE0_CLEARW;
+impl COMPARE0_CLEARW { }
+pub struct _COMPARE0_CLEARW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE0_CLEARW<'a> { }
+pub struct COMPARE1_CLEARW;
+impl COMPARE1_CLEARW { }
+pub struct _COMPARE1_CLEARW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE1_CLEARW<'a> { }
+pub struct COMPARE2_CLEARW;
+impl COMPARE2_CLEARW { }
+pub struct _COMPARE2_CLEARW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE2_CLEARW<'a> { }
+pub struct COMPARE3_CLEARW;
+impl COMPARE3_CLEARW { }
+pub struct _COMPARE3_CLEARW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE3_CLEARW<'a> { }
+pub struct COMPARE4_CLEARW;
+impl COMPARE4_CLEARW { }
+pub struct _COMPARE4_CLEARW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE4_CLEARW<'a> { }
+pub struct COMPARE5_CLEARW;
+impl COMPARE5_CLEARW { }
+pub struct _COMPARE5_CLEARW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE5_CLEARW<'a> { }
+pub struct COMPARE0_STOPW;
+impl COMPARE0_STOPW { }
+pub struct _COMPARE0_STOPW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE0_STOPW<'a> { }
+pub struct COMPARE1_STOPW;
+impl COMPARE1_STOPW { }
+pub struct _COMPARE1_STOPW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE1_STOPW<'a> { }
+pub struct COMPARE2_STOPW;
+impl COMPARE2_STOPW { }
+pub struct _COMPARE2_STOPW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE2_STOPW<'a> { }
+pub struct COMPARE3_STOPW ;
+impl COMPARE3_STOPW { }
+pub struct _COMPARE3_STOPW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE3_STOPW<'a> { }
+pub struct COMPARE4_STOPW;
+impl COMPARE4_STOPW { }
+pub struct _COMPARE4_STOPW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE4_STOPW<'a> { }
+pub struct COMPARE5_STOPW;
+impl COMPARE5_STOPW { }
+pub struct _COMPARE5_STOPW<'a> { w: &'a mut W, }
+impl<'a> _COMPARE5_STOPW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct INTENCLR;
-    pub mod intenclr;
+    pub mod intenclr {
+pub struct R;
+pub struct W;
+impl super::INTENCLR { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE0R;
+impl COMPARE0R { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE1R;
+impl COMPARE1R { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE2R;
+impl COMPARE2R { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE3R;
+impl COMPARE3R { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE4R;
+impl COMPARE4R { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct COMPARE5R;
+impl COMPARE5R { }
+pub struct COMPARE0W;
+impl COMPARE0W { }
+pub struct _COMPARE0W<'a> { w: &'a mut W, }
+impl<'a> _COMPARE0W<'a> { }
+pub struct COMPARE1W;
+impl COMPARE1W { }
+pub struct _COMPARE1W<'a> { w: &'a mut W, }
+impl<'a> _COMPARE1W<'a> { }
+pub struct COMPARE2W;
+impl COMPARE2W { }
+pub struct _COMPARE2W<'a> { w: &'a mut W, }
+impl<'a> _COMPARE2W<'a> { }
+pub struct COMPARE3W;
+impl COMPARE3W { }
+pub struct _COMPARE3W<'a> { w: &'a mut W, }
+impl<'a> _COMPARE3W<'a> { }
+pub struct COMPARE4W;
+impl COMPARE4W { }
+pub struct _COMPARE4W<'a> { w: &'a mut W, }
+impl<'a> _COMPARE4W<'a> { }
+pub struct COMPARE5W;
+impl COMPARE5W { }
+pub struct _COMPARE5W<'a> { w: &'a mut W, }
+impl<'a> _COMPARE5W<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct BITMODE;
-    pub mod bitmode;
+    pub mod bitmode {
+pub struct R;
+pub struct W;
+impl super::BITMODE { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct BITMODER;
+impl BITMODER { }
+pub struct BITMODEW;
+impl BITMODEW { }
+pub struct _BITMODEW<'a> { w: &'a mut W, }
+impl<'a> _BITMODEW<'a> { }
+impl R { }
+impl W { }
+    }
 }
 pub struct TEMP;pub mod temp {
     pub struct EVENTS_DATARDY;
-    pub mod events_datardy;
+    pub mod events_datardy {
+pub struct R;
+pub struct W;
+impl super::EVENTS_DATARDY { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct EVENTS_DATARDYR;
+impl EVENTS_DATARDYR { }
+pub struct EVENTS_DATARDYW;
+impl EVENTS_DATARDYW { }
+pub struct _EVENTS_DATARDYW<'a> { w: &'a mut W, }
+impl<'a> _EVENTS_DATARDYW<'a> { }
+impl R { }
+impl W { }
+    }
     pub struct INTENSET;
-    pub mod intenset;
+    pub mod intenset {
+pub struct R;
+pub struct W;
+impl super::INTENSET { }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct DATARDYR;
+impl DATARDYR { }
+pub struct DATARDYW;
+impl DATARDYW { }
+pub struct _DATARDYW<'a> { w: &'a mut W, }
+impl<'a> _DATARDYW<'a> { }
+impl R { }
+impl W { }
+    }
 }
 pub struct RNG; pub mod rng {
     pub struct EVENTS_VALRDY;

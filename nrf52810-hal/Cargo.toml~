@@ -42,4 +42,3 @@ version = "0.2.1"
 [features]
 doc = []
 rt = ["nrf52810-pac/rt"]
-default = ["rt"]
