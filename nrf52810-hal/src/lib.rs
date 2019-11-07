@@ -14,24 +14,21 @@ pub mod nrf52810_pac {
         mod info {
             mod part {
                 struct R;
-                #[derive(Debug, PartialEq)]
-                struct PARTR;
+                #[derive(Debug, PartialEq)]struct PARTR;
                 impl R { }
                 impl R { }
                 impl R { }
             }
             mod package {
                 struct R;
-                #[derive(Debug, PartialEq)]
-                struct PACKAGER;
+                #[derive(Debug, PartialEq)]struct PACKAGER;
                 impl R { }
                 impl R { }
                 impl R { }
             }
             mod flash {
                 struct R;
-                #[derive(Debug, PartialEq)]
-                struct FLASHR;
+                #[derive(Debug, PartialEq)]struct FLASHR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -39,8 +36,7 @@ pub mod nrf52810_pac {
         }
         mod deviceaddrtype {
             struct R;
-            #[derive(Debug, PartialEq)]
-            struct DEVICEADDRTYPER;
+            #[derive(Debug, PartialEq)]struct DEVICEADDRTYPER;
             impl R { }
             impl R { }
             impl R { }
@@ -50,101 +46,69 @@ pub mod nrf52810_pac {
         mod config0 {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct REGION0R;
+            #[derive(Debug, PartialEq)]struct REGION0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION2R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION2R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION3R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION3R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION4R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION4R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION5R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION5R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION6R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION6R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION7R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION7R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION8R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION8R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION9R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION9R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION10R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION10R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION11R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION11R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION12R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION12R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION13R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION13R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION14R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION14R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION15R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION15R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION16R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION16R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION17R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION17R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION18R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION18R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION19R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION19R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION20R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION20R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION21R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION21R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION22R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION22R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION23R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION23R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION24R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION24R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION25R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION25R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION26R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION26R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION27R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION27R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION28R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION28R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION29R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION29R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION30R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION30R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct REGION31R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct REGION31R;
             impl R { }
             struct REGION0W;
             impl R { }
@@ -248,8 +212,7 @@ pub mod nrf52810_pac {
         mod disableindebug {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct DISABLEINDEBUGR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct DISABLEINDEBUGR;
             impl R { }
             struct DISABLEINDEBUGW;
             impl R { }
@@ -265,8 +228,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 
                 impl R { }
@@ -281,8 +243,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -295,8 +256,7 @@ pub mod nrf52810_pac {
         mod events_stopped {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct EVENTS_STOPPEDR;
+            #[derive(Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
             struct EVENTS_STOPPEDW;
             impl R { }
@@ -307,8 +267,7 @@ pub mod nrf52810_pac {
         mod events_txdsent {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct EVENTS_TXDSENTR;
+            #[derive(Debug, PartialEq)]struct EVENTS_TXDSENTR;
             impl R { }
             struct EVENTS_TXDSENTW;
             impl R { }
@@ -319,8 +278,7 @@ pub mod nrf52810_pac {
         mod events_bb {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct EVENTS_BBR;
+            #[derive(Debug, PartialEq)]struct EVENTS_BBR;
             impl R { }
             struct EVENTS_BBW;
             impl R { }
@@ -331,11 +289,9 @@ pub mod nrf52810_pac {
         mod shorts {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct BB_SUSPENDR;
+            #[derive(Debug, PartialEq)]struct BB_SUSPENDR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct BB_STOPR;
+            #[derive(Debug, PartialEq)]struct BB_STOPR;
             impl R { }
             struct BB_SUSPENDW;
             impl R { }
@@ -349,23 +305,17 @@ pub mod nrf52810_pac {
         mod intenclr {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct RXDREADYR;
+            #[derive(Debug, PartialEq)]struct RXDREADYR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct TXDSENTR;
+            #[derive(Debug, PartialEq)]struct TXDSENTR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct ERRORR;
+            #[derive(Debug, PartialEq)]struct ERRORR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct BBR;
+            #[derive(Debug, PartialEq)]struct BBR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct SUSPENDEDR;
+            #[derive(Debug, PartialEq)]struct SUSPENDEDR;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -391,8 +341,7 @@ pub mod nrf52810_pac {
         mod enable {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct ENABLER;
+            #[derive(Debug, PartialEq)]struct ENABLER;
             impl R { }
             struct ENABLEW;
             impl R { }
@@ -403,8 +352,7 @@ pub mod nrf52810_pac {
         mod frequency {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct FREQUENCYR;
+            #[derive(Debug, PartialEq)]struct FREQUENCYR;
             impl R { }
             struct FREQUENCYW;
             impl R { }
@@ -420,8 +368,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -435,8 +382,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -475,8 +421,7 @@ pub mod nrf52810_pac {
             mod list {
                 struct R;
                 impl R { }
-                #[derive(Debug, PartialEq)]
-                struct LISTR;
+                #[derive(Debug, PartialEq)]struct LISTR;
                 impl R { }
                 struct LISTW;
                 impl R { }
@@ -496,8 +441,7 @@ pub mod nrf52810_pac {
         mod events_error {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct EVENTS_ERRORR;
+            #[derive(Debug, PartialEq)]struct EVENTS_ERRORR;
             impl R { }
             struct EVENTS_ERRORW;
             impl R { }
@@ -508,8 +452,7 @@ pub mod nrf52810_pac {
         mod events_rxstarted {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct EVENTS_RXSTARTEDR;
+            #[derive(Debug, PartialEq)]struct EVENTS_RXSTARTEDR;
             impl R { }
             struct EVENTS_RXSTARTEDW;
             impl R { }
@@ -520,8 +463,7 @@ pub mod nrf52810_pac {
         mod events_lastrx {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct EVENTS_LASTRXR;
+            #[derive(Debug, PartialEq)]struct EVENTS_LASTRXR;
             impl R { }
             struct EVENTS_LASTRXW;
             impl R { }
@@ -532,23 +474,17 @@ pub mod nrf52810_pac {
         mod shorts {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct LASTTX_STARTRXR;
+            #[derive(Debug, PartialEq)]struct LASTTX_STARTRXR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct LASTTX_SUSPENDR;
+            #[derive(Debug, PartialEq)]struct LASTTX_SUSPENDR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct LASTTX_STOPR;
+            #[derive(Debug, PartialEq)]struct LASTTX_STOPR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct LASTRX_STARTTXR;
+            #[derive(Debug, PartialEq)]struct LASTRX_STARTTXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct LASTRX_SUSPENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct LASTRX_SUSPENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct LASTRX_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct LASTRX_STOPR;
             impl R { }
             struct LASTTX_STARTRXW;
             impl R { }
@@ -574,26 +510,19 @@ pub mod nrf52810_pac {
         mod intenset {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ERRORR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ERRORR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SUSPENDEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SUSPENDEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct RXSTARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct RXSTARTEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TXSTARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TXSTARTEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct LASTRXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct LASTRXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct LASTTXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct LASTTXR;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -622,14 +551,11 @@ pub mod nrf52810_pac {
         mod errorsrc {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct OVERRUNR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct OVERRUNR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ANACKR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ANACKR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct DNACKR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct DNACKR;
             impl R { }
             struct OVERRUNW;
             impl R { }
@@ -646,8 +572,7 @@ pub mod nrf52810_pac {
         mod frequency {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct FREQUENCYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct FREQUENCYR;
             impl R { }
             struct FREQUENCYW;
             impl R { }
@@ -663,8 +588,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -678,8 +602,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -718,8 +641,7 @@ pub mod nrf52810_pac {
             mod list {
                 struct R;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct LISTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct LISTR;
                 impl R { }
                 struct LISTW;
                 impl R { }
@@ -731,8 +653,7 @@ pub mod nrf52810_pac {
         mod events_stopped {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
             struct EVENTS_STOPPEDW;
             impl R { }
@@ -743,8 +664,7 @@ pub mod nrf52810_pac {
         mod events_rxstarted {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_RXSTARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_RXSTARTEDR;
             impl R { }
             struct EVENTS_RXSTARTEDW;
             impl R { }
@@ -755,8 +675,7 @@ pub mod nrf52810_pac {
         mod events_write {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_WRITER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_WRITER;
             impl R { }
             struct EVENTS_WRITEW;
             impl R { }
@@ -767,11 +686,9 @@ pub mod nrf52810_pac {
         mod shorts {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct WRITE_SUSPENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct WRITE_SUSPENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct READ_SUSPENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct READ_SUSPENDR;
             impl R { }
             struct WRITE_SUSPENDW;
             impl R { }
@@ -785,23 +702,17 @@ pub mod nrf52810_pac {
         mod intenset {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ERRORR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ERRORR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct RXSTARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct RXSTARTEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TXSTARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TXSTARTEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct WRITER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct WRITER;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct READR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct READR;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -827,14 +738,11 @@ pub mod nrf52810_pac {
         mod errorsrc {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct OVERFLOWR;
+            #[derive(Debug, PartialEq)]struct OVERFLOWR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct DNACKR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct DNACKR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct OVERREADR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct OVERREADR;
             impl R { }
             struct OVERFLOWW;
             impl R { }
@@ -851,8 +759,7 @@ pub mod nrf52810_pac {
         mod enable {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENABLER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENABLER;
             impl R { }
             struct ENABLEW;
             impl R { }
@@ -863,11 +770,9 @@ pub mod nrf52810_pac {
         mod config {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ADDRESS0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ADDRESS0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ADDRESS1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ADDRESS1R;
             impl R { }
             struct ADDRESS0W;
             impl R { }
@@ -886,8 +791,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -902,8 +806,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -917,8 +820,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -931,8 +833,7 @@ pub mod nrf52810_pac {
         mod intenset {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct READYR;
+            #[derive(Debug, PartialEq)]struct READYR;
             impl R { }
             struct READYW;
             impl R { }
@@ -943,8 +844,7 @@ pub mod nrf52810_pac {
         mod enable {
             struct R;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct ENABLER;
+            #[derive(Debug, PartialEq)]struct ENABLER;
             impl R { }
             struct ENABLEW;
             impl R { }
@@ -955,14 +855,11 @@ pub mod nrf52810_pac {
         mod config {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ORDERR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ORDERR;
             impl R { }
-            #[derive(Debug, PartialEq)]
-            struct CPHAR;
+            #[derive(Debug, PartialEq)]struct CPHAR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CPOLR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CPOLR;
             impl R { }
             struct ORDERW;
             impl R { }
@@ -984,8 +881,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -999,8 +895,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1014,8 +909,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1054,8 +948,7 @@ pub mod nrf52810_pac {
             mod list {
                 struct R;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct LISTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct LISTR;
                 impl R { }
                 struct LISTW;
                 impl R { }
@@ -1075,8 +968,7 @@ pub mod nrf52810_pac {
         mod events_stopped {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
             struct EVENTS_STOPPEDW;
             impl R { }
@@ -1087,8 +979,7 @@ pub mod nrf52810_pac {
         mod events_end {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_ENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_ENDR;
             impl R { }
             struct EVENTS_ENDW;
             impl R { }
@@ -1099,8 +990,7 @@ pub mod nrf52810_pac {
         mod events_started {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_STARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STARTEDR;
             impl R { }
             struct EVENTS_STARTEDW;
             impl R { }
@@ -1111,20 +1001,15 @@ pub mod nrf52810_pac {
         mod intenset {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDRXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDRXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDTXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDTXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STARTEDR;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -1147,20 +1032,15 @@ pub mod nrf52810_pac {
         mod intenclr {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDRXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDRXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDTXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDTXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STARTEDR;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -1183,8 +1063,7 @@ pub mod nrf52810_pac {
         mod frequency {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct FREQUENCYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct FREQUENCYR;
             impl R { }
             struct FREQUENCYW;
             impl R { }
@@ -1200,8 +1079,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1215,8 +1093,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1230,8 +1107,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1245,8 +1121,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1285,8 +1160,7 @@ pub mod nrf52810_pac {
             mod list {
                 struct R;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct LISTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct LISTR;
                 impl R { }
                 struct LISTW;
                 impl R { }
@@ -1298,8 +1172,7 @@ pub mod nrf52810_pac {
         mod events_endrx {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_ENDRXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_ENDRXR;
             impl R { }
             struct EVENTS_ENDRXW;
             impl R { }
@@ -1310,8 +1183,7 @@ pub mod nrf52810_pac {
         mod shorts {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct END_ACQUIRER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct END_ACQUIRER;
             impl R { }
             struct END_ACQUIREW;
             impl R { }
@@ -1322,14 +1194,11 @@ pub mod nrf52810_pac {
         mod intenclr {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ENDRXR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ENDRXR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ACQUIREDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ACQUIREDR;
             impl R { }
             struct ENDW;
             impl R { }
@@ -1346,11 +1215,9 @@ pub mod nrf52810_pac {
         mod status {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct OVERREADR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct OVERREADR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct OVERFLOWR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct OVERFLOWR;
             impl R { }
             struct OVERREADW;
             impl R { }
@@ -1364,14 +1231,11 @@ pub mod nrf52810_pac {
         mod config {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ORDERR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ORDERR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CPHAR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CPHAR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CPOLR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CPOLR;
             impl R { }
             struct ORDERW;
             impl R { }
@@ -1391,41 +1255,29 @@ pub mod nrf52810_pac {
         mod shorts {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE0_CLEARR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE0_CLEARR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE1_CLEARR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE1_CLEARR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE2_CLEARR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE2_CLEARR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE3_CLEARR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE3_CLEARR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE4_CLEARR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE4_CLEARR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE5_CLEARR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE5_CLEARR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE0_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE0_STOPR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE1_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE1_STOPR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE2_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE2_STOPR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE3_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE3_STOPR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE4_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE4_STOPR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE5_STOPR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE5_STOPR;
             impl R { }
             struct COMPARE0_CLEARW;
             impl R { }
@@ -1469,23 +1321,17 @@ pub mod nrf52810_pac {
         mod intenclr {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE2R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE2R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE3R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE3R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE4R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE4R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct COMPARE5R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE5R;
             impl R { }
             struct COMPARE0W;
             impl R { }
@@ -1511,8 +1357,7 @@ pub mod nrf52810_pac {
         mod bitmode {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct BITMODER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct BITMODER;
             impl R { }
             struct BITMODEW;
             impl R { }
@@ -1525,8 +1370,7 @@ pub mod nrf52810_pac {
         mod events_datardy {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_DATARDYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_DATARDYR;
             impl R { }
             struct EVENTS_DATARDYW;
             impl R { }
@@ -1537,8 +1381,7 @@ pub mod nrf52810_pac {
         mod intenset {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct DATARDYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct DATARDYR;
             impl R { }
             struct DATARDYW;
             impl R { }
@@ -1551,8 +1394,7 @@ pub mod nrf52810_pac {
         mod events_valrdy {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_VALRDYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_VALRDYR;
             impl R { }
             struct EVENTS_VALRDYW;
             impl R { }
@@ -1563,8 +1405,7 @@ pub mod nrf52810_pac {
         mod intenset {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct VALRDYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct VALRDYR;
             impl R { }
             struct VALRDYW;
             impl R { }
@@ -1575,8 +1416,7 @@ pub mod nrf52810_pac {
         mod config {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct DERCENR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct DERCENR;
             impl R { }
             struct DERCENW;
             impl R { }
@@ -1589,53 +1429,37 @@ pub mod nrf52810_pac {
         mod inten {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED2R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED2R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED3R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED3R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED4R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED4R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED5R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED5R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED6R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED6R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED7R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED7R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED8R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED8R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED9R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED9R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED10R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED10R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED11R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED11R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED12R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED12R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED13R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED13R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED14R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED14R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED15R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED15R;
             impl R { }
             struct TRIGGERED0W;
             impl R { }
@@ -1691,53 +1515,37 @@ pub mod nrf52810_pac {
         mod intenclr {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED2R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED2R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED3R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED3R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED4R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED4R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED5R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED5R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED6R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED6R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED7R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED7R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED8R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED8R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED9R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED9R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED10R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED10R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED11R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED11R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED12R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED12R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED13R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED13R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED14R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED14R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct TRIGGERED15R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED15R;
             impl R { }
             struct TRIGGERED0W;
             impl R { }
@@ -1798,8 +1606,7 @@ pub mod nrf52810_pac {
                 impl R { }
                 struct PINR;
                 impl R { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
-                struct CONNECTR;
+                #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
                 struct CONNECTW;
@@ -1828,8 +1635,7 @@ pub mod nrf52810_pac {
         mod events_stopped {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
             struct EVENTS_STOPPEDW;
             impl R { }
@@ -1840,8 +1646,7 @@ pub mod nrf52810_pac {
         mod events_seqstarted {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_SEQSTARTEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_SEQSTARTEDR;
             impl R { }
             struct EVENTS_SEQSTARTEDW;
             impl R { }
@@ -1852,8 +1657,7 @@ pub mod nrf52810_pac {
         mod events_seqend {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_SEQENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_SEQENDR;
             impl R { }
             struct EVENTS_SEQENDW;
             impl R { }
@@ -1864,8 +1668,7 @@ pub mod nrf52810_pac {
         mod events_loopsdone {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct EVENTS_LOOPSDONER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_LOOPSDONER;
             impl R { }
             struct EVENTS_LOOPSDONEW;
             impl R { }
@@ -1876,26 +1679,19 @@ pub mod nrf52810_pac {
         mod inten {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQSTARTED0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQSTARTED0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQSTARTED1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQSTARTED1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQEND0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQEND0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQEND1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQEND1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct PWMPERIODENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct PWMPERIODENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct LOOPSDONER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct LOOPSDONER;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -1924,26 +1720,19 @@ pub mod nrf52810_pac {
         mod intenclr {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct STOPPEDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct STOPPEDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQSTARTED0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQSTARTED0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQSTARTED1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQSTARTED1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQEND0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQEND0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct SEQEND1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct SEQEND1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct PWMPERIODENDR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct PWMPERIODENDR;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct LOOPSDONER;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct LOOPSDONER;
             impl R { }
             struct STOPPEDW;
             impl R { }
@@ -1972,8 +1761,7 @@ pub mod nrf52810_pac {
         mod mode {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct UPDOWNR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct UPDOWNR;
             impl R { }
             struct UPDOWNW;
             impl R { }
@@ -1984,8 +1772,7 @@ pub mod nrf52810_pac {
         mod prescaler {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct PRESCALERR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct PRESCALERR;
             impl R { }
             struct PRESCALERW;
             impl R { }
@@ -1996,8 +1783,7 @@ pub mod nrf52810_pac {
         mod loop_ {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CNTR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CNTR;
             impl R { }
             struct CNTW;
             impl R { }
@@ -2010,16 +1796,14 @@ pub mod nrf52810_pac {
         mod ready {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct READYR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct READYR;
             impl R { }
             impl R { }
         }
         mod eraseuicr {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct ERASEUICRR;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct ERASEUICRR;
             impl R { }
             struct ERASEUICRW;
             impl R { }
@@ -2032,101 +1816,69 @@ pub mod nrf52810_pac {
         mod chg {
             struct R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH0R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH0R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH1R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH1R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH2R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH2R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH3R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH3R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH4R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH4R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH5R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH5R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH6R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH6R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH7R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH7R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH8R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH8R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH9R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH9R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH10R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH10R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH11R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH11R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH12R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH12R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH13R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH13R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH14R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH14R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH15R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH15R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH16R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH16R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH17R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH17R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH18R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH18R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH19R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH19R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH20R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH20R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH21R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH21R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH22R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH22R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH23R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH23R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH24R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH24R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH25R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH25R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH26R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH26R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH27R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH27R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH28R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH28R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH29R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH29R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH30R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH30R;
             impl R { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
-            struct CH31R;
+            #[derive(Clone, Copy, Debug, PartialEq)]struct CH31R;
             impl R { }
             impl R { }
             impl R { }
