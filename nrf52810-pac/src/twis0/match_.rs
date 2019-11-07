@@ -1,11 +1,7 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 impl super::MATCH { } 
 #[doc = r" Value of the field"]
-pub struct MATCHR {
-    bits: bool,
-}
+pub struct MATCHR;
 impl MATCHR { } 
 impl R { } 

@@ -20,104 +20,70 @@ pub struct TASKS_STOP;
 #[doc = "Stop TWI transaction"]
 pub mod tasks_stop;
 #[doc = "Suspend TWI transaction"]
-pub struct TASKS_SUSPEND {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct TASKS_SUSPEND;
 #[doc = "Suspend TWI transaction"]
 pub mod tasks_suspend;
 #[doc = "Resume TWI transaction"]
-pub struct TASKS_RESUME {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct TASKS_RESUME;
 #[doc = "Resume TWI transaction"]
 pub mod tasks_resume;
 #[doc = "TWI stopped"]
-pub struct EVENTS_STOPPED {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct EVENTS_STOPPED;
 #[doc = "TWI stopped"]
 pub mod events_stopped;
 #[doc = "TWI RXD byte received"]
-pub struct EVENTS_RXDREADY {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct EVENTS_RXDREADY;
 #[doc = "TWI RXD byte received"]
 pub mod events_rxdready;
 #[doc = "TWI TXD byte sent"]
-pub struct EVENTS_TXDSENT {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct EVENTS_TXDSENT;
 #[doc = "TWI TXD byte sent"]
 pub mod events_txdsent;
 #[doc = "TWI error"]
-pub struct EVENTS_ERROR {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct EVENTS_ERROR;
 #[doc = "TWI error"]
 pub mod events_error;
 #[doc = "TWI byte boundary, generated before each byte that is sent or received"]
-pub struct EVENTS_BB {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct EVENTS_BB;
 #[doc = "TWI byte boundary, generated before each byte that is sent or received"]
 pub mod events_bb;
 #[doc = "TWI entered the suspended state"]
-pub struct EVENTS_SUSPENDED {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct EVENTS_SUSPENDED;
 #[doc = "TWI entered the suspended state"]
 pub mod events_suspended;
 #[doc = "Shortcuts between local events and tasks"]
-pub struct SHORTS {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct SHORTS;
 #[doc = "Shortcuts between local events and tasks"]
 pub mod shorts;
 #[doc = "Enable interrupt"]
-pub struct INTENSET {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct INTENSET;
 #[doc = "Enable interrupt"]
 pub mod intenset;
 #[doc = "Disable interrupt"]
-pub struct INTENCLR {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct INTENCLR;
 #[doc = "Disable interrupt"]
 pub mod intenclr;
 #[doc = "Error source"]
-pub struct ERRORSRC {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct ERRORSRC;
 #[doc = "Error source"]
 pub mod errorsrc;
 #[doc = "Enable TWI"]
-pub struct ENABLE {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct ENABLE;
 #[doc = "Enable TWI"]
 pub mod enable;
 #[doc = "RXD register"]
-pub struct RXD {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct RXD;
 #[doc = "RXD register"]
 pub mod rxd;
 #[doc = "TXD register"]
-pub struct TXD {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct TXD;
 #[doc = "TXD register"]
 pub mod txd;
 #[doc = "TWI frequency. Accuracy depends on the HFCLK source selected."]
-pub struct FREQUENCY {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct FREQUENCY;
 #[doc = "TWI frequency. Accuracy depends on the HFCLK source selected."]
 pub mod frequency;
 #[doc = "Address used in the TWI transfer"]
-pub struct ADDRESS {
-    register: ::vcell::VolatileCell<u32>,
-}
+pub struct ADDRESS;
 #[doc = "Address used in the TWI transfer"]
 pub mod address;

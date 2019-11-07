@@ -1,11 +1,7 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 impl super::CODESIZE { } 
 #[doc = r" Value of the field"]
-pub struct CODESIZER {
-    bits: u32,
-}
+pub struct CODESIZER;
 impl CODESIZER { } 
 impl R { } 

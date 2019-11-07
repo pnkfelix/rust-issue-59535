@@ -1,11 +1,7 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 impl super::DEVICEID { } 
 #[doc = r" Value of the field"]
-pub struct DEVICEIDR {
-    bits: u32,
-}
+pub struct DEVICEIDR;
 impl DEVICEIDR { } 
 impl R { } 

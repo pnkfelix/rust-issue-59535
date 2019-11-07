@@ -1,7 +1,5 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 impl super::SEMSTAT { }
 
 #[doc = "Possible values of the field `SEMSTAT`"]

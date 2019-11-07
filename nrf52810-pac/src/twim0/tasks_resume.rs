@@ -1,7 +1,5 @@
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::TASKS_RESUME { } 
 #[doc = "Values that can be written to the field `TASKS_RESUME`"]
 pub struct TASKS_RESUMEW ;

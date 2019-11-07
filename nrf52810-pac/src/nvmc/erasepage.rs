@@ -1,16 +1,10 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::ERASEPAGE { } 
 #[doc = r" Value of the field"]
-pub struct ERASEPAGER {
-    bits: u32,
-}
+pub struct ERASEPAGER;
 impl ERASEPAGER { } 
 #[doc = r" Proxy"]
 pub struct _ERASEPAGEW<'a> {

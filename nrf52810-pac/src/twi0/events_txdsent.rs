@@ -1,11 +1,7 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::EVENTS_TXDSENT { } 
 #[doc = "Possible values of the field `EVENTS_TXDSENT`"]
 #[derive(Clone, Copy, Debug, PartialEq)]

@@ -1,11 +1,7 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::ERASEUICR { } 
 #[doc = "Possible values of the field `ERASEUICR`"]
 #[derive(Clone, Copy, Debug, PartialEq)]

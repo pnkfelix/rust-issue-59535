@@ -1,5 +1,5 @@
-pub struct R { bits: u32, }
-pub struct W { bits: u32, }
+pub struct R;
+pub struct W;
 impl super::CHG { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]

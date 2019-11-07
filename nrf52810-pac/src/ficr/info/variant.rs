@@ -1,7 +1,5 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 impl super::VARIANT { } 
 #[doc = "Possible values of the field `VARIANT`"]
 #[derive(Clone, Copy, Debug, PartialEq)]

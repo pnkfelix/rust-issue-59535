@@ -1,16 +1,10 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::ERASEPAGEPARTIAL { } 
 #[doc = r" Value of the field"]
-pub struct ERASEPAGEPARTIALR {
-    bits: u32,
-}
+pub struct ERASEPAGEPARTIALR;
 impl ERASEPAGEPARTIALR { } 
 #[doc = r" Proxy"]
 pub struct _ERASEPAGEPARTIALW<'a> {

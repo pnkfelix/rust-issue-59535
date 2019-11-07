@@ -1,7 +1,5 @@
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::EN { } 
 #[doc = "Values that can be written to the field `EN`"]
 pub struct ENW ;

@@ -1,16 +1,10 @@
 #[doc = r" Value read from the register"]
-pub struct R {
-    bits: u32,
-}
+pub struct R;
 #[doc = r" Value to write to the register"]
-pub struct W {
-    bits: u32,
-}
+pub struct W;
 impl super::A3 { } 
 #[doc = r" Value of the field"]
-pub struct A3R {
-    bits: u16,
-}
+pub struct A3R;
 impl A3R { } 
 #[doc = r" Proxy"]
 pub struct _A3W<'a> {
