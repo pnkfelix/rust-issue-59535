@@ -5,10 +5,7 @@ pub struct W {
 impl super::TASKS_RELEASE { }
 
 #[doc = "Values that can be written to the field `TASKS_RELEASE`"]
-pub enum TASKS_RELEASEW {
-    #[doc = "Trigger task"]
-    TRIGGER,
-}
+pub struct TASKS_RELEASEW ;
 impl TASKS_RELEASEW { }
 
 #[doc = r" Proxy"]

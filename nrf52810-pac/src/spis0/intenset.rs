@@ -10,39 +10,21 @@ impl super::INTENSET { }
 
 #[doc = "Possible values of the field `END`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ENDR ;
 impl ENDR { }
 
 #[doc = "Possible values of the field `ENDRX`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENDRXR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ENDRXR ;
 impl ENDRXR { }
 
 #[doc = "Possible values of the field `ACQUIRED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ACQUIREDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ACQUIREDR ;
 impl ACQUIREDR { }
 
 #[doc = "Values that can be written to the field `END`"]
-pub enum ENDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct ENDW ;
 impl ENDW { }
 
 #[doc = r" Proxy"]
@@ -52,10 +34,7 @@ pub struct _ENDW<'a> {
 impl<'a> _ENDW<'a> { }
 
 #[doc = "Values that can be written to the field `ENDRX`"]
-pub enum ENDRXW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct ENDRXW ;
 impl ENDRXW { }
 
 #[doc = r" Proxy"]
@@ -65,10 +44,7 @@ pub struct _ENDRXW<'a> {
 impl<'a> _ENDRXW<'a> { }
 
 #[doc = "Values that can be written to the field `ACQUIRED`"]
-pub enum ACQUIREDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct ACQUIREDW ;
 impl ACQUIREDW { }
 
 #[doc = r" Proxy"]

@@ -9,20 +9,10 @@ pub struct W {
 impl super::EVENTS_PWMPERIODEND { } 
 #[doc = "Possible values of the field `EVENTS_PWMPERIODEND`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_PWMPERIODENDR {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_PWMPERIODENDR ;
 impl EVENTS_PWMPERIODENDR { } 
 #[doc = "Values that can be written to the field `EVENTS_PWMPERIODEND`"]
-pub enum EVENTS_PWMPERIODENDW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_PWMPERIODENDW ;
 impl EVENTS_PWMPERIODENDW { } 
 #[doc = r" Proxy"]
 pub struct _EVENTS_PWMPERIODENDW<'a> {

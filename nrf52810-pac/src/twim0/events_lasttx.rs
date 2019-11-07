@@ -9,20 +9,10 @@ pub struct W {
 impl super::EVENTS_LASTTX { } 
 #[doc = "Possible values of the field `EVENTS_LASTTX`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_LASTTXR {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_LASTTXR ;
 impl EVENTS_LASTTXR { } 
 #[doc = "Values that can be written to the field `EVENTS_LASTTX`"]
-pub enum EVENTS_LASTTXW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_LASTTXW ;
 impl EVENTS_LASTTXW { } 
 #[doc = r" Proxy"]
 pub struct _EVENTS_LASTTXW<'a> {

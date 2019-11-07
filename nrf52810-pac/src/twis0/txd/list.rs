@@ -9,22 +9,10 @@ pub struct W {
 impl super::LIST { } 
 #[doc = "Possible values of the field `LIST`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum LISTR {
-    #[doc = "Disable EasyDMA list"]
-    DISABLED,
-    #[doc = "Use array list"]
-    ARRAYLIST,
-    #[doc = r" Reserved"]
-    _Reserved(u8),
-}
+pub struct LISTR ;
 impl LISTR { } 
 #[doc = "Values that can be written to the field `LIST`"]
-pub enum LISTW {
-    #[doc = "Disable EasyDMA list"]
-    DISABLED,
-    #[doc = "Use array list"]
-    ARRAYLIST,
-}
+pub struct LISTW ;
 impl LISTW { } 
 #[doc = r" Proxy"]
 pub struct _LISTW<'a> {

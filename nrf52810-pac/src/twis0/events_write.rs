@@ -9,20 +9,10 @@ pub struct W {
 impl super::EVENTS_WRITE { } 
 #[doc = "Possible values of the field `EVENTS_WRITE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_WRITER {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_WRITER ;
 impl EVENTS_WRITER { } 
 #[doc = "Values that can be written to the field `EVENTS_WRITE`"]
-pub enum EVENTS_WRITEW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_WRITEW ;
 impl EVENTS_WRITEW { } 
 #[doc = r" Proxy"]
 pub struct _EVENTS_WRITEW<'a> {

@@ -9,63 +9,30 @@ pub struct W {
 impl super::INTENCLR { } 
 #[doc = "Possible values of the field `STOPPED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum STOPPEDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct STOPPEDR ;
 impl STOPPEDR { } 
 #[doc = "Possible values of the field `RXDREADY`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum RXDREADYR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct RXDREADYR ;
 impl RXDREADYR { } 
 #[doc = "Possible values of the field `TXDSENT`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum TXDSENTR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct TXDSENTR ;
 impl TXDSENTR { } 
 #[doc = "Possible values of the field `ERROR`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ERRORR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ERRORR ;
 impl ERRORR { } 
 #[doc = "Possible values of the field `BB`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum BBR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct BBR ;
 impl BBR { } 
 #[doc = "Possible values of the field `SUSPENDED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum SUSPENDEDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct SUSPENDEDR ;
 impl SUSPENDEDR { } 
 #[doc = "Values that can be written to the field `STOPPED`"]
-pub enum STOPPEDW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct STOPPEDW ;
 impl STOPPEDW { } 
 #[doc = r" Proxy"]
 pub struct _STOPPEDW<'a> {
@@ -73,10 +40,7 @@ pub struct _STOPPEDW<'a> {
 }
 impl<'a> _STOPPEDW<'a> { } 
 #[doc = "Values that can be written to the field `RXDREADY`"]
-pub enum RXDREADYW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct RXDREADYW ;
 impl RXDREADYW { } 
 #[doc = r" Proxy"]
 pub struct _RXDREADYW<'a> {
@@ -84,10 +48,7 @@ pub struct _RXDREADYW<'a> {
 }
 impl<'a> _RXDREADYW<'a> { } 
 #[doc = "Values that can be written to the field `TXDSENT`"]
-pub enum TXDSENTW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct TXDSENTW ;
 impl TXDSENTW { } 
 #[doc = r" Proxy"]
 pub struct _TXDSENTW<'a> {
@@ -95,10 +56,7 @@ pub struct _TXDSENTW<'a> {
 }
 impl<'a> _TXDSENTW<'a> { } 
 #[doc = "Values that can be written to the field `ERROR`"]
-pub enum ERRORW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct ERRORW ;
 impl ERRORW { } 
 #[doc = r" Proxy"]
 pub struct _ERRORW<'a> {
@@ -106,10 +64,7 @@ pub struct _ERRORW<'a> {
 }
 impl<'a> _ERRORW<'a> { } 
 #[doc = "Values that can be written to the field `BB`"]
-pub enum BBW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct BBW ;
 impl BBW { } 
 #[doc = r" Proxy"]
 pub struct _BBW<'a> {
@@ -117,10 +72,7 @@ pub struct _BBW<'a> {
 }
 impl<'a> _BBW<'a> { } 
 #[doc = "Values that can be written to the field `SUSPENDED`"]
-pub enum SUSPENDEDW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct SUSPENDEDW ;
 impl SUSPENDEDW { } 
 #[doc = r" Proxy"]
 pub struct _SUSPENDEDW<'a> {

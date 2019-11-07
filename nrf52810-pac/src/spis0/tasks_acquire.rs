@@ -5,10 +5,7 @@ pub struct W {
 impl super::TASKS_ACQUIRE { }
 
 #[doc = "Values that can be written to the field `TASKS_ACQUIRE`"]
-pub enum TASKS_ACQUIREW {
-    #[doc = "Trigger task"]
-    TRIGGER,
-}
+pub struct TASKS_ACQUIREW ;
 impl TASKS_ACQUIREW { }
 
 #[doc = r" Proxy"]

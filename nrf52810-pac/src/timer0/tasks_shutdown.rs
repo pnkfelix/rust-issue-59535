@@ -4,10 +4,7 @@ pub struct W {
 }
 impl super::TASKS_SHUTDOWN { } 
 #[doc = "Values that can be written to the field `TASKS_SHUTDOWN`"]
-pub enum TASKS_SHUTDOWNW {
-    #[doc = "Trigger task"]
-    TRIGGER,
-}
+pub struct TASKS_SHUTDOWNW ;
 impl TASKS_SHUTDOWNW { } 
 #[doc = r" Proxy"]
 pub struct _TASKS_SHUTDOWNW<'a> {

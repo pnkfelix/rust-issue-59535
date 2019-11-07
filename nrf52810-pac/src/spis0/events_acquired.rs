@@ -10,21 +10,11 @@ impl super::EVENTS_ACQUIRED { }
 
 #[doc = "Possible values of the field `EVENTS_ACQUIRED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_ACQUIREDR {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_ACQUIREDR ;
 impl EVENTS_ACQUIREDR { }
 
 #[doc = "Values that can be written to the field `EVENTS_ACQUIRED`"]
-pub enum EVENTS_ACQUIREDW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_ACQUIREDW ;
 impl EVENTS_ACQUIREDW { }
 
 #[doc = r" Proxy"]

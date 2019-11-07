@@ -4,10 +4,7 @@ pub struct W {
 }
 impl super::TASKS_START { } 
 #[doc = "Values that can be written to the field `TASKS_START`"]
-pub enum TASKS_STARTW {
-    #[doc = "Trigger task"]
-    TRIGGER,
-}
+pub struct TASKS_STARTW ;
 impl TASKS_STARTW { } 
 #[doc = r" Proxy"]
 pub struct _TASKS_STARTW<'a> {

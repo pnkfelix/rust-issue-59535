@@ -9,18 +9,10 @@ pub struct W {
 impl super::REFRESH { } 
 #[doc = "Possible values of the field `CNT`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CNTR {
-    #[doc = "Update every PWM period"]
-    CONTINUOUS,
-    #[doc = r" Reserved"]
-    _Reserved(u32),
-}
+pub struct CNTR ;
 impl CNTR { } 
 #[doc = "Values that can be written to the field `CNT`"]
-pub enum CNTW {
-    #[doc = "Update every PWM period"]
-    CONTINUOUS,
-}
+pub struct CNTW ;
 impl CNTW { } 
 #[doc = r" Proxy"]
 pub struct _CNTW<'a> {

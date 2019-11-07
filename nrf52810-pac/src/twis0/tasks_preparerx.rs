@@ -4,10 +4,7 @@ pub struct W {
 }
 impl super::TASKS_PREPARERX { } 
 #[doc = "Values that can be written to the field `TASKS_PREPARERX`"]
-pub enum TASKS_PREPARERXW {
-    #[doc = "Trigger task"]
-    TRIGGER,
-}
+pub struct TASKS_PREPARERXW ;
 impl TASKS_PREPARERXW { } 
 #[doc = r" Proxy"]
 pub struct _TASKS_PREPARERXW<'a> {

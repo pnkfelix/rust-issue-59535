@@ -9,28 +9,10 @@ pub struct W {
 impl super::BITMODE { } 
 #[doc = "Possible values of the field `BITMODE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum BITMODER {
-    #[doc = "16 bit timer bit width"]
-    _16BIT,
-    #[doc = "8 bit timer bit width"]
-    _08BIT,
-    #[doc = "24 bit timer bit width"]
-    _24BIT,
-    #[doc = "32 bit timer bit width"]
-    _32BIT,
-}
+pub struct BITMODER ;
 impl BITMODER { } 
 #[doc = "Values that can be written to the field `BITMODE`"]
-pub enum BITMODEW {
-    #[doc = "16 bit timer bit width"]
-    _16BIT,
-    #[doc = "8 bit timer bit width"]
-    _08BIT,
-    #[doc = "24 bit timer bit width"]
-    _24BIT,
-    #[doc = "32 bit timer bit width"]
-    _32BIT,
-}
+pub struct BITMODEW ;
 impl BITMODEW { } 
 #[doc = r" Proxy"]
 pub struct _BITMODEW<'a> {

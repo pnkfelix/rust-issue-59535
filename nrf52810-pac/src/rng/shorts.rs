@@ -9,20 +9,10 @@ pub struct W {
 impl super::SHORTS { } 
 #[doc = "Possible values of the field `VALRDY_STOP`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum VALRDY_STOPR {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct VALRDY_STOPR ;
 impl VALRDY_STOPR { } 
 #[doc = "Values that can be written to the field `VALRDY_STOP`"]
-pub enum VALRDY_STOPW {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct VALRDY_STOPW ;
 impl VALRDY_STOPW { } 
 #[doc = r" Proxy"]
 pub struct _VALRDY_STOPW<'a> {

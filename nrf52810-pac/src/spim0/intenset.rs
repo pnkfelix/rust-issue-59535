@@ -9,54 +9,26 @@ pub struct W {
 impl super::INTENSET { } 
 #[doc = "Possible values of the field `STOPPED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum STOPPEDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct STOPPEDR ;
 impl STOPPEDR { } 
 #[doc = "Possible values of the field `ENDRX`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENDRXR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ENDRXR ;
 impl ENDRXR { } 
 #[doc = "Possible values of the field `END`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ENDR ;
 impl ENDR { } 
 #[doc = "Possible values of the field `ENDTX`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENDTXR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct ENDTXR ;
 impl ENDTXR { } 
 #[doc = "Possible values of the field `STARTED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum STARTEDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct STARTEDR ;
 impl STARTEDR { } 
 #[doc = "Values that can be written to the field `STOPPED`"]
-pub enum STOPPEDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct STOPPEDW ;
 impl STOPPEDW { } 
 #[doc = r" Proxy"]
 pub struct _STOPPEDW<'a> {
@@ -64,10 +36,7 @@ pub struct _STOPPEDW<'a> {
 }
 impl<'a> _STOPPEDW<'a> { } 
 #[doc = "Values that can be written to the field `ENDRX`"]
-pub enum ENDRXW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct ENDRXW ;
 impl ENDRXW { } 
 #[doc = r" Proxy"]
 pub struct _ENDRXW<'a> {
@@ -75,10 +44,7 @@ pub struct _ENDRXW<'a> {
 }
 impl<'a> _ENDRXW<'a> { } 
 #[doc = "Values that can be written to the field `END`"]
-pub enum ENDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct ENDW ;
 impl ENDW { } 
 #[doc = r" Proxy"]
 pub struct _ENDW<'a> {
@@ -86,10 +52,7 @@ pub struct _ENDW<'a> {
 }
 impl<'a> _ENDW<'a> { } 
 #[doc = "Values that can be written to the field `ENDTX`"]
-pub enum ENDTXW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct ENDTXW ;
 impl ENDTXW { } 
 #[doc = r" Proxy"]
 pub struct _ENDTXW<'a> {
@@ -97,10 +60,7 @@ pub struct _ENDTXW<'a> {
 }
 impl<'a> _ENDTXW<'a> { } 
 #[doc = "Values that can be written to the field `STARTED`"]
-pub enum STARTEDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct STARTEDW ;
 impl STARTEDW { } 
 #[doc = r" Proxy"]
 pub struct _STARTEDW<'a> {

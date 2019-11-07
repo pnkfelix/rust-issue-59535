@@ -9,38 +9,18 @@ pub struct W {
 impl super::ERRORSRC { } 
 #[doc = "Possible values of the field `OVERRUN`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum OVERRUNR {
-    #[doc = "Error did not occur"]
-    NOTRECEIVED,
-    #[doc = "Error occurred"]
-    RECEIVED,
-}
+pub struct OVERRUNR ;
 impl OVERRUNR { } 
 #[doc = "Possible values of the field `ANACK`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ANACKR {
-    #[doc = "Error did not occur"]
-    NOTRECEIVED,
-    #[doc = "Error occurred"]
-    RECEIVED,
-}
+pub struct ANACKR ;
 impl ANACKR { } 
 #[doc = "Possible values of the field `DNACK`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum DNACKR {
-    #[doc = "Error did not occur"]
-    NOTRECEIVED,
-    #[doc = "Error occurred"]
-    RECEIVED,
-}
+pub struct DNACKR ;
 impl DNACKR { } 
 #[doc = "Values that can be written to the field `OVERRUN`"]
-pub enum OVERRUNW {
-    #[doc = "Error did not occur"]
-    NOTRECEIVED,
-    #[doc = "Error occurred"]
-    RECEIVED,
-}
+pub struct OVERRUNW ;
 impl OVERRUNW { } 
 #[doc = r" Proxy"]
 pub struct _OVERRUNW<'a> {
@@ -48,12 +28,7 @@ pub struct _OVERRUNW<'a> {
 }
 impl<'a> _OVERRUNW<'a> { } 
 #[doc = "Values that can be written to the field `ANACK`"]
-pub enum ANACKW {
-    #[doc = "Error did not occur"]
-    NOTRECEIVED,
-    #[doc = "Error occurred"]
-    RECEIVED,
-}
+pub struct ANACKW ;
 impl ANACKW { } 
 #[doc = r" Proxy"]
 pub struct _ANACKW<'a> {
@@ -61,12 +36,7 @@ pub struct _ANACKW<'a> {
 }
 impl<'a> _ANACKW<'a> { } 
 #[doc = "Values that can be written to the field `DNACK`"]
-pub enum DNACKW {
-    #[doc = "Error did not occur"]
-    NOTRECEIVED,
-    #[doc = "Error occurred"]
-    RECEIVED,
-}
+pub struct DNACKW ;
 impl DNACKW { } 
 #[doc = r" Proxy"]
 pub struct _DNACKW<'a> {

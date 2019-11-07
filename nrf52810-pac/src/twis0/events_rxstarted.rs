@@ -9,20 +9,10 @@ pub struct W {
 impl super::EVENTS_RXSTARTED { } 
 #[doc = "Possible values of the field `EVENTS_RXSTARTED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_RXSTARTEDR {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_RXSTARTEDR ;
 impl EVENTS_RXSTARTEDR { } 
 #[doc = "Values that can be written to the field `EVENTS_RXSTARTED`"]
-pub enum EVENTS_RXSTARTEDW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_RXSTARTEDW ;
 impl EVENTS_RXSTARTEDW { } 
 #[doc = r" Proxy"]
 pub struct _EVENTS_RXSTARTEDW<'a> {

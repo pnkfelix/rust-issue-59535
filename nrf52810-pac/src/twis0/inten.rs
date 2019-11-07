@@ -9,65 +9,30 @@ pub struct W {
 impl super::INTEN { } 
 #[doc = "Possible values of the field `STOPPED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum STOPPEDR {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct STOPPEDR ;
 impl STOPPEDR { } 
 #[doc = "Possible values of the field `ERROR`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ERRORR {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct ERRORR ;
 impl ERRORR { } 
 #[doc = "Possible values of the field `RXSTARTED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum RXSTARTEDR {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct RXSTARTEDR ;
 impl RXSTARTEDR { } 
 #[doc = "Possible values of the field `TXSTARTED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum TXSTARTEDR {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct TXSTARTEDR ;
 impl TXSTARTEDR { } 
 #[doc = "Possible values of the field `WRITE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum WRITER {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct WRITER ;
 impl WRITER { } 
 #[doc = "Possible values of the field `READ`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum READR {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct READR ;
 impl READR { } 
 #[doc = "Values that can be written to the field `STOPPED`"]
-pub enum STOPPEDW {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct STOPPEDW ;
 impl STOPPEDW { } 
 #[doc = r" Proxy"]
 pub struct _STOPPEDW<'a> {
@@ -75,12 +40,7 @@ pub struct _STOPPEDW<'a> {
 }
 impl<'a> _STOPPEDW<'a> { } 
 #[doc = "Values that can be written to the field `ERROR`"]
-pub enum ERRORW {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct ERRORW ;
 impl ERRORW { } 
 #[doc = r" Proxy"]
 pub struct _ERRORW<'a> {
@@ -88,12 +48,7 @@ pub struct _ERRORW<'a> {
 }
 impl<'a> _ERRORW<'a> { } 
 #[doc = "Values that can be written to the field `RXSTARTED`"]
-pub enum RXSTARTEDW {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct RXSTARTEDW ;
 impl RXSTARTEDW { } 
 #[doc = r" Proxy"]
 pub struct _RXSTARTEDW<'a> {
@@ -101,12 +56,7 @@ pub struct _RXSTARTEDW<'a> {
 }
 impl<'a> _RXSTARTEDW<'a> { } 
 #[doc = "Values that can be written to the field `TXSTARTED`"]
-pub enum TXSTARTEDW {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct TXSTARTEDW ;
 impl TXSTARTEDW { } 
 #[doc = r" Proxy"]
 pub struct _TXSTARTEDW<'a> {
@@ -114,12 +64,7 @@ pub struct _TXSTARTEDW<'a> {
 }
 impl<'a> _TXSTARTEDW<'a> { } 
 #[doc = "Values that can be written to the field `WRITE`"]
-pub enum WRITEW {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct WRITEW ;
 impl WRITEW { } 
 #[doc = r" Proxy"]
 pub struct _WRITEW<'a> {
@@ -127,12 +72,7 @@ pub struct _WRITEW<'a> {
 }
 impl<'a> _WRITEW<'a> { } 
 #[doc = "Values that can be written to the field `READ`"]
-pub enum READW {
-    #[doc = "Disable"]
-    DISABLED,
-    #[doc = "Enable"]
-    ENABLED,
-}
+pub struct READW ;
 impl READW { } 
 #[doc = r" Proxy"]
 pub struct _READW<'a> {

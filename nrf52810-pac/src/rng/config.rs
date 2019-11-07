@@ -9,20 +9,10 @@ pub struct W {
 impl super::CONFIG { } 
 #[doc = "Possible values of the field `DERCEN`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum DERCENR {
-    #[doc = "Disabled"]
-    DISABLED,
-    #[doc = "Enabled"]
-    ENABLED,
-}
+pub struct DERCENR ;
 impl DERCENR { } 
 #[doc = "Values that can be written to the field `DERCEN`"]
-pub enum DERCENW {
-    #[doc = "Disabled"]
-    DISABLED,
-    #[doc = "Enabled"]
-    ENABLED,
-}
+pub struct DERCENW ;
 impl DERCENW { } 
 #[doc = r" Proxy"]
 pub struct _DERCENW<'a> {

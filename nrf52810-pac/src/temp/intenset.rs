@@ -9,18 +9,10 @@ pub struct W {
 impl super::INTENSET { } 
 #[doc = "Possible values of the field `DATARDY`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum DATARDYR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct DATARDYR ;
 impl DATARDYR { } 
 #[doc = "Values that can be written to the field `DATARDY`"]
-pub enum DATARDYW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct DATARDYW ;
 impl DATARDYW { } 
 #[doc = r" Proxy"]
 pub struct _DATARDYW<'a> {

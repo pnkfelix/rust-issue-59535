@@ -9,18 +9,10 @@ pub struct W {
 impl super::INTENSET { } 
 #[doc = "Possible values of the field `READY`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum READYR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct READYR ;
 impl READYR { } 
 #[doc = "Values that can be written to the field `READY`"]
-pub enum READYW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct READYW ;
 impl READYW { } 
 #[doc = r" Proxy"]
 pub struct _READYW<'a> {

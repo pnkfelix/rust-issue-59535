@@ -10,21 +10,11 @@ impl super::EVENTS_END { }
 
 #[doc = "Possible values of the field `EVENTS_END`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_ENDR {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_ENDR ;
 impl EVENTS_ENDR { }
 
 #[doc = "Values that can be written to the field `EVENTS_END`"]
-pub enum EVENTS_ENDW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_ENDW ;
 impl EVENTS_ENDW { }
 
 #[doc = r" Proxy"]

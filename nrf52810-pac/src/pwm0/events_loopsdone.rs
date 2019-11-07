@@ -9,20 +9,10 @@ pub struct W {
 impl super::EVENTS_LOOPSDONE { } 
 #[doc = "Possible values of the field `EVENTS_LOOPSDONE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum EVENTS_LOOPSDONER {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_LOOPSDONER ;
 impl EVENTS_LOOPSDONER { } 
 #[doc = "Values that can be written to the field `EVENTS_LOOPSDONE`"]
-pub enum EVENTS_LOOPSDONEW {
-    #[doc = "Event not generated"]
-    NOTGENERATED,
-    #[doc = "Event generated"]
-    GENERATED,
-}
+pub struct EVENTS_LOOPSDONEW ;
 impl EVENTS_LOOPSDONEW { } 
 #[doc = r" Proxy"]
 pub struct _EVENTS_LOOPSDONEW<'a> {

@@ -9,20 +9,10 @@ pub struct W {
 impl super::ERASEUICR { } 
 #[doc = "Possible values of the field `ERASEUICR`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ERASEUICRR {
-    #[doc = "No operation"]
-    NOOPERATION,
-    #[doc = "Start erase of UICR"]
-    ERASE,
-}
+pub struct ERASEUICRR ;
 impl ERASEUICRR { } 
 #[doc = "Values that can be written to the field `ERASEUICR`"]
-pub enum ERASEUICRW {
-    #[doc = "No operation"]
-    NOOPERATION,
-    #[doc = "Start erase of UICR"]
-    ERASE,
-}
+pub struct ERASEUICRW ;
 impl ERASEUICRW { } 
 #[doc = r" Proxy"]
 pub struct _ERASEUICRW<'a> {

@@ -9,26 +9,10 @@ pub struct W {
 impl super::CONFIG { } 
 #[doc = "Possible values of the field `WEN`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum WENR {
-    #[doc = "Read only access"]
-    REN,
-    #[doc = "Write enabled"]
-    WEN,
-    #[doc = "Erase enabled"]
-    EEN,
-    #[doc = r" Reserved"]
-    _Reserved(u8),
-}
+pub struct WENR ;
 impl WENR { } 
 #[doc = "Values that can be written to the field `WEN`"]
-pub enum WENW {
-    #[doc = "Read only access"]
-    REN,
-    #[doc = "Write enabled"]
-    WEN,
-    #[doc = "Erase enabled"]
-    EEN,
-}
+pub struct WENW ;
 impl WENW { } 
 #[doc = r" Proxy"]
 pub struct _WENW<'a> {

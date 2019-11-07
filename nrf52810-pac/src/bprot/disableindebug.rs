@@ -9,20 +9,10 @@ pub struct W {
 impl super::DISABLEINDEBUG { } 
 #[doc = "Possible values of the field `DISABLEINDEBUG`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum DISABLEINDEBUGR {
-    #[doc = "Disabled in debug"]
-    DISABLED,
-    #[doc = "Enabled in debug"]
-    ENABLED,
-}
+pub struct DISABLEINDEBUGR ;
 impl DISABLEINDEBUGR { } 
 #[doc = "Values that can be written to the field `DISABLEINDEBUG`"]
-pub enum DISABLEINDEBUGW {
-    #[doc = "Disabled in debug"]
-    DISABLED,
-    #[doc = "Enabled in debug"]
-    ENABLED,
-}
+pub struct DISABLEINDEBUGW ;
 impl DISABLEINDEBUGW { } 
 #[doc = r" Proxy"]
 pub struct _DISABLEINDEBUGW<'a> {

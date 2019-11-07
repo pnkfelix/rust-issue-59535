@@ -9,20 +9,10 @@ pub struct W {
 impl super::SHORTS { } 
 #[doc = "Possible values of the field `END_START`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum END_STARTR {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct END_STARTR ;
 impl END_STARTR { } 
 #[doc = "Values that can be written to the field `END_START`"]
-pub enum END_STARTW {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct END_STARTW ;
 impl END_STARTW { } 
 #[doc = r" Proxy"]
 pub struct _END_STARTW<'a> {

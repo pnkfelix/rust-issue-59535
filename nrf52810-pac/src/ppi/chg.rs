@@ -3,236 +3,236 @@ pub struct W { bits: u32, }
 impl super::CHG { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH0R { EXCLUDED, INCLUDED, }
+pub struct CH0R ;
 impl CH0R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH1R { EXCLUDED, INCLUDED, }
+pub struct CH1R ;
 impl CH1R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH2R { EXCLUDED, INCLUDED, }
+pub struct CH2R ;
 impl CH2R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH3R { EXCLUDED, INCLUDED, }
+pub struct CH3R ;
 impl CH3R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH4R { EXCLUDED, INCLUDED, }
+pub struct CH4R ;
 impl CH4R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH5R { EXCLUDED, INCLUDED, }
+pub struct CH5R ;
 impl CH5R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH6R { EXCLUDED, INCLUDED, }
+pub struct CH6R ;
 impl CH6R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH7R { EXCLUDED, INCLUDED, }
+pub struct CH7R ;
 impl CH7R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH8R { EXCLUDED, INCLUDED, }
+pub struct CH8R ;
 impl CH8R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH9R { EXCLUDED, INCLUDED, }
+pub struct CH9R ;
 impl CH9R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH10R { EXCLUDED, INCLUDED, }
+pub struct CH10R ;
 impl CH10R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH11R { EXCLUDED, INCLUDED, }
+pub struct CH11R ;
 impl CH11R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH12R { EXCLUDED, INCLUDED, }
+pub struct CH12R ;
 impl CH12R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH13R { EXCLUDED, INCLUDED, }
+pub struct CH13R ;
 impl CH13R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH14R { EXCLUDED, INCLUDED, }
+pub struct CH14R ;
 impl CH14R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH15R { EXCLUDED, INCLUDED, }
+pub struct CH15R ;
 impl CH15R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH16R { EXCLUDED, INCLUDED, }
+pub struct CH16R ;
 impl CH16R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH17R { EXCLUDED, INCLUDED, }
+pub struct CH17R ;
 impl CH17R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH18R { EXCLUDED, INCLUDED, }
+pub struct CH18R ;
 impl CH18R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH19R { EXCLUDED, INCLUDED, }
+pub struct CH19R ;
 impl CH19R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH20R { EXCLUDED, INCLUDED, }
+pub struct CH20R ;
 impl CH20R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH21R { EXCLUDED, INCLUDED, }
+pub struct CH21R ;
 impl CH21R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH22R { EXCLUDED, INCLUDED, }
+pub struct CH22R ;
 impl CH22R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH23R { EXCLUDED, INCLUDED, }
+pub struct CH23R ;
 impl CH23R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH24R { EXCLUDED, INCLUDED, }
+pub struct CH24R ;
 impl CH24R { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH25R { EXCLUDED, INCLUDED, }
+pub struct CH25R ;
 impl CH25R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH26R { EXCLUDED, INCLUDED, }
+pub struct CH26R ;
 impl CH26R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH27R { EXCLUDED, INCLUDED, }
+pub struct CH27R ;
 impl CH27R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH28R { EXCLUDED, INCLUDED, }
+pub struct CH28R ;
 impl CH28R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH29R { EXCLUDED, INCLUDED, }
+pub struct CH29R ;
 impl CH29R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH30R { EXCLUDED, INCLUDED, }
+pub struct CH30R ;
 impl CH30R { } 
 
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH31R { EXCLUDED, INCLUDED, }
+pub struct CH31R ;
 impl CH31R { } 
 
-pub enum CH0W { EXCLUDED, INCLUDED, }
+pub struct CH0W ;
 pub struct _CH0W<'a> { w: &'a mut W, }
 impl<'a> _CH0W<'a> { } 
 
-pub enum CH1W { EXCLUDED, INCLUDED, }
+pub struct CH1W ;
 pub struct _CH1W<'a> { w: &'a mut W, }
 impl<'a> _CH1W<'a> { } 
 
-pub enum CH2W { EXCLUDED, INCLUDED, }
+pub struct CH2W ;
 pub struct _CH2W<'a> { w: &'a mut W, }
 impl<'a> _CH2W<'a> { } 
 
-pub enum CH3W { EXCLUDED, INCLUDED, }
+pub struct CH3W ;
 pub struct _CH3W<'a> { w: &'a mut W, }
 impl<'a> _CH3W<'a> { } 
 
-pub enum CH4W { EXCLUDED, INCLUDED, }
+pub struct CH4W ;
 pub struct _CH4W<'a> { w: &'a mut W, }
 impl<'a> _CH4W<'a> { } 
 
-pub enum CH5W { EXCLUDED, INCLUDED, }
+pub struct CH5W ;
 pub struct _CH5W<'a> { w: &'a mut W, }
 impl<'a> _CH5W<'a> { } 
 
-pub enum CH6W { EXCLUDED, INCLUDED, }
+pub struct CH6W ;
 
 pub struct _CH6W<'a> { w: &'a mut W, }
 impl<'a> _CH6W<'a> { } 
 
-pub enum CH7W { EXCLUDED, INCLUDED, }
+pub struct CH7W ;
 pub struct _CH7W<'a> { w: &'a mut W, }
 impl<'a> _CH7W<'a> { } 
 
-pub enum CH8W { EXCLUDED, INCLUDED, }
+pub struct CH8W ;
 pub struct _CH8W<'a> { w: &'a mut W, }
 impl<'a> _CH8W<'a> { } 
 
-pub enum CH9W { EXCLUDED, INCLUDED, }
+pub struct CH9W ;
 pub struct _CH9W<'a> { w: &'a mut W, }
 impl<'a> _CH9W<'a> { } 
 
-pub enum CH10W { EXCLUDED, INCLUDED, }
+pub struct CH10W ;
 
 pub struct _CH10W<'a> { w: &'a mut W, }
 impl<'a> _CH10W<'a> { } 
 
-pub enum CH11W { EXCLUDED, INCLUDED, }
+pub struct CH11W ;
 pub struct _CH11W<'a> { w: &'a mut W, }
 impl<'a> _CH11W<'a> { } 
 
-pub enum CH12W { EXCLUDED, INCLUDED, }
+pub struct CH12W ;
 pub struct _CH12W<'a> { w: &'a mut W, }
 impl<'a> _CH12W<'a> { } 
 
-pub enum CH13W { EXCLUDED, INCLUDED, }
+pub struct CH13W ;
 pub struct _CH13W<'a> { w: &'a mut W, }
 impl<'a> _CH13W<'a> { } 
 
-pub enum CH14W { EXCLUDED, INCLUDED, }
+pub struct CH14W ;
 pub struct _CH14W<'a> { w: &'a mut W, }
 impl<'a> _CH14W<'a> { } 
 
-pub enum CH15W { EXCLUDED, INCLUDED, }
+pub struct CH15W ;
 pub struct _CH15W<'a> { w: &'a mut W, }
 impl<'a> _CH15W<'a> { } 
 
-pub enum CH16W { EXCLUDED, INCLUDED, }
+pub struct CH16W ;
 pub struct _CH16W<'a> { w: &'a mut W, }
 impl<'a> _CH16W<'a> { } 
 
-pub enum CH17W { EXCLUDED, INCLUDED, }
+pub struct CH17W ;
 pub struct _CH17W<'a> { w: &'a mut W, }
 impl<'a> _CH17W<'a> { } 
 
-pub enum CH18W { EXCLUDED, INCLUDED, }
+pub struct CH18W ;
 pub struct _CH18W<'a> { w: &'a mut W, }
 impl<'a> _CH18W<'a> { } 
 
-pub enum CH19W { EXCLUDED, INCLUDED, }
+pub struct CH19W ;
 pub struct _CH19W<'a> { w: &'a mut W, }
 impl<'a> _CH19W<'a> { } 
 
-pub enum CH20W { EXCLUDED, INCLUDED, }
+pub struct CH20W ;
 pub struct _CH20W<'a> { w: &'a mut W, }
 impl<'a> _CH20W<'a> { } 
 
-pub enum CH21W { EXCLUDED, INCLUDED, }
+pub struct CH21W ;
 pub struct _CH21W<'a> { w: &'a mut W, }
 impl<'a> _CH21W<'a> { } 
 
-pub enum CH22W { EXCLUDED, INCLUDED, }
+pub struct CH22W ;
 pub struct _CH22W<'a> { w: &'a mut W, }
 impl<'a> _CH22W<'a> { } 
 
-pub enum CH23W { EXCLUDED, INCLUDED, }
+pub struct CH23W ;
 pub struct _CH23W<'a> { w: &'a mut W, }
 impl<'a> _CH23W<'a> { } 
 
-pub enum CH24W { EXCLUDED, INCLUDED, }
+pub struct CH24W ;
 pub struct _CH24W<'a> { w: &'a mut W, }
 impl<'a> _CH24W<'a> { } 
 
-pub enum CH25W { EXCLUDED, INCLUDED, }
+pub struct CH25W ;
 pub struct _CH25W<'a> { w: &'a mut W, }
 impl<'a> _CH25W<'a> { } 
 
-pub enum CH26W { EXCLUDED, INCLUDED, }
+pub struct CH26W ;
 pub struct _CH26W<'a> { w: &'a mut W, }
 impl<'a> _CH26W<'a> { } 
 
-pub enum CH27W { EXCLUDED, INCLUDED, }
+pub struct CH27W ;
 pub struct _CH27W<'a> { w: &'a mut W, }
 impl<'a> _CH27W<'a> { } 
 
-pub enum CH28W { EXCLUDED, INCLUDED, }
+pub struct CH28W ;
 pub struct _CH28W<'a> { w: &'a mut W, }
 impl<'a> _CH28W<'a> { } 
 
-pub enum CH29W { EXCLUDED, INCLUDED, }
+pub struct CH29W ;
 pub struct _CH29W<'a> { w: &'a mut W, }
 impl<'a> _CH29W<'a> { } 
 
-pub enum CH30W { EXCLUDED, INCLUDED, }
+pub struct CH30W ;
 pub struct _CH30W<'a> { w: &'a mut () }
 impl<'a> _CH30W<'a> { } 
 
-pub enum CH31W { EXCLUDED, INCLUDED, }
+pub struct CH31W ;
 
 pub struct _CH31W<'a> { w: &'a mut W, }
 impl<'a> _CH31W<'a> { } 

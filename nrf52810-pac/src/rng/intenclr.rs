@@ -9,18 +9,10 @@ pub struct W {
 impl super::INTENCLR { } 
 #[doc = "Possible values of the field `VALRDY`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum VALRDYR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct VALRDYR ;
 impl VALRDYR { } 
 #[doc = "Values that can be written to the field `VALRDY`"]
-pub enum VALRDYW {
-    #[doc = "Disable"]
-    CLEAR,
-}
+pub struct VALRDYW ;
 impl VALRDYW { } 
 #[doc = r" Proxy"]
 pub struct _VALRDYW<'a> {

@@ -9,26 +9,10 @@ pub struct W {
 impl super::MODE { } 
 #[doc = "Possible values of the field `MODE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum MODER {
-    #[doc = "Select Timer mode"]
-    TIMER,
-    #[doc = "Deprecated enumerator -  Select Counter mode"]
-    COUNTER,
-    #[doc = "Select Low Power Counter mode"]
-    LOWPOWERCOUNTER,
-    #[doc = r" Reserved"]
-    _Reserved(u8),
-}
+pub struct MODER ;
 impl MODER { } 
 #[doc = "Values that can be written to the field `MODE`"]
-pub enum MODEW {
-    #[doc = "Select Timer mode"]
-    TIMER,
-    #[doc = "Deprecated enumerator -  Select Counter mode"]
-    COUNTER,
-    #[doc = "Select Low Power Counter mode"]
-    LOWPOWERCOUNTER,
-}
+pub struct MODEW ;
 impl MODEW { } 
 #[doc = r" Proxy"]
 pub struct _MODEW<'a> {

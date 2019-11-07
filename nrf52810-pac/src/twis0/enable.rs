@@ -9,22 +9,10 @@ pub struct W {
 impl super::ENABLE { } 
 #[doc = "Possible values of the field `ENABLE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENABLER {
-    #[doc = "Disable TWIS"]
-    DISABLED,
-    #[doc = "Enable TWIS"]
-    ENABLED,
-    #[doc = r" Reserved"]
-    _Reserved(u8),
-}
+pub struct ENABLER ;
 impl ENABLER { } 
 #[doc = "Values that can be written to the field `ENABLE`"]
-pub enum ENABLEW {
-    #[doc = "Disable TWIS"]
-    DISABLED,
-    #[doc = "Enable TWIS"]
-    ENABLED,
-}
+pub struct ENABLEW ;
 impl ENABLEW { } 
 #[doc = r" Proxy"]
 pub struct _ENABLEW<'a> {

@@ -4,10 +4,7 @@ pub struct W {
 }
 impl super::EN { } 
 #[doc = "Values that can be written to the field `EN`"]
-pub enum ENW {
-    #[doc = "Trigger task"]
-    TRIGGER,
-}
+pub struct ENW ;
 impl ENW { } 
 #[doc = r" Proxy"]
 pub struct _ENW<'a> {

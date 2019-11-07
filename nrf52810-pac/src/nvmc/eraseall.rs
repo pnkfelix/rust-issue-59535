@@ -9,20 +9,10 @@ pub struct W {
 impl super::ERASEALL { } 
 #[doc = "Possible values of the field `ERASEALL`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ERASEALLR {
-    #[doc = "No operation"]
-    NOOPERATION,
-    #[doc = "Start erase of chip"]
-    ERASE,
-}
+pub struct ERASEALLR ;
 impl ERASEALLR { } 
 #[doc = "Values that can be written to the field `ERASEALL`"]
-pub enum ERASEALLW {
-    #[doc = "No operation"]
-    NOOPERATION,
-    #[doc = "Start erase of chip"]
-    ERASE,
-}
+pub struct ERASEALLW ;
 impl ERASEALLW { } 
 #[doc = r" Proxy"]
 pub struct _ERASEALLW<'a> {

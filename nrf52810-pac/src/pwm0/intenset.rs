@@ -9,72 +9,34 @@ pub struct W {
 impl super::INTENSET { } 
 #[doc = "Possible values of the field `STOPPED`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum STOPPEDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct STOPPEDR ;
 impl STOPPEDR { } 
 #[doc = "Possible values of the field `SEQSTARTED0`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum SEQSTARTED0R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct SEQSTARTED0R ;
 impl SEQSTARTED0R { } 
 #[doc = "Possible values of the field `SEQSTARTED1`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum SEQSTARTED1R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct SEQSTARTED1R ;
 impl SEQSTARTED1R { } 
 #[doc = "Possible values of the field `SEQEND0`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum SEQEND0R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct SEQEND0R ;
 impl SEQEND0R { } 
 #[doc = "Possible values of the field `SEQEND1`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum SEQEND1R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct SEQEND1R ;
 impl SEQEND1R { } 
 #[doc = "Possible values of the field `PWMPERIODEND`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum PWMPERIODENDR {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct PWMPERIODENDR ;
 impl PWMPERIODENDR { } 
 #[doc = "Possible values of the field `LOOPSDONE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum LOOPSDONER {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct LOOPSDONER ;
 impl LOOPSDONER { } 
 #[doc = "Values that can be written to the field `STOPPED`"]
-pub enum STOPPEDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct STOPPEDW ;
 impl STOPPEDW { } 
 #[doc = r" Proxy"]
 pub struct _STOPPEDW<'a> {
@@ -82,10 +44,7 @@ pub struct _STOPPEDW<'a> {
 }
 impl<'a> _STOPPEDW<'a> { } 
 #[doc = "Values that can be written to the field `SEQSTARTED0`"]
-pub enum SEQSTARTED0W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct SEQSTARTED0W ;
 impl SEQSTARTED0W { } 
 #[doc = r" Proxy"]
 pub struct _SEQSTARTED0W<'a> {
@@ -93,10 +52,7 @@ pub struct _SEQSTARTED0W<'a> {
 }
 impl<'a> _SEQSTARTED0W<'a> { } 
 #[doc = "Values that can be written to the field `SEQSTARTED1`"]
-pub enum SEQSTARTED1W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct SEQSTARTED1W ;
 impl SEQSTARTED1W { } 
 #[doc = r" Proxy"]
 pub struct _SEQSTARTED1W<'a> {
@@ -104,10 +60,7 @@ pub struct _SEQSTARTED1W<'a> {
 }
 impl<'a> _SEQSTARTED1W<'a> { } 
 #[doc = "Values that can be written to the field `SEQEND0`"]
-pub enum SEQEND0W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct SEQEND0W ;
 impl SEQEND0W { } 
 #[doc = r" Proxy"]
 pub struct _SEQEND0W<'a> {
@@ -115,10 +68,7 @@ pub struct _SEQEND0W<'a> {
 }
 impl<'a> _SEQEND0W<'a> { } 
 #[doc = "Values that can be written to the field `SEQEND1`"]
-pub enum SEQEND1W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct SEQEND1W ;
 impl SEQEND1W { } 
 #[doc = r" Proxy"]
 pub struct _SEQEND1W<'a> {
@@ -126,10 +76,7 @@ pub struct _SEQEND1W<'a> {
 }
 impl<'a> _SEQEND1W<'a> { } 
 #[doc = "Values that can be written to the field `PWMPERIODEND`"]
-pub enum PWMPERIODENDW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct PWMPERIODENDW ;
 impl PWMPERIODENDW { } 
 #[doc = r" Proxy"]
 pub struct _PWMPERIODENDW<'a> {
@@ -137,10 +84,7 @@ pub struct _PWMPERIODENDW<'a> {
 }
 impl<'a> _PWMPERIODENDW<'a> { } 
 #[doc = "Values that can be written to the field `LOOPSDONE`"]
-pub enum LOOPSDONEW {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct LOOPSDONEW ;
 impl LOOPSDONEW { } 
 #[doc = r" Proxy"]
 pub struct _LOOPSDONEW<'a> {

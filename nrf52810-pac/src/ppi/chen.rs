@@ -9,299 +9,134 @@ pub struct W {
 impl super::CHEN { } 
 #[doc = "Possible values of the field `CH0`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH0R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH0R ;
 impl CH0R { } 
 #[doc = "Possible values of the field `CH1`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH1R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH1R ;
 impl CH1R { } 
 #[doc = "Possible values of the field `CH2`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH2R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH2R ;
 impl CH2R { } 
 #[doc = "Possible values of the field `CH3`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH3R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH3R ;
 impl CH3R { } 
 #[doc = "Possible values of the field `CH4`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH4R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH4R ;
 impl CH4R { } 
 #[doc = "Possible values of the field `CH5`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH5R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH5R ;
 impl CH5R { } 
 #[doc = "Possible values of the field `CH6`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH6R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH6R ;
 impl CH6R { } 
 #[doc = "Possible values of the field `CH7`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH7R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH7R ;
 impl CH7R { } 
 #[doc = "Possible values of the field `CH8`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH8R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH8R ;
 impl CH8R { } 
 #[doc = "Possible values of the field `CH9`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH9R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH9R ;
 impl CH9R { } 
 #[doc = "Possible values of the field `CH10`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH10R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH10R ;
 impl CH10R { } 
 #[doc = "Possible values of the field `CH11`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH11R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH11R ;
 impl CH11R { } 
 #[doc = "Possible values of the field `CH12`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH12R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH12R ;
 impl CH12R { } 
 #[doc = "Possible values of the field `CH13`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH13R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH13R ;
 impl CH13R { } 
 #[doc = "Possible values of the field `CH14`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH14R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH14R ;
 impl CH14R { } 
 #[doc = "Possible values of the field `CH15`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH15R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH15R ;
 impl CH15R { } 
 #[doc = "Possible values of the field `CH16`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH16R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH16R ;
 impl CH16R { } 
 #[doc = "Possible values of the field `CH17`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH17R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH17R ;
 impl CH17R { } 
 #[doc = "Possible values of the field `CH18`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH18R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH18R ;
 impl CH18R { } 
 #[doc = "Possible values of the field `CH19`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH19R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH19R ;
 impl CH19R { } 
 #[doc = "Possible values of the field `CH20`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH20R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH20R ;
 impl CH20R { } 
 #[doc = "Possible values of the field `CH21`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH21R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH21R ;
 impl CH21R { } 
 #[doc = "Possible values of the field `CH22`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH22R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH22R ;
 impl CH22R { } 
 #[doc = "Possible values of the field `CH23`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH23R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH23R ;
 impl CH23R { } 
 #[doc = "Possible values of the field `CH24`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH24R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH24R ;
 impl CH24R { } 
 #[doc = "Possible values of the field `CH25`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH25R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH25R ;
 impl CH25R { } 
 #[doc = "Possible values of the field `CH26`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH26R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH26R ;
 impl CH26R { } 
 #[doc = "Possible values of the field `CH27`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH27R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH27R ;
 impl CH27R { } 
 #[doc = "Possible values of the field `CH28`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH28R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH28R ;
 impl CH28R { } 
 #[doc = "Possible values of the field `CH29`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH29R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH29R ;
 impl CH29R { } 
 #[doc = "Possible values of the field `CH30`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH30R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH30R ;
 impl CH30R { } 
 #[doc = "Possible values of the field `CH31`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CH31R {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH31R ;
 impl CH31R { } 
 #[doc = "Values that can be written to the field `CH0`"]
-pub enum CH0W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH0W ;
 impl CH0W { } 
 #[doc = r" Proxy"]
 pub struct _CH0W<'a> {
@@ -309,12 +144,7 @@ pub struct _CH0W<'a> {
 }
 impl<'a> _CH0W<'a> { } 
 #[doc = "Values that can be written to the field `CH1`"]
-pub enum CH1W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH1W ;
 impl CH1W { } 
 #[doc = r" Proxy"]
 pub struct _CH1W<'a> {
@@ -322,12 +152,7 @@ pub struct _CH1W<'a> {
 }
 impl<'a> _CH1W<'a> { } 
 #[doc = "Values that can be written to the field `CH2`"]
-pub enum CH2W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH2W ;
 impl CH2W { } 
 #[doc = r" Proxy"]
 pub struct _CH2W<'a> {
@@ -335,12 +160,7 @@ pub struct _CH2W<'a> {
 }
 impl<'a> _CH2W<'a> { } 
 #[doc = "Values that can be written to the field `CH3`"]
-pub enum CH3W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH3W ;
 impl CH3W { } 
 #[doc = r" Proxy"]
 pub struct _CH3W<'a> {
@@ -348,12 +168,7 @@ pub struct _CH3W<'a> {
 }
 impl<'a> _CH3W<'a> { } 
 #[doc = "Values that can be written to the field `CH4`"]
-pub enum CH4W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH4W ;
 impl CH4W { } 
 #[doc = r" Proxy"]
 pub struct _CH4W<'a> {
@@ -361,12 +176,7 @@ pub struct _CH4W<'a> {
 }
 impl<'a> _CH4W<'a> { } 
 #[doc = "Values that can be written to the field `CH5`"]
-pub enum CH5W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH5W ;
 impl CH5W { } 
 #[doc = r" Proxy"]
 pub struct _CH5W<'a> {
@@ -374,12 +184,7 @@ pub struct _CH5W<'a> {
 }
 impl<'a> _CH5W<'a> { } 
 #[doc = "Values that can be written to the field `CH6`"]
-pub enum CH6W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH6W ;
 impl CH6W { } 
 #[doc = r" Proxy"]
 pub struct _CH6W<'a> {
@@ -387,12 +192,7 @@ pub struct _CH6W<'a> {
 }
 impl<'a> _CH6W<'a> { } 
 #[doc = "Values that can be written to the field `CH7`"]
-pub enum CH7W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH7W ;
 impl CH7W { } 
 #[doc = r" Proxy"]
 pub struct _CH7W<'a> {
@@ -400,12 +200,7 @@ pub struct _CH7W<'a> {
 }
 impl<'a> _CH7W<'a> { } 
 #[doc = "Values that can be written to the field `CH8`"]
-pub enum CH8W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH8W ;
 impl CH8W { } 
 #[doc = r" Proxy"]
 pub struct _CH8W<'a> {
@@ -413,12 +208,7 @@ pub struct _CH8W<'a> {
 }
 impl<'a> _CH8W<'a> { } 
 #[doc = "Values that can be written to the field `CH9`"]
-pub enum CH9W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH9W ;
 impl CH9W { } 
 #[doc = r" Proxy"]
 pub struct _CH9W<'a> {
@@ -426,12 +216,7 @@ pub struct _CH9W<'a> {
 }
 impl<'a> _CH9W<'a> { } 
 #[doc = "Values that can be written to the field `CH10`"]
-pub enum CH10W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH10W ;
 impl CH10W { } 
 #[doc = r" Proxy"]
 pub struct _CH10W<'a> {
@@ -439,12 +224,7 @@ pub struct _CH10W<'a> {
 }
 impl<'a> _CH10W<'a> { } 
 #[doc = "Values that can be written to the field `CH11`"]
-pub enum CH11W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH11W ;
 impl CH11W { } 
 #[doc = r" Proxy"]
 pub struct _CH11W<'a> {
@@ -452,12 +232,7 @@ pub struct _CH11W<'a> {
 }
 impl<'a> _CH11W<'a> { } 
 #[doc = "Values that can be written to the field `CH12`"]
-pub enum CH12W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH12W ;
 impl CH12W { } 
 #[doc = r" Proxy"]
 pub struct _CH12W<'a> {
@@ -465,12 +240,7 @@ pub struct _CH12W<'a> {
 }
 impl<'a> _CH12W<'a> { } 
 #[doc = "Values that can be written to the field `CH13`"]
-pub enum CH13W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH13W ;
 impl CH13W { } 
 #[doc = r" Proxy"]
 pub struct _CH13W<'a> {
@@ -478,12 +248,7 @@ pub struct _CH13W<'a> {
 }
 impl<'a> _CH13W<'a> { } 
 #[doc = "Values that can be written to the field `CH14`"]
-pub enum CH14W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH14W ;
 impl CH14W { } 
 #[doc = r" Proxy"]
 pub struct _CH14W<'a> {
@@ -491,12 +256,7 @@ pub struct _CH14W<'a> {
 }
 impl<'a> _CH14W<'a> { } 
 #[doc = "Values that can be written to the field `CH15`"]
-pub enum CH15W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH15W ;
 impl CH15W { } 
 #[doc = r" Proxy"]
 pub struct _CH15W<'a> {
@@ -504,12 +264,7 @@ pub struct _CH15W<'a> {
 }
 impl<'a> _CH15W<'a> { } 
 #[doc = "Values that can be written to the field `CH16`"]
-pub enum CH16W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH16W ;
 impl CH16W { } 
 #[doc = r" Proxy"]
 pub struct _CH16W<'a> {
@@ -517,12 +272,7 @@ pub struct _CH16W<'a> {
 }
 impl<'a> _CH16W<'a> { } 
 #[doc = "Values that can be written to the field `CH17`"]
-pub enum CH17W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH17W ;
 impl CH17W { } 
 #[doc = r" Proxy"]
 pub struct _CH17W<'a> {
@@ -530,12 +280,7 @@ pub struct _CH17W<'a> {
 }
 impl<'a> _CH17W<'a> { } 
 #[doc = "Values that can be written to the field `CH18`"]
-pub enum CH18W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH18W ;
 impl CH18W { } 
 #[doc = r" Proxy"]
 pub struct _CH18W<'a> {
@@ -543,12 +288,7 @@ pub struct _CH18W<'a> {
 }
 impl<'a> _CH18W<'a> { } 
 #[doc = "Values that can be written to the field `CH19`"]
-pub enum CH19W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH19W ;
 impl CH19W { } 
 #[doc = r" Proxy"]
 pub struct _CH19W<'a> {
@@ -556,12 +296,7 @@ pub struct _CH19W<'a> {
 }
 impl<'a> _CH19W<'a> { } 
 #[doc = "Values that can be written to the field `CH20`"]
-pub enum CH20W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH20W ;
 impl CH20W { } 
 #[doc = r" Proxy"]
 pub struct _CH20W<'a> {
@@ -569,12 +304,7 @@ pub struct _CH20W<'a> {
 }
 impl<'a> _CH20W<'a> { } 
 #[doc = "Values that can be written to the field `CH21`"]
-pub enum CH21W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH21W ;
 impl CH21W { } 
 #[doc = r" Proxy"]
 pub struct _CH21W<'a> {
@@ -582,12 +312,7 @@ pub struct _CH21W<'a> {
 }
 impl<'a> _CH21W<'a> { } 
 #[doc = "Values that can be written to the field `CH22`"]
-pub enum CH22W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH22W ;
 impl CH22W { } 
 #[doc = r" Proxy"]
 pub struct _CH22W<'a> {
@@ -595,12 +320,7 @@ pub struct _CH22W<'a> {
 }
 impl<'a> _CH22W<'a> { } 
 #[doc = "Values that can be written to the field `CH23`"]
-pub enum CH23W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH23W ;
 impl CH23W { } 
 #[doc = r" Proxy"]
 pub struct _CH23W<'a> {
@@ -608,12 +328,7 @@ pub struct _CH23W<'a> {
 }
 impl<'a> _CH23W<'a> { } 
 #[doc = "Values that can be written to the field `CH24`"]
-pub enum CH24W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH24W ;
 impl CH24W { } 
 #[doc = r" Proxy"]
 pub struct _CH24W<'a> {
@@ -621,12 +336,7 @@ pub struct _CH24W<'a> {
 }
 impl<'a> _CH24W<'a> { } 
 #[doc = "Values that can be written to the field `CH25`"]
-pub enum CH25W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH25W ;
 impl CH25W { } 
 #[doc = r" Proxy"]
 pub struct _CH25W<'a> {
@@ -634,12 +344,7 @@ pub struct _CH25W<'a> {
 }
 impl<'a> _CH25W<'a> { } 
 #[doc = "Values that can be written to the field `CH26`"]
-pub enum CH26W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH26W ;
 impl CH26W { } 
 #[doc = r" Proxy"]
 pub struct _CH26W<'a> {
@@ -647,12 +352,7 @@ pub struct _CH26W<'a> {
 }
 impl<'a> _CH26W<'a> { } 
 #[doc = "Values that can be written to the field `CH27`"]
-pub enum CH27W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH27W ;
 impl CH27W { } 
 #[doc = r" Proxy"]
 pub struct _CH27W<'a> {
@@ -660,12 +360,7 @@ pub struct _CH27W<'a> {
 }
 impl<'a> _CH27W<'a> { } 
 #[doc = "Values that can be written to the field `CH28`"]
-pub enum CH28W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH28W ;
 impl CH28W { } 
 #[doc = r" Proxy"]
 pub struct _CH28W<'a> {
@@ -673,12 +368,7 @@ pub struct _CH28W<'a> {
 }
 impl<'a> _CH28W<'a> { } 
 #[doc = "Values that can be written to the field `CH29`"]
-pub enum CH29W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH29W ;
 impl CH29W { } 
 #[doc = r" Proxy"]
 pub struct _CH29W<'a> {
@@ -686,12 +376,7 @@ pub struct _CH29W<'a> {
 }
 impl<'a> _CH29W<'a> { } 
 #[doc = "Values that can be written to the field `CH30`"]
-pub enum CH30W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH30W ;
 impl CH30W { } 
 #[doc = r" Proxy"]
 pub struct _CH30W<'a> {
@@ -699,12 +384,7 @@ pub struct _CH30W<'a> {
 }
 impl<'a> _CH30W<'a> { } 
 #[doc = "Values that can be written to the field `CH31`"]
-pub enum CH31W {
-    #[doc = "Disable channel"]
-    DISABLED,
-    #[doc = "Enable channel"]
-    ENABLED,
-}
+pub struct CH31W ;
 impl CH31W { } 
 #[doc = r" Proxy"]
 pub struct _CH31W<'a> {

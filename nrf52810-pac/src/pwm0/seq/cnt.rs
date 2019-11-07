@@ -9,18 +9,10 @@ pub struct W {
 impl super::CNT { } 
 #[doc = "Possible values of the field `CNT`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CNTR {
-    #[doc = "Sequence is disabled, and shall not be started as it is empty"]
-    DISABLED,
-    #[doc = r" Reserved"]
-    _Reserved(u16),
-}
+pub struct CNTR ;
 impl CNTR { } 
 #[doc = "Values that can be written to the field `CNT`"]
-pub enum CNTW {
-    #[doc = "Sequence is disabled, and shall not be started as it is empty"]
-    DISABLED,
-}
+pub struct CNTW ;
 impl CNTW { } 
 #[doc = r" Proxy"]
 pub struct _CNTW<'a> {

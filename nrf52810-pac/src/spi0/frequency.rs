@@ -9,42 +9,10 @@ pub struct W {
 impl super::FREQUENCY { } 
 #[doc = "Possible values of the field `FREQUENCY`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum FREQUENCYR {
-    #[doc = "125 kbps"]
-    K125,
-    #[doc = "250 kbps"]
-    K250,
-    #[doc = "500 kbps"]
-    K500,
-    #[doc = "1 Mbps"]
-    M1,
-    #[doc = "2 Mbps"]
-    M2,
-    #[doc = "4 Mbps"]
-    M4,
-    #[doc = "8 Mbps"]
-    M8,
-    #[doc = r" Reserved"]
-    _Reserved(u32),
-}
+pub struct FREQUENCYR ;
 impl FREQUENCYR { } 
 #[doc = "Values that can be written to the field `FREQUENCY`"]
-pub enum FREQUENCYW {
-    #[doc = "125 kbps"]
-    K125,
-    #[doc = "250 kbps"]
-    K250,
-    #[doc = "500 kbps"]
-    K500,
-    #[doc = "1 Mbps"]
-    M1,
-    #[doc = "2 Mbps"]
-    M2,
-    #[doc = "4 Mbps"]
-    M4,
-    #[doc = "8 Mbps"]
-    M8,
-}
+pub struct FREQUENCYW ;
 impl FREQUENCYW { } 
 #[doc = r" Proxy"]
 pub struct _FREQUENCYW<'a> {

@@ -10,41 +10,21 @@ impl super::CONFIG { }
 
 #[doc = "Possible values of the field `ORDER`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ORDERR {
-    #[doc = "Most significant bit shifted out first"]
-    MSBFIRST,
-    #[doc = "Least significant bit shifted out first"]
-    LSBFIRST,
-}
+pub struct ORDERR ;
 impl ORDERR { }
 
 #[doc = "Possible values of the field `CPHA`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CPHAR {
-    #[doc = "Sample on leading edge of clock, shift serial data on trailing edge"]
-    LEADING,
-    #[doc = "Sample on trailing edge of clock, shift serial data on leading edge"]
-    TRAILING,
-}
+pub struct CPHAR ;
 impl CPHAR { }
 
 #[doc = "Possible values of the field `CPOL`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CPOLR {
-    #[doc = "Active high"]
-    ACTIVEHIGH,
-    #[doc = "Active low"]
-    ACTIVELOW,
-}
+pub struct CPOLR ;
 impl CPOLR { }
 
 #[doc = "Values that can be written to the field `ORDER`"]
-pub enum ORDERW {
-    #[doc = "Most significant bit shifted out first"]
-    MSBFIRST,
-    #[doc = "Least significant bit shifted out first"]
-    LSBFIRST,
-}
+pub struct ORDERW ;
 impl ORDERW { }
 
 #[doc = r" Proxy"]
@@ -54,12 +34,7 @@ pub struct _ORDERW<'a> {
 impl<'a> _ORDERW<'a> { }
 
 #[doc = "Values that can be written to the field `CPHA`"]
-pub enum CPHAW {
-    #[doc = "Sample on leading edge of clock, shift serial data on trailing edge"]
-    LEADING,
-    #[doc = "Sample on trailing edge of clock, shift serial data on leading edge"]
-    TRAILING,
-}
+pub struct CPHAW ;
 impl CPHAW { }
 
 #[doc = r" Proxy"]
@@ -69,12 +44,7 @@ pub struct _CPHAW<'a> {
 impl<'a> _CPHAW<'a> { }
 
 #[doc = "Values that can be written to the field `CPOL`"]
-pub enum CPOLW {
-    #[doc = "Active high"]
-    ACTIVEHIGH,
-    #[doc = "Active low"]
-    ACTIVELOW,
-}
+pub struct CPOLW ;
 impl CPOLW { }
 
 #[doc = r" Proxy"]

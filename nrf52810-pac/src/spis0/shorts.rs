@@ -10,21 +10,11 @@ impl super::SHORTS { }
 
 #[doc = "Possible values of the field `END_ACQUIRE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum END_ACQUIRER {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct END_ACQUIRER ;
 impl END_ACQUIRER { }
 
 #[doc = "Values that can be written to the field `END_ACQUIRE`"]
-pub enum END_ACQUIREW {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct END_ACQUIREW ;
 impl END_ACQUIREW { }
 
 #[doc = r" Proxy"]

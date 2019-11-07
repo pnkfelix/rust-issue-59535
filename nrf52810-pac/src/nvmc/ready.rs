@@ -5,11 +5,6 @@ pub struct R {
 impl super::READY { } 
 #[doc = "Possible values of the field `READY`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum READYR {
-    #[doc = "NVMC is busy (ongoing write or erase operation)"]
-    BUSY,
-    #[doc = "NVMC is ready"]
-    READY,
-}
+pub struct READYR ;
 impl READYR { } 
 impl R { } 

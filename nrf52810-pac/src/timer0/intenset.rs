@@ -9,63 +9,30 @@ pub struct W {
 impl super::INTENSET { } 
 #[doc = "Possible values of the field `COMPARE0`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum COMPARE0R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct COMPARE0R ;
 impl COMPARE0R { } 
 #[doc = "Possible values of the field `COMPARE1`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum COMPARE1R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct COMPARE1R ;
 impl COMPARE1R { } 
 #[doc = "Possible values of the field `COMPARE2`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum COMPARE2R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct COMPARE2R ;
 impl COMPARE2R { } 
 #[doc = "Possible values of the field `COMPARE3`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum COMPARE3R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct COMPARE3R ;
 impl COMPARE3R { } 
 #[doc = "Possible values of the field `COMPARE4`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum COMPARE4R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct COMPARE4R ;
 impl COMPARE4R { } 
 #[doc = "Possible values of the field `COMPARE5`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum COMPARE5R {
-    #[doc = "Read: Disabled"]
-    DISABLED,
-    #[doc = "Read: Enabled"]
-    ENABLED,
-}
+pub struct COMPARE5R ;
 impl COMPARE5R { } 
 #[doc = "Values that can be written to the field `COMPARE0`"]
-pub enum COMPARE0W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct COMPARE0W ;
 impl COMPARE0W { } 
 #[doc = r" Proxy"]
 pub struct _COMPARE0W<'a> {
@@ -73,10 +40,7 @@ pub struct _COMPARE0W<'a> {
 }
 impl<'a> _COMPARE0W<'a> { } 
 #[doc = "Values that can be written to the field `COMPARE1`"]
-pub enum COMPARE1W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct COMPARE1W ;
 impl COMPARE1W { } 
 #[doc = r" Proxy"]
 pub struct _COMPARE1W<'a> {
@@ -84,10 +48,7 @@ pub struct _COMPARE1W<'a> {
 }
 impl<'a> _COMPARE1W<'a> { } 
 #[doc = "Values that can be written to the field `COMPARE2`"]
-pub enum COMPARE2W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct COMPARE2W ;
 impl COMPARE2W { } 
 #[doc = r" Proxy"]
 pub struct _COMPARE2W<'a> {
@@ -95,10 +56,7 @@ pub struct _COMPARE2W<'a> {
 }
 impl<'a> _COMPARE2W<'a> { } 
 #[doc = "Values that can be written to the field `COMPARE3`"]
-pub enum COMPARE3W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct COMPARE3W ;
 impl COMPARE3W { } 
 #[doc = r" Proxy"]
 pub struct _COMPARE3W<'a> {
@@ -106,10 +64,7 @@ pub struct _COMPARE3W<'a> {
 }
 impl<'a> _COMPARE3W<'a> { } 
 #[doc = "Values that can be written to the field `COMPARE4`"]
-pub enum COMPARE4W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct COMPARE4W ;
 impl COMPARE4W { } 
 #[doc = r" Proxy"]
 pub struct _COMPARE4W<'a> {
@@ -117,10 +72,7 @@ pub struct _COMPARE4W<'a> {
 }
 impl<'a> _COMPARE4W<'a> { } 
 #[doc = "Values that can be written to the field `COMPARE5`"]
-pub enum COMPARE5W {
-    #[doc = "Enable"]
-    SET,
-}
+pub struct COMPARE5W ;
 impl COMPARE5W { } 
 #[doc = r" Proxy"]
 pub struct _COMPARE5W<'a> {

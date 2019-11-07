@@ -10,23 +10,11 @@ impl super::ENABLE { }
 
 #[doc = "Possible values of the field `ENABLE`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum ENABLER {
-    #[doc = "Disable SPI slave"]
-    DISABLED,
-    #[doc = "Enable SPI slave"]
-    ENABLED,
-    #[doc = r" Reserved"]
-    _Reserved(u8),
-}
+pub struct ENABLER ;
 impl ENABLER { }
 
 #[doc = "Values that can be written to the field `ENABLE`"]
-pub enum ENABLEW {
-    #[doc = "Disable SPI slave"]
-    DISABLED,
-    #[doc = "Enable SPI slave"]
-    ENABLED,
-}
+pub struct ENABLEW ;
 impl ENABLEW { }
 
 #[doc = r" Proxy"]

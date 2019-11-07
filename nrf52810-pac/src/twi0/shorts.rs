@@ -9,29 +9,14 @@ pub struct W {
 impl super::SHORTS { } 
 #[doc = "Possible values of the field `BB_SUSPEND`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum BB_SUSPENDR {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct BB_SUSPENDR ;
 impl BB_SUSPENDR { } 
 #[doc = "Possible values of the field `BB_STOP`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum BB_STOPR {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct BB_STOPR ;
 impl BB_STOPR { } 
 #[doc = "Values that can be written to the field `BB_SUSPEND`"]
-pub enum BB_SUSPENDW {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct BB_SUSPENDW ;
 impl BB_SUSPENDW { } 
 #[doc = r" Proxy"]
 pub struct _BB_SUSPENDW<'a> {
@@ -39,12 +24,7 @@ pub struct _BB_SUSPENDW<'a> {
 }
 impl<'a> _BB_SUSPENDW<'a> { } 
 #[doc = "Values that can be written to the field `BB_STOP`"]
-pub enum BB_STOPW {
-    #[doc = "Disable shortcut"]
-    DISABLED,
-    #[doc = "Enable shortcut"]
-    ENABLED,
-}
+pub struct BB_STOPW ;
 impl BB_STOPW { } 
 #[doc = r" Proxy"]
 pub struct _BB_STOPW<'a> {

@@ -14,12 +14,7 @@ pub struct PINR {
 impl PINR { } 
 #[doc = "Possible values of the field `CONNECT`"]
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub enum CONNECTR {
-    #[doc = "Disconnect"]
-    DISCONNECTED,
-    #[doc = "Connect"]
-    CONNECTED,
-}
+pub struct CONNECTR ;
 impl CONNECTR { } 
 #[doc = r" Proxy"]
 pub struct _PINW<'a> {
@@ -27,12 +22,7 @@ pub struct _PINW<'a> {
 }
 impl<'a> _PINW<'a> { } 
 #[doc = "Values that can be written to the field `CONNECT`"]
-pub enum CONNECTW {
-    #[doc = "Disconnect"]
-    DISCONNECTED,
-    #[doc = "Connect"]
-    CONNECTED,
-}
+pub struct CONNECTW ;
 impl CONNECTW { } 
 #[doc = r" Proxy"]
 pub struct _CONNECTW<'a> {
