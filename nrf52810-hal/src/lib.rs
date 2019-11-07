@@ -333,15 +333,15 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]
             struct BB_SUSPENDR;
-            impl BB_SUSPENDR { }
+            impl R { }
             #[derive(Debug, PartialEq)]
             struct BB_STOPR;
-            impl BB_STOPR { }
+            impl R { }
             struct BB_SUSPENDW;
-            impl BB_SUSPENDW { }
+            impl R { }
             impl R { }
             struct BB_STOPW;
-            impl BB_STOPW { }
+            impl R { }
             impl R { }
             impl R { }
             impl R { }
@@ -363,7 +363,7 @@ pub mod nrf52810_pac {
             impl ERRORR { }
             #[derive(Debug, PartialEq)]
             struct BBR;
-            impl BBR { }
+            impl R { }
             #[derive(Debug, PartialEq)]
             struct SUSPENDEDR;
             impl SUSPENDEDR { }
@@ -380,7 +380,7 @@ pub mod nrf52810_pac {
             impl ERRORW { }
             impl R { }
             struct BBW;
-            impl BBW { }
+            impl R { }
             impl R { }
             struct SUSPENDEDW;
             impl SUSPENDEDW { }
@@ -1513,9 +1513,9 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]
             struct BITMODER;
-            impl BITMODER { }
+            impl R { }
             struct BITMODEW;
-            impl BITMODEW { }
+            impl R { }
             impl R { }
             impl R { }
             impl R { }
