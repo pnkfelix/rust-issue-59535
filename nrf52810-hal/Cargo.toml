@@ -4,5 +4,4 @@ version = "0.8.1"
 edition = "2018"
 
 [dependencies]
-# cortex-m-rt = "0.6.8"
 cortex-m-rt = { path = "../cortex-m-rt" }
