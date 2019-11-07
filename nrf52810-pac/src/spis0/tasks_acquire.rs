@@ -1,12 +1,12 @@
-#[doc = r" Value to write to the register"]
+
 pub struct W;
 impl super::TASKS_ACQUIRE { }
 
-#[doc = "Values that can be written to the field `TASKS_ACQUIRE`"]
+
 pub struct TASKS_ACQUIREW ;
 impl TASKS_ACQUIREW { }
 
-#[doc = r" Proxy"]
+
 pub struct _TASKS_ACQUIREW<'a> {
     w: &'a mut W,
 }
