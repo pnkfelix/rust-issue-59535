@@ -110,100 +110,68 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct REGION31R;
             impl R { }
-            struct REGION0W;
             impl R { }
             impl R { }
-            struct REGION1W;
             impl R { }
             impl R { }
-            struct REGION2W;
             impl R { }
             impl R { }
-            struct REGION3W;
             impl R { }
             impl R { }
-            struct REGION4W;
             impl R { }
             impl R { }
-            struct REGION5W;
             impl R { }
             impl R { }
-            struct REGION6W;
             impl R { }
             impl R { }
-            struct REGION7W;
             impl R { }
             impl R { }
-            struct REGION8W;
             impl R { }
             impl R { }
-            struct REGION9W;
             impl R { }
             impl R { }
-            struct REGION10W;
             impl R { }
             impl R { }
-            struct REGION11W;
             impl R { }
             impl R { }
-            struct REGION12W;
             impl R { }
             impl R { }
-            struct REGION13W;
             impl R { }
             impl R { }
-            struct REGION14W;
             impl R { }
             impl R { }
-            struct REGION15W;
             impl R { }
             impl R { }
-            struct REGION16W;
             impl R { }
             impl R { }
-            struct REGION17W;
             impl R { }
             impl R { }
-            struct REGION18W;
             impl R { }
             impl R { }
-            struct REGION19W;
             impl R { }
             impl R { }
-            struct REGION20W;
             impl R { }
             impl R { }
-            struct REGION21W;
             impl R { }
             impl R { }
-            struct REGION22W;
             impl R { }
             impl R { }
-            struct REGION23W;
             impl R { }
             impl R { }
-            struct REGION24W;
             impl R { }
             impl R { }
-            struct REGION25W;
             impl R { }
             impl R { }
-            struct REGION26W;
             impl R { }
             impl R { }
-            struct REGION27W;
             impl R { }
             impl R { }
-            struct REGION28W;
             impl R { }
             impl R { }
-            struct REGION29W;
             impl R { }
             impl R { }
-            struct REGION30W;
             impl R { }
             impl R { }
-            struct REGION31W;
             impl R { }
             impl R { }
             impl R { }
@@ -214,7 +182,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct DISABLEINDEBUGR;
             impl R { }
-            struct DISABLEINDEBUGW;
             impl R { }
             impl R { }
             impl R { }
@@ -226,13 +193,11 @@ pub mod nrf52810_pac {
             mod scl {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -241,12 +206,10 @@ pub mod nrf52810_pac {
             mod sda {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -258,7 +221,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
-            struct EVENTS_STOPPEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -269,7 +231,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct EVENTS_TXDSENTR;
             impl R { }
-            struct EVENTS_TXDSENTW;
             impl R { }
             impl R { }
             impl R { }
@@ -280,7 +241,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct EVENTS_BBR;
             impl R { }
-            struct EVENTS_BBW;
             impl R { }
             impl R { }
             impl R { }
@@ -293,10 +253,8 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct BB_STOPR;
             impl R { }
-            struct BB_SUSPENDW;
             impl R { }
             impl R { }
-            struct BB_STOPW;
             impl R { }
             impl R { }
             impl R { }
@@ -317,22 +275,16 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct SUSPENDEDR;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct RXDREADYW;
             impl R { }
             impl R { }
-            struct TXDSENTW;
             impl R { }
             impl R { }
-            struct ERRORW;
             impl R { }
             impl R { }
-            struct BBW;
             impl R { }
             impl R { }
-            struct SUSPENDEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -343,7 +295,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct ENABLER;
             impl R { }
-            struct ENABLEW;
             impl R { }
             impl R { }
             impl R { }
@@ -354,7 +305,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct FREQUENCYR;
             impl R { }
-            struct FREQUENCYW;
             impl R { }
             impl R { }
             impl R { }
@@ -366,12 +316,10 @@ pub mod nrf52810_pac {
             mod scl {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -380,12 +328,10 @@ pub mod nrf52810_pac {
             mod sda {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -396,7 +342,6 @@ pub mod nrf52810_pac {
             mod ptr {
                 struct R;
                 impl R { }
-                struct PTRR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -405,7 +350,6 @@ pub mod nrf52810_pac {
             mod maxcnt {
                 struct R;
                 impl R { }
-                struct MAXCNTR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -414,7 +358,6 @@ pub mod nrf52810_pac {
             mod amount {
                 struct R;
                 impl R { }
-                struct AMOUNTR;
                 impl R { }
                 impl R { }
             }
@@ -423,7 +366,6 @@ pub mod nrf52810_pac {
                 impl R { }
                 #[derive(Debug, PartialEq)]struct LISTR;
                 impl R { }
-                struct LISTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -433,7 +375,6 @@ pub mod nrf52810_pac {
         mod tasks_suspend {
             struct R;
             impl R { }
-            struct TASKS_SUSPENDW;
             impl R { }
             impl R { }
             impl R { }
@@ -443,7 +384,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct EVENTS_ERRORR;
             impl R { }
-            struct EVENTS_ERRORW;
             impl R { }
             impl R { }
             impl R { }
@@ -454,7 +394,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct EVENTS_RXSTARTEDR;
             impl R { }
-            struct EVENTS_RXSTARTEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -465,7 +404,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct EVENTS_LASTRXR;
             impl R { }
-            struct EVENTS_LASTRXW;
             impl R { }
             impl R { }
             impl R { }
@@ -486,22 +424,16 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct LASTRX_STOPR;
             impl R { }
-            struct LASTTX_STARTRXW;
             impl R { }
             impl R { }
-            struct LASTTX_SUSPENDW;
             impl R { }
             impl R { }
-            struct LASTTX_STOPW;
             impl R { }
             impl R { }
-            struct LASTRX_STARTTXW;
             impl R { }
             impl R { }
-            struct LASTRX_SUSPENDW;
             impl R { }
             impl R { }
-            struct LASTRX_STOPW;
             impl R { }
             impl R { }
             impl R { }
@@ -524,25 +456,18 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct LASTTXR;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct ERRORW;
             impl R { }
             impl R { }
-            struct SUSPENDEDW;
             impl R { }
             impl R { }
-            struct RXSTARTEDW;
             impl R { }
             impl R { }
-            struct TXSTARTEDW;
             impl R { }
             impl R { }
-            struct LASTRXW;
             impl R { }
             impl R { }
-            struct LASTTXW;
             impl R { }
             impl R { }
             impl R { }
@@ -557,13 +482,10 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct DNACKR;
             impl R { }
-            struct OVERRUNW;
             impl R { }
             impl R { }
-            struct ANACKW;
             impl R { }
             impl R { }
-            struct DNACKW;
             impl R { }
             impl R { }
             impl R { }
@@ -574,7 +496,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct FREQUENCYR;
             impl R { }
-            struct FREQUENCYW;
             impl R { }
             impl R { }
             impl R { }
@@ -586,12 +507,10 @@ pub mod nrf52810_pac {
             mod scl {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -600,12 +519,10 @@ pub mod nrf52810_pac {
             mod sda {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -616,7 +533,6 @@ pub mod nrf52810_pac {
             mod ptr{
                 struct R;
                 impl R { }
-                struct PTRR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -625,7 +541,6 @@ pub mod nrf52810_pac {
             mod maxcnt {
                 struct R;
                 impl R { }
-                struct MAXCNTR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -634,7 +549,6 @@ pub mod nrf52810_pac {
             mod amount {
                 struct R;
                 impl R { }
-                struct AMOUNTR;
                 impl R { }
                 impl R { }
             }
@@ -643,7 +557,6 @@ pub mod nrf52810_pac {
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct LISTR;
                 impl R { }
-                struct LISTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -655,7 +568,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
-            struct EVENTS_STOPPEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -666,7 +578,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_RXSTARTEDR;
             impl R { }
-            struct EVENTS_RXSTARTEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -677,7 +588,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_WRITER;
             impl R { }
-            struct EVENTS_WRITEW;
             impl R { }
             impl R { }
             impl R { }
@@ -690,10 +600,8 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct READ_SUSPENDR;
             impl R { }
-            struct WRITE_SUSPENDW;
             impl R { }
             impl R { }
-            struct READ_SUSPENDW;
             impl R { }
             impl R { }
             impl R { }
@@ -714,22 +622,16 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct READR;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct ERRORW;
             impl R { }
             impl R { }
-            struct RXSTARTEDW;
             impl R { }
             impl R { }
-            struct TXSTARTEDW;
             impl R { }
             impl R { }
-            struct WRITEW;
             impl R { }
             impl R { }
-            struct READW;
             impl R { }
             impl R { }
             impl R { }
@@ -744,13 +646,10 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct OVERREADR;
             impl R { }
-            struct OVERFLOWW;
             impl R { }
             impl R { }
-            struct DNACKW;
             impl R { }
             impl R { }
-            struct OVERREADW;
             impl R { }
             impl R { }
             impl R { }
@@ -761,7 +660,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct ENABLER;
             impl R { }
-            struct ENABLEW;
             impl R { }
             impl R { }
             impl R { }
@@ -774,10 +672,8 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct ADDRESS1R;
             impl R { }
-            struct ADDRESS0W;
             impl R { }
             impl R { }
-            struct ADDRESS1W;
             impl R { }
             impl R { }
             impl R { }
@@ -789,12 +685,10 @@ pub mod nrf52810_pac {
             mod sck {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -804,12 +698,10 @@ pub mod nrf52810_pac {
             mod mosi {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -818,12 +710,10 @@ pub mod nrf52810_pac {
             mod miso {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -835,7 +725,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct READYR;
             impl R { }
-            struct READYW;
             impl R { }
             impl R { }
             impl R { }
@@ -846,7 +735,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Debug, PartialEq)]struct ENABLER;
             impl R { }
-            struct ENABLEW;
             impl R { }
             impl R { }
             impl R { }
@@ -861,13 +749,10 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct CPOLR;
             impl R { }
-            struct ORDERW;
             impl R { }
             impl R { }
-            struct CPHAW;
             impl R { }
             impl R { }
-            struct CPOLW;
             impl R { }
             impl R { }
             impl R { }
@@ -879,12 +764,10 @@ pub mod nrf52810_pac {
             mod sck {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -893,12 +776,10 @@ pub mod nrf52810_pac {
             mod mosi {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -907,12 +788,10 @@ pub mod nrf52810_pac {
             mod miso {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -923,7 +802,6 @@ pub mod nrf52810_pac {
             mod ptr {
                 struct R;
                 impl R { }
-                struct PTRR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -932,7 +810,6 @@ pub mod nrf52810_pac {
             mod maxcnt {
                 struct R;
                 impl R { }
-                struct MAXCNTR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -941,7 +818,6 @@ pub mod nrf52810_pac {
             mod amount {
                 struct R;
                 impl R { }
-                struct AMOUNTR;
                 impl R { }
                 impl R { }
             }
@@ -950,7 +826,6 @@ pub mod nrf52810_pac {
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct LISTR;
                 impl R { }
-                struct LISTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -960,7 +835,6 @@ pub mod nrf52810_pac {
         mod tasks_resume {
             struct R;
             impl R { }
-            struct TASKS_RESUMEW;
             impl R { }
             impl R { }
             impl R { }
@@ -970,7 +844,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
-            struct EVENTS_STOPPEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -981,7 +854,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_ENDR;
             impl R { }
-            struct EVENTS_ENDW;
             impl R { }
             impl R { }
             impl R { }
@@ -992,7 +864,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STARTEDR;
             impl R { }
-            struct EVENTS_STARTEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1011,19 +882,14 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct STARTEDR;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct ENDRXW;
             impl R { }
             impl R { }
-            struct ENDW;
             impl R { }
             impl R { }
-            struct ENDTXW;
             impl R { }
             impl R { }
-            struct STARTEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1042,19 +908,14 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct STARTEDR;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct ENDRXW;
             impl R { }
             impl R { }
-            struct ENDW;
             impl R { }
             impl R { }
-            struct ENDTXW;
             impl R { }
             impl R { }
-            struct STARTEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1065,7 +926,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct FREQUENCYR;
             impl R { }
-            struct FREQUENCYW;
             impl R { }
             impl R { }
             impl R { }
@@ -1077,12 +937,10 @@ pub mod nrf52810_pac {
             mod sck {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1091,12 +949,10 @@ pub mod nrf52810_pac {
             mod miso {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1105,12 +961,10 @@ pub mod nrf52810_pac {
             mod mosi {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1119,12 +973,10 @@ pub mod nrf52810_pac {
             mod csn {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1135,7 +987,6 @@ pub mod nrf52810_pac {
             mod ptr {
                 struct R;
                 impl R { }
-                struct PTRR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1144,7 +995,6 @@ pub mod nrf52810_pac {
             mod maxcnt {
                 struct R;
                 impl R { }
-                struct MAXCNTR;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1153,7 +1003,6 @@ pub mod nrf52810_pac {
             mod amount {
                 struct R;
                 impl R { }
-                struct AMOUNTR;
                 impl R { }
                 impl R { }
             }
@@ -1162,7 +1011,6 @@ pub mod nrf52810_pac {
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct LISTR;
                 impl R { }
-                struct LISTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1174,7 +1022,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_ENDRXR;
             impl R { }
-            struct EVENTS_ENDRXW;
             impl R { }
             impl R { }
             impl R { }
@@ -1185,7 +1032,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct END_ACQUIRER;
             impl R { }
-            struct END_ACQUIREW;
             impl R { }
             impl R { }
             impl R { }
@@ -1200,13 +1046,10 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct ACQUIREDR;
             impl R { }
-            struct ENDW;
             impl R { }
             impl R { }
-            struct ENDRXW;
             impl R { }
             impl R { }
-            struct ACQUIREDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1219,10 +1062,8 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct OVERFLOWR;
             impl R { }
-            struct OVERREADW;
             impl R { }
             impl R { }
-            struct OVERFLOWW;
             impl R { }
             impl R { }
             impl R { }
@@ -1237,13 +1078,10 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct CPOLR;
             impl R { }
-            struct ORDERW;
             impl R { }
             impl R { }
-            struct CPHAW;
             impl R { }
             impl R { }
-            struct CPOLW;
             impl R { }
             impl R { }
             impl R { }
@@ -1279,40 +1117,28 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE5_STOPR;
             impl R { }
-            struct COMPARE0_CLEARW;
             impl R { }
             impl R { }
-            struct COMPARE1_CLEARW;
             impl R { }
             impl R { }
-            struct COMPARE2_CLEARW;
             impl R { }
             impl R { }
-            struct COMPARE3_CLEARW;
             impl R { }
             impl R { }
-            struct COMPARE4_CLEARW;
             impl R { }
             impl R { }
-            struct COMPARE5_CLEARW;
             impl R { }
             impl R { }
-            struct COMPARE0_STOPW;
             impl R { }
             impl R { }
-            struct COMPARE1_STOPW;
             impl R { }
             impl R { }
-            struct COMPARE2_STOPW;
             impl R { }
             impl R { }
-            struct COMPARE3_STOPW;
             impl R { }
             impl R { }
-            struct COMPARE4_STOPW;
             impl R { }
             impl R { }
-            struct COMPARE5_STOPW;
             impl R { }
             impl R { }
             impl R { }
@@ -1333,22 +1159,16 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct COMPARE5R;
             impl R { }
-            struct COMPARE0W;
             impl R { }
             impl R { }
-            struct COMPARE1W;
             impl R { }
             impl R { }
-            struct COMPARE2W;
             impl R { }
             impl R { }
-            struct COMPARE3W;
             impl R { }
             impl R { }
-            struct COMPARE4W;
             impl R { }
             impl R { }
-            struct COMPARE5W;
             impl R { }
             impl R { }
             impl R { }
@@ -1359,7 +1179,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct BITMODER;
             impl R { }
-            struct BITMODEW;
             impl R { }
             impl R { }
             impl R { }
@@ -1372,7 +1191,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_DATARDYR;
             impl R { }
-            struct EVENTS_DATARDYW;
             impl R { }
             impl R { }
             impl R { }
@@ -1383,7 +1201,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct DATARDYR;
             impl R { }
-            struct DATARDYW;
             impl R { }
             impl R { }
             impl R { }
@@ -1396,7 +1213,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_VALRDYR;
             impl R { }
-            struct EVENTS_VALRDYW;
             impl R { }
             impl R { }
             impl R { }
@@ -1407,7 +1223,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct VALRDYR;
             impl R { }
-            struct VALRDYW;
             impl R { }
             impl R { }
             impl R { }
@@ -1418,7 +1233,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct DERCENR;
             impl R { }
-            struct DERCENW;
             impl R { }
             impl R { }
             impl R { }
@@ -1461,52 +1275,36 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED15R;
             impl R { }
-            struct TRIGGERED0W;
             impl R { }
             impl R { }
-            struct TRIGGERED1W;
             impl R { }
             impl R { }
-            struct TRIGGERED2W;
             impl R { }
             impl R { }
-            struct TRIGGERED3W;
             impl R { }
             impl R { }
-            struct TRIGGERED4W;
             impl R { }
             impl R { }
-            struct TRIGGERED5W;
             impl R { }
             impl R { }
-            struct TRIGGERED6W;
             impl R { }
             impl R { }
-            struct TRIGGERED7W;
             impl R { }
             impl R { }
-            struct TRIGGERED8W;
             impl R { }
             impl R { }
-            struct TRIGGERED9W;
             impl R { }
             impl R { }
-            struct TRIGGERED10W;
             impl R { }
             impl R { }
-            struct TRIGGERED11W;
             impl R { }
             impl R { }
-            struct TRIGGERED12W;
             impl R { }
             impl R { }
-            struct TRIGGERED13W;
             impl R { }
             impl R { }
-            struct TRIGGERED14W;
             impl R { }
             impl R { }
-            struct TRIGGERED15W;
             impl R { }
             impl R { }
             impl R { }
@@ -1547,52 +1345,36 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct TRIGGERED15R;
             impl R { }
-            struct TRIGGERED0W;
             impl R { }
             impl R { }
-            struct TRIGGERED1W;
             impl R { }
             impl R { }
-            struct TRIGGERED2W;
             impl R { }
             impl R { }
-            struct TRIGGERED3W;
             impl R { }
             impl R { }
-            struct TRIGGERED4W;
             impl R { }
             impl R { }
-            struct TRIGGERED5W;
             impl R { }
             impl R { }
-            struct TRIGGERED6W;
             impl R { }
             impl R { }
-            struct TRIGGERED7W;
             impl R { }
             impl R { }
-            struct TRIGGERED8W;
             impl R { }
             impl R { }
-            struct TRIGGERED9W;
             impl R { }
             impl R { }
-            struct TRIGGERED10W;
             impl R { }
             impl R { }
-            struct TRIGGERED11W;
             impl R { }
             impl R { }
-            struct TRIGGERED12W;
             impl R { }
             impl R { }
-            struct TRIGGERED13W;
             impl R { }
             impl R { }
-            struct TRIGGERED14W;
             impl R { }
             impl R { }
-            struct TRIGGERED15W;
             impl R { }
             impl R { }
             impl R { }
@@ -1604,12 +1386,10 @@ pub mod nrf52810_pac {
             mod out {
                 struct R;
                 impl R { }
-                struct PINR;
                 impl R { }
                 #[derive(Clone, Copy, Debug, PartialEq)]struct CONNECTR;
                 impl R { }
                 impl R { }
-                struct CONNECTW;
                 impl R { }
                 impl R { }
                 impl R { }
@@ -1619,7 +1399,6 @@ pub mod nrf52810_pac {
         mod tasks_seqstart {
             struct R;
             impl R { }
-            struct TASKS_SEQSTARTW;
             impl R { }
             impl R { }
             impl R { }
@@ -1627,7 +1406,6 @@ pub mod nrf52810_pac {
         mod tasks_nextstep {
             struct R;
             impl R { }
-            struct TASKS_NEXTSTEPW;
             impl R { }
             impl R { }
             impl R { }
@@ -1637,7 +1415,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_STOPPEDR;
             impl R { }
-            struct EVENTS_STOPPEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1648,7 +1425,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_SEQSTARTEDR;
             impl R { }
-            struct EVENTS_SEQSTARTEDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1659,7 +1435,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_SEQENDR;
             impl R { }
-            struct EVENTS_SEQENDW;
             impl R { }
             impl R { }
             impl R { }
@@ -1670,7 +1445,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct EVENTS_LOOPSDONER;
             impl R { }
-            struct EVENTS_LOOPSDONEW;
             impl R { }
             impl R { }
             impl R { }
@@ -1693,25 +1467,18 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct LOOPSDONER;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct SEQSTARTED0W;
             impl R { }
             impl R { }
-            struct SEQSTARTED1W;
             impl R { }
             impl R { }
-            struct SEQEND0W;
             impl R { }
             impl R { }
-            struct SEQEND1W;
             impl R { }
             impl R { }
-            struct PWMPERIODENDW;
             impl R { }
             impl R { }
-            struct LOOPSDONEW;
             impl R { }
             impl R { }
             impl R { }
@@ -1734,25 +1501,18 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct LOOPSDONER;
             impl R { }
-            struct STOPPEDW;
             impl R { }
             impl R { }
-            struct SEQSTARTED0W;
             impl R { }
             impl R { }
-            struct SEQSTARTED1W;
             impl R { }
             impl R { }
-            struct SEQEND0W;
             impl R { }
             impl R { }
-            struct SEQEND1W;
             impl R { }
             impl R { }
-            struct PWMPERIODENDW;
             impl R { }
             impl R { }
-            struct LOOPSDONEW;
             impl R { }
             impl R { }
             impl R { }
@@ -1763,7 +1523,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct UPDOWNR;
             impl R { }
-            struct UPDOWNW;
             impl R { }
             impl R { }
             impl R { }
@@ -1774,7 +1533,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct PRESCALERR;
             impl R { }
-            struct PRESCALERW;
             impl R { }
             impl R { }
             impl R { }
@@ -1785,7 +1543,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct CNTR;
             impl R { }
-            struct CNTW;
             impl R { }
             impl R { }
             impl R { }
@@ -1805,7 +1562,6 @@ pub mod nrf52810_pac {
             impl R { }
             #[derive(Clone, Copy, Debug, PartialEq)]struct ERASEUICRR;
             impl R { }
-            struct ERASEUICRW;
             impl R { }
             impl R { }
             impl R { }
