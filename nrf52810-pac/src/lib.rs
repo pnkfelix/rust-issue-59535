@@ -1,181 +1,584 @@
-// #![deny(missing_docs)]
-// #![deny(warnings)]
 #![allow(non_camel_case_types)]
 #![no_std]
-extern crate bare_metal;
-extern crate cortex_m;
-#[cfg(feature = "rt")]
-extern crate cortex_m_rt;
-extern crate vcell;
 
-pub const NVIC_PRIO_BITS: u8 = 3;
-#[cfg(feature = "rt")]
-extern "C" {
-    fn POWER_CLOCK();
-    fn RADIO();
-    fn UARTE0_UART0();
-    fn TWIM0_TWIS0_TWI0();
-    fn SPIM0_SPIS0_SPI0();
-    fn GPIOTE();
-    fn SAADC();
-    fn TIMER0();
-    fn TIMER1();
-    fn TIMER2();
-    fn RTC0();
-    fn TEMP();
-    fn RNG();
-    fn ECB();
-    fn CCM_AAR();
-    fn WDT();
-    fn RTC1();
-    fn QDEC();
-    fn COMP();
-    fn SWI0_EGU0();
-    fn SWI1_EGU1();
-    fn SWI2();
-    fn SWI3();
-    fn SWI4();
-    fn SWI5();
-    fn PWM0();
-    fn PDM();
-}
-pub union Vector {
-    _handler: unsafe extern "C" fn(),
-    _reserved: u32,
-}
-#[cfg(feature = "rt")]
+extern crate cortex_m_rt;
+extern "C" { fn POWER_CLOCK(); }
+pub struct Vector { _handler: unsafe extern "C" fn(), }
+
 #[link_section = ".vector_table.interrupts"]
 #[no_mangle]
-pub static __INTERRUPTS: [Vector; 30] = [
-    Vector {
-        _handler: POWER_CLOCK,
-    },
-    Vector { _handler: RADIO },
-    Vector {
-        _handler: UARTE0_UART0,
-    },
-    Vector {
-        _handler: TWIM0_TWIS0_TWI0,
-    },
-    Vector {
-        _handler: SPIM0_SPIS0_SPI0,
-    },
-    Vector { _reserved: 0 },
-    Vector { _handler: GPIOTE },
-    Vector { _handler: SAADC },
-    Vector { _handler: TIMER0 },
-    Vector { _handler: TIMER1 },
-    Vector { _handler: TIMER2 },
-    Vector { _handler: RTC0 },
-    Vector { _handler: TEMP },
-    Vector { _handler: RNG },
-    Vector { _handler: ECB },
-    Vector { _handler: CCM_AAR },
-    Vector { _handler: WDT },
-    Vector { _handler: RTC1 },
-    Vector { _handler: QDEC },
-    Vector { _handler: COMP },
-    Vector {
-        _handler: SWI0_EGU0,
-    },
-    Vector {
-        _handler: SWI1_EGU1,
-    },
-    Vector { _handler: SWI2 },
-    Vector { _handler: SWI3 },
-    Vector { _handler: SWI4 },
-    Vector { _handler: SWI5 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _handler: PWM0 },
-    Vector { _handler: PDM },
-];
-pub enum Interrupt {
-    POWER_CLOCK,
-    RADIO,
-    UARTE0_UART0,
-    TWIM0_TWIS0_TWI0,
-    SPIM0_SPIS0_SPI0,
-    GPIOTE,
-    SAADC,
-    TIMER0,
-    TIMER1,
-    TIMER2,
-    RTC0,
-    TEMP,
-    RNG,
-    ECB,
-    CCM_AAR,
-    WDT,
-    RTC1,
-    QDEC,
-    COMP,
-    SWI0_EGU0,
-    SWI1_EGU1,
-    SWI2,
-    SWI3,
-    SWI4,
-    SWI5,
-    PWM0,
-    PDM,
-}
-unsafe impl ::bare_metal::Nr for Interrupt {
-    fn nr(&self) -> u8 { loop { } }
-}
-#[cfg(feature = "rt")]
-pub use self::Interrupt as interrupt;
-pub use cortex_m::peripheral::Peripherals as CorePeripherals;
-pub use cortex_m::peripheral::{CBP, CPUID, DCB, DWT, FPB, ITM, MPU, NVIC, SCB, SYST, TPIU};
-#[cfg(feature = "rt")]
-pub use cortex_m_rt::interrupt;
+pub static __INTERRUPTS: [Vector; 1] = [ Vector { _handler: POWER_CLOCK } ];
+
+pub enum Interrupt { POWER_CLOCK, }
+unsafe impl ::bare_metal::Nr for Interrupt { fn nr(&self) -> u8 { loop { } } }
+
 pub struct FICR { }   pub mod ficr;
 pub struct BPROT { }  pub mod bprot;
-
-pub struct POWER { }  pub mod power;
-pub struct P0 { }     pub mod p0;
-pub struct RADIO { }  pub mod radio;
-pub struct UART0 { }  pub mod uart0;
-pub struct UARTE0 { } pub mod uarte0;
 pub struct TWI0 { }   pub mod twi0;
 pub struct TWIM0 { }  pub mod twim0;
 pub struct TWIS0 { }  pub mod twis0;
 pub struct SPI0 { }   pub mod spi0;
 pub struct SPIM0 { }  pub mod spim0;
 pub struct SPIS0 { }  pub mod spis0;
-pub struct GPIOTE { } pub mod gpiote;
-pub struct SAADC { }  pub mod saadc;
 pub struct TIMER0 { } pub mod timer0;
-pub struct TIMER1 { }
-pub struct TIMER2 { }
-pub struct RTC0 { } pub mod rtc0;
 pub struct TEMP { } pub mod temp;
 pub struct RNG { }  pub mod rng;
-pub struct ECB { }  pub mod ecb;
-pub struct AAR { }  pub mod aar;
-pub struct CCM { }  pub mod ccm;
-pub struct WDT { }  pub mod wdt;
-pub struct RTC1 { }
-pub struct QDEC { } pub mod qdec;
-pub struct COMP { } pub mod comp;
 pub struct EGU0 { } pub mod egu0;
-pub struct SWI0 { } pub mod swi0;
-pub struct EGU1 { }
-pub struct SWI1 { }
-pub struct SWI2 { }
-pub struct SWI3 { }
-pub struct SWI4 { }
-pub struct SWI5 { }
 pub struct PWM0 { } pub mod pwm0;
-pub struct PDM { }  pub mod pdm;
 pub struct NVMC { } pub mod nvmc;
-
-pub struct PPI { }
 
 pub mod ppi {
     #[repr(C)]
-    pub struct RegisterBlock { pub tasks_chg: [TASKS_CHG; 6], }
-    #[repr(C)]
-    pub struct TASKS_CHG { }
-    pub struct CHG { register: ::vcell::VolatileCell<u32>, }
-    pub mod chg;
+    pub struct RegisterBlock {  }
+    pub struct CHG;
+    pub mod chg {
+        pub struct R { bits: u32, }
+        pub struct W { bits: u32, }
+        impl super::CHG {
+            pub fn modify<F>(&self, f: F) { loop { } }
+            pub fn read(&self) -> R { loop { } }
+            pub fn write<F>(&self, f: F) { loop { } }
+            pub fn reset(&self) { loop { } }
+        }
+
+        #[derive(Clone, Copy, Debug, PartialEq)]
+        pub enum CH0R { EXCLUDED, INCLUDED, }
+        impl CH0R {
+            pub fn bit_is_clear(&self) -> bool { loop { } }
+            pub fn bit_is_set(&self) -> bool { loop { } }
+            pub fn bit(&self) -> bool { loop { } }
+        }
+        #[derive(Clone, Copy, Debug, PartialEq)]
+        pub enum CH1R { EXCLUDED, INCLUDED, }
+        impl CH1R {
+            pub fn bit_is_clear(&self) -> bool { loop { } }
+            pub fn bit_is_set(&self) -> bool { loop { } }
+            pub fn bit(&self) -> bool { loop { } }
+        }
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH2R { EXCLUDED, INCLUDED, }
+impl CH2R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH3R { EXCLUDED, INCLUDED, }
+impl CH3R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH4R { EXCLUDED, INCLUDED, }
+impl CH4R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH5R { EXCLUDED, INCLUDED, }
+impl CH5R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH6R { EXCLUDED, INCLUDED, }
+impl CH6R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH7R { EXCLUDED, INCLUDED, }
+impl CH7R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH8R { EXCLUDED, INCLUDED, }
+impl CH8R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH9R { EXCLUDED, INCLUDED, }
+impl CH9R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH10R { EXCLUDED, INCLUDED, }
+impl CH10R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH11R { EXCLUDED, INCLUDED, }
+impl CH11R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH12R { EXCLUDED, INCLUDED, }
+impl CH12R {
+    pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH13R { EXCLUDED, INCLUDED, }
+impl CH13R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH14R { EXCLUDED, INCLUDED, }
+impl CH14R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH15R { EXCLUDED, INCLUDED, }
+impl CH15R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH16R { EXCLUDED, INCLUDED, }
+impl CH16R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH17R { EXCLUDED, INCLUDED, }
+impl CH17R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH18R { EXCLUDED, INCLUDED, }
+impl CH18R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH19R { EXCLUDED, INCLUDED, }
+impl CH19R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH20R { EXCLUDED, INCLUDED, }
+impl CH20R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH21R { EXCLUDED, INCLUDED, }
+impl CH21R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH22R { EXCLUDED, INCLUDED, }
+impl CH22R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH23R { EXCLUDED, INCLUDED, }
+impl CH23R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH24R { EXCLUDED, INCLUDED, }
+impl CH24R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH25R { EXCLUDED, INCLUDED, }
+impl CH25R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH26R { EXCLUDED, INCLUDED, }
+impl CH26R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH27R { EXCLUDED, INCLUDED, }
+impl CH27R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH28R { EXCLUDED, INCLUDED, }
+impl CH28R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH29R { EXCLUDED, INCLUDED, }
+impl CH29R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH30R { EXCLUDED, INCLUDED, }
+impl CH30R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum CH31R { EXCLUDED, INCLUDED, }
+impl CH31R { pub fn bit_is_clear(&self) -> bool { loop { } }
+    pub fn bit_is_set(&self) -> bool { loop { } }
+    pub fn bit(&self) -> bool { loop { } }
+}
+
+pub enum CH0W { EXCLUDED, INCLUDED, }
+pub struct _CH0W<'a> { w: &'a mut W, }
+impl<'a> _CH0W<'a> { pub fn variant(self, variant: CH0W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH1W { EXCLUDED, INCLUDED, }
+pub struct _CH1W<'a> { w: &'a mut W, }
+impl<'a> _CH1W<'a> { pub fn variant(self, variant: CH1W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH2W { EXCLUDED, INCLUDED, }
+pub struct _CH2W<'a> { w: &'a mut W, }
+impl<'a> _CH2W<'a> { pub fn variant(self, variant: CH2W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH3W { EXCLUDED, INCLUDED, }
+pub struct _CH3W<'a> { w: &'a mut W, }
+impl<'a> _CH3W<'a> { pub fn variant(self, variant: CH3W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH4W { EXCLUDED, INCLUDED, }
+pub struct _CH4W<'a> { w: &'a mut W, }
+impl<'a> _CH4W<'a> { pub fn variant(self, variant: CH4W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH5W { EXCLUDED, INCLUDED, }
+pub struct _CH5W<'a> { w: &'a mut W, }
+impl<'a> _CH5W<'a> { pub fn variant(self, variant: CH5W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH6W { EXCLUDED, INCLUDED, }
+
+pub struct _CH6W<'a> { w: &'a mut W, }
+impl<'a> _CH6W<'a> { pub fn variant(self, variant: CH6W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH7W { EXCLUDED, INCLUDED, }
+pub struct _CH7W<'a> { w: &'a mut W, }
+impl<'a> _CH7W<'a> { pub fn variant(self, variant: CH7W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH8W { EXCLUDED, INCLUDED, }
+pub struct _CH8W<'a> { w: &'a mut W, }
+impl<'a> _CH8W<'a> { pub fn variant(self, variant: CH8W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH9W { EXCLUDED, INCLUDED, }
+pub struct _CH9W<'a> { w: &'a mut W, }
+impl<'a> _CH9W<'a> { pub fn variant(self, variant: CH9W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH10W { EXCLUDED, INCLUDED, }
+
+pub struct _CH10W<'a> { w: &'a mut W, }
+impl<'a> _CH10W<'a> { pub fn variant(self, variant: CH10W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH11W { EXCLUDED, INCLUDED, }
+pub struct _CH11W<'a> { w: &'a mut W, }
+impl<'a> _CH11W<'a> { pub fn variant(self, variant: CH11W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH12W { EXCLUDED, INCLUDED, }
+pub struct _CH12W<'a> { w: &'a mut W, }
+impl<'a> _CH12W<'a> { pub fn variant(self, variant: CH12W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH13W { EXCLUDED, INCLUDED, }
+pub struct _CH13W<'a> { w: &'a mut W, }
+impl<'a> _CH13W<'a> { pub fn variant(self, variant: CH13W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH14W { EXCLUDED, INCLUDED, }
+pub struct _CH14W<'a> { w: &'a mut W, }
+impl<'a> _CH14W<'a> { pub fn variant(self, variant: CH14W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH15W { EXCLUDED, INCLUDED, }
+pub struct _CH15W<'a> { w: &'a mut W, }
+impl<'a> _CH15W<'a> { pub fn variant(self, variant: CH15W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH16W { EXCLUDED, INCLUDED, }
+pub struct _CH16W<'a> { w: &'a mut W, }
+impl<'a> _CH16W<'a> { pub fn variant(self, variant: CH16W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH17W { EXCLUDED, INCLUDED, }
+pub struct _CH17W<'a> { w: &'a mut W, }
+impl<'a> _CH17W<'a> { pub fn variant(self, variant: CH17W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH18W { EXCLUDED, INCLUDED, }
+pub struct _CH18W<'a> { w: &'a mut W, }
+impl<'a> _CH18W<'a> { pub fn variant(self, variant: CH18W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH19W { EXCLUDED, INCLUDED, }
+pub struct _CH19W<'a> { w: &'a mut W, }
+impl<'a> _CH19W<'a> { pub fn variant(self, variant: CH19W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH20W { EXCLUDED, INCLUDED, }
+pub struct _CH20W<'a> { w: &'a mut W, }
+impl<'a> _CH20W<'a> { pub fn variant(self, variant: CH20W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH21W { EXCLUDED, INCLUDED, }
+pub struct _CH21W<'a> { w: &'a mut W, }
+impl<'a> _CH21W<'a> { pub fn variant(self, variant: CH21W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH22W { EXCLUDED, INCLUDED, }
+pub struct _CH22W<'a> { w: &'a mut W, }
+impl<'a> _CH22W<'a> { pub fn variant(self, variant: CH22W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH23W { EXCLUDED, INCLUDED, }
+pub struct _CH23W<'a> { w: &'a mut W, }
+impl<'a> _CH23W<'a> { pub fn variant(self, variant: CH23W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH24W { EXCLUDED, INCLUDED, }
+pub struct _CH24W<'a> { w: &'a mut W, }
+impl<'a> _CH24W<'a> { pub fn variant(self, variant: CH24W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH25W { EXCLUDED, INCLUDED, }
+pub struct _CH25W<'a> { w: &'a mut W, }
+impl<'a> _CH25W<'a> { pub fn variant(self, variant: CH25W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH26W { EXCLUDED, INCLUDED, }
+pub struct _CH26W<'a> { w: &'a mut W, }
+impl<'a> _CH26W<'a> { pub fn variant(self, variant: CH26W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH27W { EXCLUDED, INCLUDED, }
+pub struct _CH27W<'a> { w: &'a mut W, }
+impl<'a> _CH27W<'a> { pub fn variant(self, variant: CH27W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH28W { EXCLUDED, INCLUDED, }
+pub struct _CH28W<'a> { w: &'a mut W, }
+impl<'a> _CH28W<'a> { pub fn variant(self, variant: CH28W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH29W { EXCLUDED, INCLUDED, }
+pub struct _CH29W<'a> { w: &'a mut W, }
+impl<'a> _CH29W<'a> { pub fn variant(self, variant: CH29W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH30W { EXCLUDED, INCLUDED, }
+pub struct _CH30W<'a> { w: &'a mut () }
+impl<'a> _CH30W<'a> { pub fn variant(self, variant: CH30W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+pub enum CH31W { EXCLUDED, INCLUDED, }
+
+pub struct _CH31W<'a> { w: &'a mut W, }
+impl<'a> _CH31W<'a> { pub fn variant(self, variant: CH31W) -> &'a mut W { loop { } }
+    pub fn excluded(self) -> &'a mut W { loop { } }
+    pub fn included(self) -> &'a mut W { loop { } }
+    pub fn set_bit(self) -> &'a mut W { loop { } }
+    pub fn clear_bit(self) -> &'a mut W { loop { } }
+    pub fn bit(self, value: bool) -> &'a mut W { loop { } }
+}
+
+impl R { pub fn bits(&self) -> u32 { loop { } } }
+impl W { pub fn reset_value() -> W { loop { } } }
+
+    }
 }
