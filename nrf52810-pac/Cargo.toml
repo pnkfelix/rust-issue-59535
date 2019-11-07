@@ -1,7 +1,0 @@
-[package]
-version = "0.8.0"
-name = "nrf52810-pac"
-edition = "2018"
-
-[dependencies]
-cortex-m-rt = "0.6.8"
