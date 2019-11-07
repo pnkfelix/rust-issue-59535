@@ -11,13 +11,12 @@ pub mod nrf52810_pac {
     pub static __INTERRUPTS: [Vector; 1] = [ Vector { _handler: power_clock_2 } ];
 
     pub struct FICR;pub mod ficr {
-        #[repr(C)] pub struct INFO;
         pub mod info {
             pub struct PART;
             pub mod part {
                 pub struct R;
                 impl super::PART { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
+                #[derive(Debug, PartialEq)]
                 pub struct PARTR;
                 impl PARTR { }
                 impl R { }
@@ -27,7 +26,7 @@ pub mod nrf52810_pac {
             pub mod package {
                 pub struct R;
                 impl super::PACKAGE { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
+                #[derive(Debug, PartialEq)]
                 pub struct PACKAGER;
                 impl PACKAGER { }
                 impl R { }
@@ -36,7 +35,7 @@ pub mod nrf52810_pac {
             pub mod flash {
                 pub struct R;
                 impl super::FLASH { }
-                #[derive(Clone, Copy, Debug, PartialEq)]
+                #[derive(Debug, PartialEq)]
                 pub struct FLASHR;
                 impl FLASHR { }
                 impl R { }
@@ -46,7 +45,7 @@ pub mod nrf52810_pac {
         pub mod deviceaddrtype {
             pub struct R;
             impl super::DEVICEADDRTYPE { }
-            #[derive(Clone, Copy, Debug, PartialEq)]
+            #[derive(Debug, PartialEq)]
             pub struct DEVICEADDRTYPER;
             impl DEVICEADDRTYPER { }
             impl R { }
@@ -156,132 +155,132 @@ pub mod nrf52810_pac {
             impl REGION31R { }
             pub struct REGION0W;
             impl REGION0W { }
-            pub struct _REGION0W<'a> { w: &'a mut W, }
-            impl<'a> _REGION0W<'a> { }
+            pub struct _REGION0W { w: &'static mut W, }
+            impl _REGION0W { }
             pub struct REGION1W;
             impl REGION1W { }
             pub struct _REGION1W<'a> { w: &'a mut W, }
-            impl<'a> _REGION1W<'a> { }
+            impl _REGION1W<'static> { }
             pub struct REGION2W;
             impl REGION2W { }
             pub struct _REGION2W<'a> { w: &'a mut W, }
-            impl<'a> _REGION2W<'a> { }
+            impl _REGION2W<'static> { }
             pub struct REGION3W;
             impl REGION3W { }
             pub struct _REGION3W<'a> { w: &'a mut W, }
-            impl<'a> _REGION3W<'a> { }
+            impl _REGION3W<'static> { }
             pub struct REGION4W;
             impl REGION4W { }
             pub struct _REGION4W<'a> { w: &'a mut W, }
-            impl<'a> _REGION4W<'a> { }
+            impl _REGION4W<'static> { }
             pub struct REGION5W;
             impl REGION5W { }
             pub struct _REGION5W<'a> { w: &'a mut W, }
-            impl<'a> _REGION5W<'a> { }
+            impl _REGION5W<'static> { }
             pub struct REGION6W;
             impl REGION6W { }
             pub struct _REGION6W<'a> { w: &'a mut W, }
-            impl<'a> _REGION6W<'a> { }
+            impl _REGION6W<'static> { }
             pub struct REGION7W;
             impl REGION7W { }
             pub struct _REGION7W<'a> { w: &'a mut W, }
-            impl<'a> _REGION7W<'a> { }
+            impl _REGION7W<'static> { }
             pub struct REGION8W;
             impl REGION8W { }
             pub struct _REGION8W<'a> { w: &'a mut W, }
-            impl<'a> _REGION8W<'a> { }
+            impl _REGION8W<'static> { }
             pub struct REGION9W;
             impl REGION9W { }
             pub struct _REGION9W<'a> { w: &'a mut W, }
-            impl<'a> _REGION9W<'a> { }
+            impl _REGION9W<'static> { }
             pub struct REGION10W;
             impl REGION10W { }
             pub struct _REGION10W<'a> { w: &'a mut W, }
-            impl<'a> _REGION10W<'a> { }
+            impl _REGION10W<'static> { }
             pub struct REGION11W;
             impl REGION11W { }
             pub struct _REGION11W<'a> { w: &'a mut W, }
-            impl<'a> _REGION11W<'a> { }
+            impl _REGION11W<'static> { }
             pub struct REGION12W;
             impl REGION12W { }
             pub struct _REGION12W<'a> { w: &'a mut W, }
-            impl<'a> _REGION12W<'a> { }
+            impl _REGION12W<'static> { }
             pub struct REGION13W;
             impl REGION13W { }
             pub struct _REGION13W<'a> { w: &'a mut W, }
-            impl<'a> _REGION13W<'a> { }
+            impl _REGION13W<'static> { }
             pub struct REGION14W;
             impl REGION14W { }
             pub struct _REGION14W<'a> { w: &'a mut W, }
-            impl<'a> _REGION14W<'a> { }
+            impl _REGION14W<'static> { }
             pub struct REGION15W;
             impl REGION15W { }
             pub struct _REGION15W<'a> { w: &'a mut W, }
-            impl<'a> _REGION15W<'a> { }
+            impl _REGION15W<'static> { }
             pub struct REGION16W;
             impl REGION16W { }
             pub struct _REGION16W<'a> { w: &'a mut W, }
-            impl<'a> _REGION16W<'a> { }
+            impl _REGION16W<'static> { }
             pub struct REGION17W;
             impl REGION17W { }
             pub struct _REGION17W<'a> { w: &'a mut W, }
-            impl<'a> _REGION17W<'a> { }
+            impl _REGION17W<'static> { }
             pub struct REGION18W;
             impl REGION18W { }
             pub struct _REGION18W<'a> { w: &'a mut W, }
-            impl<'a> _REGION18W<'a> { }
+            impl _REGION18W<'static> { }
             pub struct REGION19W;
             impl REGION19W { }
             pub struct _REGION19W<'a> { w: &'a mut W, }
-            impl<'a> _REGION19W<'a> { }
+            impl _REGION19W<'static> { }
             pub struct REGION20W;
             impl REGION20W { }
             pub struct _REGION20W<'a> { w: &'a mut W, }
-            impl<'a> _REGION20W<'a> { }
+            impl _REGION20W<'static> { }
             pub struct REGION21W;
             impl REGION21W { }
             pub struct _REGION21W<'a> { w: &'a mut W, }
-            impl<'a> _REGION21W<'a> { }
+            impl _REGION21W<'static> { }
             pub struct REGION22W;
             impl REGION22W { }
             pub struct _REGION22W<'a> { w: &'a mut W, }
-            impl<'a> _REGION22W<'a> { }
+            impl _REGION22W<'static> { }
             pub struct REGION23W;
             impl REGION23W { }
             pub struct _REGION23W<'a> { w: &'a mut W, }
-            impl<'a> _REGION23W<'a> { }
+            impl _REGION23W<'static> { }
             pub struct REGION24W;
             impl REGION24W { }
             pub struct _REGION24W<'a> { w: &'a mut W, }
-            impl<'a> _REGION24W<'a> { }
+            impl _REGION24W<'static> { }
             pub struct REGION25W;
             impl REGION25W { }
             pub struct _REGION25W<'a> { w: &'a mut W, }
-            impl<'a> _REGION25W<'a> { }
+            impl _REGION25W<'static> { }
             pub struct REGION26W;
             impl REGION26W { }
             pub struct _REGION26W<'a> { w: &'a mut W, }
-            impl<'a> _REGION26W<'a> { }
+            impl _REGION26W<'static> { }
             pub struct REGION27W;
             impl REGION27W { }
             pub struct _REGION27W<'a> { w: &'a mut W, }
-            impl<'a> _REGION27W<'a> { }
+            impl _REGION27W<'static> { }
             pub struct REGION28W;
             impl REGION28W { }
             pub struct _REGION28W<'a> { w: &'a mut W, }
-            impl<'a> _REGION28W<'a> { }
+            impl _REGION28W<'static> { }
             pub struct REGION29W;
             impl REGION29W { }
             pub struct _REGION29W<'a> { w: &'a mut W, }
-            impl<'a> _REGION29W<'a> { }
+            impl _REGION29W<'static> { }
             pub struct REGION30W;
             impl REGION30W { }
             pub struct _REGION30W<'a> { w: &'a mut W, }
-            impl<'a> _REGION30W<'a> { }
+            impl _REGION30W<'static> { }
             pub struct REGION31W;
             impl REGION31W { }
             pub struct _REGION31W<'a> { w: &'a mut W, }
-            impl<'a> _REGION31W<'a> { }
+            impl _REGION31W<'static> { }
             impl R { }
             impl W { }
         }
@@ -298,7 +297,7 @@ pub mod nrf52810_pac {
             pub struct _DISABLEINDEBUGW<'a> {
                 w: &'a mut W,
             }
-            impl<'a> _DISABLEINDEBUGW<'a> { }
+            impl _DISABLEINDEBUGW<'static> { }
             impl R { }
             impl W { }
         }
@@ -318,11 +317,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -337,11 +336,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -357,7 +356,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_STOPPEDW;
             impl EVENTS_STOPPEDW { }
             pub struct _EVENTS_STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_STOPPEDW<'a> { }
+            impl _EVENTS_STOPPEDW<'static> { }
             impl R { }
             impl W { }
         }
@@ -372,7 +371,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_TXDSENTW;
             impl EVENTS_TXDSENTW { }
             pub struct _EVENTS_TXDSENTW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_TXDSENTW<'a> { }
+            impl _EVENTS_TXDSENTW<'static> { }
             impl R { }
             impl W { }
         }
@@ -387,7 +386,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_BBW ;
             impl EVENTS_BBW { }
             pub struct _EVENTS_BBW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_BBW<'a> { }
+            impl _EVENTS_BBW<'static> { }
             impl R { }
             impl W { }
         }
@@ -405,11 +404,11 @@ pub mod nrf52810_pac {
             pub struct BB_SUSPENDW;
             impl BB_SUSPENDW { }
             pub struct _BB_SUSPENDW<'a> { w: &'a mut W, }
-            impl<'a> _BB_SUSPENDW<'a> { }
+            impl _BB_SUSPENDW<'static> { }
             pub struct BB_STOPW;
             impl BB_STOPW { }
             pub struct _BB_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _BB_STOPW<'a> { }
+            impl _BB_STOPW<'static> { }
             impl R { }
             impl W { }
         }
@@ -439,27 +438,27 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW;
             impl STOPPEDW { }
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { }
+            impl _STOPPEDW<'static> { }
             pub struct RXDREADYW;
             impl RXDREADYW { }
             pub struct _RXDREADYW<'a> { w: &'a mut W, }
-            impl<'a> _RXDREADYW<'a> { }
+            impl _RXDREADYW<'static> { }
             pub struct TXDSENTW;
             impl TXDSENTW { }
             pub struct _TXDSENTW<'a> { w: &'a mut W, }
-            impl<'a> _TXDSENTW<'a> { }
+            impl _TXDSENTW<'static> { }
             pub struct ERRORW;
             impl ERRORW { }
             pub struct _ERRORW<'a> { w: &'a mut W, }
-            impl<'a> _ERRORW<'a> { }
+            impl _ERRORW<'static> { }
             pub struct BBW;
             impl BBW { }
             pub struct _BBW<'a> { w: &'a mut W, }
-            impl<'a> _BBW<'a> { }
+            impl _BBW<'static> { }
             pub struct SUSPENDEDW;
             impl SUSPENDEDW { }
             pub struct _SUSPENDEDW<'a> { w: &'a mut W, }
-            impl<'a> _SUSPENDEDW<'a> { }
+            impl _SUSPENDEDW<'static> { }
             impl R { }
             impl W { }
         }
@@ -474,7 +473,7 @@ pub mod nrf52810_pac {
             pub struct ENABLEW;
             impl ENABLEW { }
             pub struct _ENABLEW<'a> { w: &'a mut W, }
-            impl<'a> _ENABLEW<'a> { }
+            impl _ENABLEW<'static> { }
             impl R { }
             impl W { }
         }
@@ -489,7 +488,7 @@ pub mod nrf52810_pac {
             pub struct FREQUENCYW;
             impl FREQUENCYW { }
             pub struct _FREQUENCYW<'a> { w: &'a mut W, }
-            impl<'a> _FREQUENCYW<'a> { }
+            impl _FREQUENCYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -509,11 +508,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -528,11 +527,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -547,7 +546,7 @@ pub mod nrf52810_pac {
                 pub struct PTRR;
                 impl PTRR { } 
                 pub struct _PTRW<'a> { w: &'a mut W, }
-                impl<'a> _PTRW<'a> { } 
+                impl _PTRW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -559,7 +558,7 @@ pub mod nrf52810_pac {
                 pub struct MAXCNTR;
                 impl MAXCNTR { } 
                 pub struct _MAXCNTW<'a> { w: &'a mut W, }
-                impl<'a> _MAXCNTW<'a> { } 
+                impl _MAXCNTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -582,7 +581,7 @@ pub mod nrf52810_pac {
                 pub struct LISTW ;
                 impl LISTW { } 
                 pub struct _LISTW<'a> { w: &'a mut W, }
-                impl<'a> _LISTW<'a> { } 
+                impl _LISTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -594,7 +593,7 @@ pub mod nrf52810_pac {
             pub struct TASKS_SUSPENDW ;
             impl TASKS_SUSPENDW { } 
             pub struct _TASKS_SUSPENDW<'a> { w: &'a mut W, }
-            impl<'a> _TASKS_SUSPENDW<'a> { } 
+            impl _TASKS_SUSPENDW<'static> { } 
             impl W { } 
         }
         pub struct EVENTS_ERROR;
@@ -608,7 +607,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_ERRORW ;
             impl EVENTS_ERRORW { } 
             pub struct _EVENTS_ERRORW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_ERRORW<'a> { } 
+            impl _EVENTS_ERRORW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -623,7 +622,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_RXSTARTEDW ;
             impl EVENTS_RXSTARTEDW { } 
             pub struct _EVENTS_RXSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_RXSTARTEDW<'a> { } 
+            impl _EVENTS_RXSTARTEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -638,7 +637,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_LASTRXW ;
             impl EVENTS_LASTRXW { } 
             pub struct _EVENTS_LASTRXW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_LASTRXW<'a> { } 
+            impl _EVENTS_LASTRXW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -668,27 +667,27 @@ pub mod nrf52810_pac {
             pub struct LASTTX_STARTRXW ;
             impl LASTTX_STARTRXW { }
             pub struct _LASTTX_STARTRXW<'a> { w: &'a mut W, }
-            impl<'a> _LASTTX_STARTRXW<'a> { }
+            impl _LASTTX_STARTRXW<'static> { }
             pub struct LASTTX_SUSPENDW ;
             impl LASTTX_SUSPENDW { }
             pub struct _LASTTX_SUSPENDW<'a> { w: &'a mut W, }
-            impl<'a> _LASTTX_SUSPENDW<'a> { }
+            impl _LASTTX_SUSPENDW<'static> { }
             pub struct LASTTX_STOPW ;
             impl LASTTX_STOPW { }
             pub struct _LASTTX_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _LASTTX_STOPW<'a> { }
+            impl _LASTTX_STOPW<'static> { }
             pub struct LASTRX_STARTTXW ;
             impl LASTRX_STARTTXW { }
             pub struct _LASTRX_STARTTXW<'a> { w: &'a mut W, }
-            impl<'a> _LASTRX_STARTTXW<'a> { }
+            impl _LASTRX_STARTTXW<'static> { }
             pub struct LASTRX_SUSPENDW ;
             impl LASTRX_SUSPENDW { }
             pub struct _LASTRX_SUSPENDW<'a> { w: &'a mut W, }
-            impl<'a> _LASTRX_SUSPENDW<'a> { }
+            impl _LASTRX_SUSPENDW<'static> { }
             pub struct LASTRX_STOPW ;
             impl LASTRX_STOPW { }
             pub struct _LASTRX_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _LASTRX_STOPW<'a> { }
+            impl _LASTRX_STOPW<'static> { }
             impl R { }
             impl W { }
         }
@@ -721,31 +720,31 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW ;
             impl STOPPEDW { } 
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { } 
+            impl _STOPPEDW<'static> { } 
             pub struct ERRORW ;
             impl ERRORW { } 
             pub struct _ERRORW<'a> { w: &'a mut W, }
-            impl<'a> _ERRORW<'a> { } 
+            impl _ERRORW<'static> { } 
             pub struct SUSPENDEDW ;
             impl SUSPENDEDW { } 
             pub struct _SUSPENDEDW<'a> { w: &'a mut W, }
-            impl<'a> _SUSPENDEDW<'a> { } 
+            impl _SUSPENDEDW<'static> { } 
             pub struct RXSTARTEDW ;
             impl RXSTARTEDW { } 
             pub struct _RXSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _RXSTARTEDW<'a> { } 
+            impl _RXSTARTEDW<'static> { } 
             pub struct TXSTARTEDW ;
             impl TXSTARTEDW { } 
             pub struct _TXSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _TXSTARTEDW<'a> { } 
+            impl _TXSTARTEDW<'static> { } 
             pub struct LASTRXW ;
             impl LASTRXW { } 
             pub struct _LASTRXW<'a> { w: &'a mut W, }
-            impl<'a> _LASTRXW<'a> { } 
+            impl _LASTRXW<'static> { } 
             pub struct LASTTXW ;
             impl LASTTXW { } 
             pub struct _LASTTXW<'a> { w: &'a mut W, }
-            impl<'a> _LASTTXW<'a> { } 
+            impl _LASTTXW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -766,15 +765,15 @@ pub mod nrf52810_pac {
             pub struct OVERRUNW ;
             impl OVERRUNW { } 
             pub struct _OVERRUNW<'a> { w: &'a mut W, }
-            impl<'a> _OVERRUNW<'a> { } 
+            impl _OVERRUNW<'static> { } 
             pub struct ANACKW ;
             impl ANACKW { } 
             pub struct _ANACKW<'a> { w: &'a mut W, }
-            impl<'a> _ANACKW<'a> { } 
+            impl _ANACKW<'static> { } 
             pub struct DNACKW ;
             impl DNACKW { } 
             pub struct _DNACKW<'a> { w: &'a mut W, }
-            impl<'a> _DNACKW<'a> { } 
+            impl _DNACKW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -789,7 +788,7 @@ pub mod nrf52810_pac {
             pub struct FREQUENCYW ;
             impl FREQUENCYW { }
             pub struct _FREQUENCYW<'a> { w: &'a mut W, }
-            impl<'a> _FREQUENCYW<'a> { }
+            impl _FREQUENCYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -809,11 +808,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -828,11 +827,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -848,7 +847,7 @@ pub mod nrf52810_pac {
                 pub struct PTRR;
                 impl PTRR { } 
                 pub struct _PTRW<'a> { w: &'a mut W, }
-                impl<'a> _PTRW<'a> { } 
+                impl _PTRW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -860,7 +859,7 @@ pub mod nrf52810_pac {
                 pub struct MAXCNTR;
                 impl MAXCNTR { } 
                 pub struct _MAXCNTW<'a> { w: &'a mut W, }
-                impl<'a> _MAXCNTW<'a> { } 
+                impl _MAXCNTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -883,7 +882,7 @@ pub mod nrf52810_pac {
                 pub struct LISTW ;
                 impl LISTW { } 
                 pub struct _LISTW<'a> { w: &'a mut W, }
-                impl<'a> _LISTW<'a> { } 
+                impl _LISTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -899,7 +898,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_STOPPEDW ;
             impl EVENTS_STOPPEDW { } 
             pub struct _EVENTS_STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_STOPPEDW<'a> { } 
+            impl _EVENTS_STOPPEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -914,7 +913,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_RXSTARTEDW ;
             impl EVENTS_RXSTARTEDW { } 
             pub struct _EVENTS_RXSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_RXSTARTEDW<'a> { } 
+            impl _EVENTS_RXSTARTEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -929,7 +928,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_WRITEW ;
             impl EVENTS_WRITEW { } 
             pub struct _EVENTS_WRITEW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_WRITEW<'a> { } 
+            impl _EVENTS_WRITEW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -947,11 +946,11 @@ pub mod nrf52810_pac {
             pub struct WRITE_SUSPENDW ;
             impl WRITE_SUSPENDW { } 
             pub struct _WRITE_SUSPENDW<'a> { w: &'a mut W, }
-            impl<'a> _WRITE_SUSPENDW<'a> { } 
+            impl _WRITE_SUSPENDW<'static> { } 
             pub struct READ_SUSPENDW ;
             impl READ_SUSPENDW { } 
             pub struct _READ_SUSPENDW<'a> { w: &'a mut W, }
-            impl<'a> _READ_SUSPENDW<'a> { } 
+            impl _READ_SUSPENDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -981,27 +980,27 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW ;
             impl STOPPEDW { } 
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { } 
+            impl _STOPPEDW<'static> { } 
             pub struct ERRORW ;
             impl ERRORW { } 
             pub struct _ERRORW<'a> { w: &'a mut W, }
-            impl<'a> _ERRORW<'a> { } 
+            impl _ERRORW<'static> { } 
             pub struct RXSTARTEDW ;
             impl RXSTARTEDW { } 
             pub struct _RXSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _RXSTARTEDW<'a> { } 
+            impl _RXSTARTEDW<'static> { } 
             pub struct TXSTARTEDW ;
             impl TXSTARTEDW { } 
             pub struct _TXSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _TXSTARTEDW<'a> { } 
+            impl _TXSTARTEDW<'static> { } 
             pub struct WRITEW ;
             impl WRITEW { } 
             pub struct _WRITEW<'a> { w: &'a mut W, }
-            impl<'a> _WRITEW<'a> { } 
+            impl _WRITEW<'static> { } 
             pub struct READW ;
             impl READW { } 
             pub struct _READW<'a> { w: &'a mut W, }
-            impl<'a> _READW<'a> { } 
+            impl _READW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1022,15 +1021,15 @@ pub mod nrf52810_pac {
             pub struct OVERFLOWW ;
             impl OVERFLOWW { } 
             pub struct _OVERFLOWW<'a> { w: &'a mut W, }
-            impl<'a> _OVERFLOWW<'a> { } 
+            impl _OVERFLOWW<'static> { } 
             pub struct DNACKW ;
             impl DNACKW { } 
             pub struct _DNACKW<'a> { w: &'a mut W, }
-            impl<'a> _DNACKW<'a> { } 
+            impl _DNACKW<'static> { } 
             pub struct OVERREADW ;
             impl OVERREADW { } 
             pub struct _OVERREADW<'a> { w: &'a mut W, }
-            impl<'a> _OVERREADW<'a> { } 
+            impl _OVERREADW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1045,7 +1044,7 @@ pub mod nrf52810_pac {
             pub struct ENABLEW ;
             impl ENABLEW { } 
             pub struct _ENABLEW<'a> { w: &'a mut W, }
-            impl<'a> _ENABLEW<'a> { } 
+            impl _ENABLEW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1063,11 +1062,11 @@ pub mod nrf52810_pac {
             pub struct ADDRESS0W ;
             impl ADDRESS0W { } 
             pub struct _ADDRESS0W<'a> { w: &'a mut W, }
-            impl<'a> _ADDRESS0W<'a> { } 
+            impl _ADDRESS0W<'static> { } 
             pub struct ADDRESS1W ;
             impl ADDRESS1W { } 
             pub struct _ADDRESS1W<'a> { w: &'a mut W, }
-            impl<'a> _ADDRESS1W<'a> { } 
+            impl _ADDRESS1W<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1087,11 +1086,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
 
@@ -1107,11 +1106,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW ;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1126,11 +1125,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1146,7 +1145,7 @@ pub mod nrf52810_pac {
             pub struct READYW;
             impl READYW { }
             pub struct _READYW<'a> { w: &'a mut W, }
-            impl<'a> _READYW<'a> { }
+            impl _READYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1161,7 +1160,7 @@ pub mod nrf52810_pac {
             pub struct ENABLEW;
             impl ENABLEW { }
             pub struct _ENABLEW<'a> { w: &'a mut W, }
-            impl<'a> _ENABLEW<'a> { }
+            impl _ENABLEW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1182,15 +1181,15 @@ pub mod nrf52810_pac {
             pub struct ORDERW;
             impl ORDERW { }
             pub struct _ORDERW<'a> { w: &'a mut W, }
-            impl<'a> _ORDERW<'a> { }
+            impl _ORDERW<'static> { }
             pub struct CPHAW;
             impl CPHAW { }
             pub struct _CPHAW<'a> { w: &'a mut W, }
-            impl<'a> _CPHAW<'a> { }
+            impl _CPHAW<'static> { }
             pub struct CPOLW;
             impl CPOLW { }
             pub struct _CPOLW<'a> { w: &'a mut W, }
-            impl<'a> _CPOLW<'a> { }
+            impl _CPOLW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1210,11 +1209,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -1229,11 +1228,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -1248,11 +1247,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { } 
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { } 
+                impl _PINW<'static> { } 
                 pub struct CONNECTW ;
                 impl CONNECTW { } 
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { } 
+                impl _CONNECTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -1268,7 +1267,7 @@ pub mod nrf52810_pac {
                 pub struct PTRR;
                 impl PTRR { } 
                 pub struct _PTRW<'a> { w: &'a mut W, }
-                impl<'a> _PTRW<'a> { } 
+                impl _PTRW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -1280,7 +1279,7 @@ pub mod nrf52810_pac {
                 pub struct MAXCNTR;
                 impl MAXCNTR { } 
                 pub struct _MAXCNTW<'a> { w: &'a mut W, }
-                impl<'a> _MAXCNTW<'a> { } 
+                impl _MAXCNTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -1303,7 +1302,7 @@ pub mod nrf52810_pac {
                 pub struct LISTW ;
                 impl LISTW { } 
                 pub struct _LISTW<'a> { w: &'a mut W, }
-                impl<'a> _LISTW<'a> { } 
+                impl _LISTW<'static> { } 
                 impl R { } 
                 impl W { } 
             }
@@ -1315,7 +1314,7 @@ pub mod nrf52810_pac {
             pub struct TASKS_RESUMEW ;
             impl TASKS_RESUMEW { } 
             pub struct _TASKS_RESUMEW<'a> { w: &'a mut W, }
-            impl<'a> _TASKS_RESUMEW<'a> { } 
+            impl _TASKS_RESUMEW<'static> { } 
             impl W { } 
         }
         pub struct EVENTS_STOPPED;
@@ -1329,7 +1328,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_STOPPEDW ;
             impl EVENTS_STOPPEDW { } 
             pub struct _EVENTS_STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_STOPPEDW<'a> { } 
+            impl _EVENTS_STOPPEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1344,7 +1343,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_ENDW ;
             impl EVENTS_ENDW { } 
             pub struct _EVENTS_ENDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_ENDW<'a> { } 
+            impl _EVENTS_ENDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1359,7 +1358,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_STARTEDW ;
             impl EVENTS_STARTEDW { } 
             pub struct _EVENTS_STARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_STARTEDW<'a> { } 
+            impl _EVENTS_STARTEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1386,23 +1385,23 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW ;
             impl STOPPEDW { } 
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { } 
+            impl _STOPPEDW<'static> { } 
             pub struct ENDRXW ;
             impl ENDRXW { } 
             pub struct _ENDRXW<'a> { w: &'a mut W, }
-            impl<'a> _ENDRXW<'a> { } 
+            impl _ENDRXW<'static> { } 
             pub struct ENDW ;
             impl ENDW { } 
             pub struct _ENDW<'a> { w: &'a mut W, }
-            impl<'a> _ENDW<'a> { } 
+            impl _ENDW<'static> { } 
             pub struct ENDTXW ;
             impl ENDTXW { } 
             pub struct _ENDTXW<'a> { w: &'a mut W, }
-            impl<'a> _ENDTXW<'a> { } 
+            impl _ENDTXW<'static> { } 
             pub struct STARTEDW ;
             impl STARTEDW { } 
             pub struct _STARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _STARTEDW<'a> { } 
+            impl _STARTEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1429,23 +1428,23 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW ;
             impl STOPPEDW { } 
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { } 
+            impl _STOPPEDW<'static> { } 
             pub struct ENDRXW ;
             impl ENDRXW { } 
             pub struct _ENDRXW<'a> { w: &'a mut W, }
-            impl<'a> _ENDRXW<'a> { } 
+            impl _ENDRXW<'static> { } 
             pub struct ENDW ;
             impl ENDW { } 
             pub struct _ENDW<'a> { w: &'a mut W, }
-            impl<'a> _ENDW<'a> { } 
+            impl _ENDW<'static> { } 
             pub struct ENDTXW ;
             impl ENDTXW { } 
             pub struct _ENDTXW<'a> { w: &'a mut W, }
-            impl<'a> _ENDTXW<'a> { } 
+            impl _ENDTXW<'static> { } 
             pub struct STARTEDW ;
             impl STARTEDW { } 
             pub struct _STARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _STARTEDW<'a> { } 
+            impl _STARTEDW<'static> { } 
             impl R { } 
             impl W { } 
         }
@@ -1460,7 +1459,7 @@ pub mod nrf52810_pac {
             pub struct FREQUENCYW ;
             impl FREQUENCYW { }
             pub struct _FREQUENCYW<'a> { w: &'a mut W, }
-            impl<'a> _FREQUENCYW<'a> { }
+            impl _FREQUENCYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1480,11 +1479,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW ;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1499,11 +1498,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW ;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1518,11 +1517,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW ;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1537,11 +1536,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR ;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW ;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1557,7 +1556,7 @@ pub mod nrf52810_pac {
                 pub struct PTRR;
                 impl PTRR { }
                 pub struct _PTRW<'a> { w: &'a mut W, }
-                impl<'a> _PTRW<'a> { }
+                impl _PTRW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1569,7 +1568,7 @@ pub mod nrf52810_pac {
                 pub struct MAXCNTR;
                 impl MAXCNTR { }
                 pub struct _MAXCNTW<'a> { w: &'a mut W, }
-                impl<'a> _MAXCNTW<'a> { }
+                impl _MAXCNTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1592,7 +1591,7 @@ pub mod nrf52810_pac {
                 pub struct LISTW ;
                 impl LISTW { }
                 pub struct _LISTW<'a> { w: &'a mut W, }
-                impl<'a> _LISTW<'a> { }
+                impl _LISTW<'static> { }
                 impl R { }
                 impl W { }
             }
@@ -1608,7 +1607,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_ENDRXW ;
             impl EVENTS_ENDRXW { }
             pub struct _EVENTS_ENDRXW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_ENDRXW<'a> { }
+            impl _EVENTS_ENDRXW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1623,7 +1622,7 @@ pub mod nrf52810_pac {
             pub struct END_ACQUIREW ;
             impl END_ACQUIREW { }
             pub struct _END_ACQUIREW<'a> { w: &'a mut W, }
-            impl<'a> _END_ACQUIREW<'a> { }
+            impl _END_ACQUIREW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1644,15 +1643,15 @@ pub mod nrf52810_pac {
             pub struct ENDW ;
             impl ENDW { }
             pub struct _ENDW<'a> { w: &'a mut W, }
-            impl<'a> _ENDW<'a> { }
+            impl _ENDW<'static> { }
             pub struct ENDRXW ;
             impl ENDRXW { }
             pub struct _ENDRXW<'a> { w: &'a mut W, }
-            impl<'a> _ENDRXW<'a> { }
+            impl _ENDRXW<'static> { }
             pub struct ACQUIREDW ;
             impl ACQUIREDW { }
             pub struct _ACQUIREDW<'a> { w: &'a mut W, }
-            impl<'a> _ACQUIREDW<'a> { }
+            impl _ACQUIREDW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1670,11 +1669,11 @@ pub mod nrf52810_pac {
             pub struct OVERREADW ;
             impl OVERREADW { }
             pub struct _OVERREADW<'a> { w: &'a mut W, }
-            impl<'a> _OVERREADW<'a> { }
+            impl _OVERREADW<'static> { }
             pub struct OVERFLOWW ;
             impl OVERFLOWW { }
             pub struct _OVERFLOWW<'a> { w: &'a mut W, }
-            impl<'a> _OVERFLOWW<'a> { }
+            impl _OVERFLOWW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1695,15 +1694,15 @@ pub mod nrf52810_pac {
             pub struct ORDERW ;
             impl ORDERW { }
             pub struct _ORDERW<'a> { w: &'a mut W, }
-            impl<'a> _ORDERW<'a> { }
+            impl _ORDERW<'static> { }
             pub struct CPHAW ;
             impl CPHAW { }
             pub struct _CPHAW<'a> { w: &'a mut W, }
-            impl<'a> _CPHAW<'a> { }
+            impl _CPHAW<'static> { }
             pub struct CPOLW ;
             impl CPOLW { }
             pub struct _CPOLW<'a> { w: &'a mut W, }
-            impl<'a> _CPOLW<'a> { }
+            impl _CPOLW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1753,51 +1752,51 @@ pub mod nrf52810_pac {
             pub struct COMPARE0_CLEARW;
             impl COMPARE0_CLEARW { }
             pub struct _COMPARE0_CLEARW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE0_CLEARW<'a> { }
+            impl _COMPARE0_CLEARW<'static> { }
             pub struct COMPARE1_CLEARW;
             impl COMPARE1_CLEARW { }
             pub struct _COMPARE1_CLEARW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE1_CLEARW<'a> { }
+            impl _COMPARE1_CLEARW<'static> { }
             pub struct COMPARE2_CLEARW;
             impl COMPARE2_CLEARW { }
             pub struct _COMPARE2_CLEARW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE2_CLEARW<'a> { }
+            impl _COMPARE2_CLEARW<'static> { }
             pub struct COMPARE3_CLEARW;
             impl COMPARE3_CLEARW { }
             pub struct _COMPARE3_CLEARW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE3_CLEARW<'a> { }
+            impl _COMPARE3_CLEARW<'static> { }
             pub struct COMPARE4_CLEARW;
             impl COMPARE4_CLEARW { }
             pub struct _COMPARE4_CLEARW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE4_CLEARW<'a> { }
+            impl _COMPARE4_CLEARW<'static> { }
             pub struct COMPARE5_CLEARW;
             impl COMPARE5_CLEARW { }
             pub struct _COMPARE5_CLEARW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE5_CLEARW<'a> { }
+            impl _COMPARE5_CLEARW<'static> { }
             pub struct COMPARE0_STOPW;
             impl COMPARE0_STOPW { }
             pub struct _COMPARE0_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE0_STOPW<'a> { }
+            impl _COMPARE0_STOPW<'static> { }
             pub struct COMPARE1_STOPW;
             impl COMPARE1_STOPW { }
             pub struct _COMPARE1_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE1_STOPW<'a> { }
+            impl _COMPARE1_STOPW<'static> { }
             pub struct COMPARE2_STOPW;
             impl COMPARE2_STOPW { }
             pub struct _COMPARE2_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE2_STOPW<'a> { }
+            impl _COMPARE2_STOPW<'static> { }
             pub struct COMPARE3_STOPW ;
             impl COMPARE3_STOPW { }
             pub struct _COMPARE3_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE3_STOPW<'a> { }
+            impl _COMPARE3_STOPW<'static> { }
             pub struct COMPARE4_STOPW;
             impl COMPARE4_STOPW { }
             pub struct _COMPARE4_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE4_STOPW<'a> { }
+            impl _COMPARE4_STOPW<'static> { }
             pub struct COMPARE5_STOPW;
             impl COMPARE5_STOPW { }
             pub struct _COMPARE5_STOPW<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE5_STOPW<'a> { }
+            impl _COMPARE5_STOPW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1827,27 +1826,27 @@ pub mod nrf52810_pac {
             pub struct COMPARE0W;
             impl COMPARE0W { }
             pub struct _COMPARE0W<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE0W<'a> { }
+            impl _COMPARE0W<'static> { }
             pub struct COMPARE1W;
             impl COMPARE1W { }
             pub struct _COMPARE1W<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE1W<'a> { }
+            impl _COMPARE1W<'static> { }
             pub struct COMPARE2W;
             impl COMPARE2W { }
             pub struct _COMPARE2W<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE2W<'a> { }
+            impl _COMPARE2W<'static> { }
             pub struct COMPARE3W;
             impl COMPARE3W { }
             pub struct _COMPARE3W<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE3W<'a> { }
+            impl _COMPARE3W<'static> { }
             pub struct COMPARE4W;
             impl COMPARE4W { }
             pub struct _COMPARE4W<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE4W<'a> { }
+            impl _COMPARE4W<'static> { }
             pub struct COMPARE5W;
             impl COMPARE5W { }
             pub struct _COMPARE5W<'a> { w: &'a mut W, }
-            impl<'a> _COMPARE5W<'a> { }
+            impl _COMPARE5W<'static> { }
             impl R { }
             impl W { }
         }
@@ -1862,7 +1861,7 @@ pub mod nrf52810_pac {
             pub struct BITMODEW;
             impl BITMODEW { }
             pub struct _BITMODEW<'a> { w: &'a mut W, }
-            impl<'a> _BITMODEW<'a> { }
+            impl _BITMODEW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1879,7 +1878,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_DATARDYW;
             impl EVENTS_DATARDYW { }
             pub struct _EVENTS_DATARDYW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_DATARDYW<'a> { }
+            impl _EVENTS_DATARDYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1894,7 +1893,7 @@ pub mod nrf52810_pac {
             pub struct DATARDYW;
             impl DATARDYW { }
             pub struct _DATARDYW<'a> { w: &'a mut W, }
-            impl<'a> _DATARDYW<'a> { }
+            impl _DATARDYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1911,7 +1910,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_VALRDYW;
             impl EVENTS_VALRDYW { }
             pub struct _EVENTS_VALRDYW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_VALRDYW<'a> { }
+            impl _EVENTS_VALRDYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1926,7 +1925,7 @@ pub mod nrf52810_pac {
             pub struct VALRDYW;
             impl VALRDYW { }
             pub struct _VALRDYW<'a> { w: &'a mut W, }
-            impl<'a> _VALRDYW<'a> { }
+            impl _VALRDYW<'static> { }
             impl R { }
             impl W { }
         }
@@ -1941,7 +1940,7 @@ pub mod nrf52810_pac {
             pub struct DERCENW;
             impl DERCENW { }
             pub struct _DERCENW<'a> { w: &'a mut W, }
-            impl<'a> _DERCENW<'a> { }
+            impl _DERCENW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2003,67 +2002,67 @@ pub mod nrf52810_pac {
             pub struct TRIGGERED0W;
             impl TRIGGERED0W { }
             pub struct _TRIGGERED0W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED0W<'a> { }
+            impl _TRIGGERED0W<'static> { }
             pub struct TRIGGERED1W;
             impl TRIGGERED1W { }
             pub struct _TRIGGERED1W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED1W<'a> { }
+            impl _TRIGGERED1W<'static> { }
             pub struct TRIGGERED2W;
             impl TRIGGERED2W { }
             pub struct _TRIGGERED2W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED2W<'a> { }
+            impl _TRIGGERED2W<'static> { }
             pub struct TRIGGERED3W;
             impl TRIGGERED3W { }
             pub struct _TRIGGERED3W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED3W<'a> { }
+            impl _TRIGGERED3W<'static> { }
             pub struct TRIGGERED4W;
             impl TRIGGERED4W { }
             pub struct _TRIGGERED4W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED4W<'a> { }
+            impl _TRIGGERED4W<'static> { }
             pub struct TRIGGERED5W;
             impl TRIGGERED5W { }
             pub struct _TRIGGERED5W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED5W<'a> { }
+            impl _TRIGGERED5W<'static> { }
             pub struct TRIGGERED6W;
             impl TRIGGERED6W { }
             pub struct _TRIGGERED6W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED6W<'a> { }
+            impl _TRIGGERED6W<'static> { }
             pub struct TRIGGERED7W;
             impl TRIGGERED7W { }
             pub struct _TRIGGERED7W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED7W<'a> { }
+            impl _TRIGGERED7W<'static> { }
             pub struct TRIGGERED8W;
             impl TRIGGERED8W { }
             pub struct _TRIGGERED8W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED8W<'a> { }
+            impl _TRIGGERED8W<'static> { }
             pub struct TRIGGERED9W;
             impl TRIGGERED9W { }
             pub struct _TRIGGERED9W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED9W<'a> { }
+            impl _TRIGGERED9W<'static> { }
             pub struct TRIGGERED10W;
             impl TRIGGERED10W { }
             pub struct _TRIGGERED10W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED10W<'a> { }
+            impl _TRIGGERED10W<'static> { }
             pub struct TRIGGERED11W;
             impl TRIGGERED11W { }
             pub struct _TRIGGERED11W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED11W<'a> { }
+            impl _TRIGGERED11W<'static> { }
             pub struct TRIGGERED12W;
             impl TRIGGERED12W { }
             pub struct _TRIGGERED12W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED12W<'a> { }
+            impl _TRIGGERED12W<'static> { }
             pub struct TRIGGERED13W;
             impl TRIGGERED13W { }
             pub struct _TRIGGERED13W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED13W<'a> { }
+            impl _TRIGGERED13W<'static> { }
             pub struct TRIGGERED14W;
             impl TRIGGERED14W { }
             pub struct _TRIGGERED14W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED14W<'a> { }
+            impl _TRIGGERED14W<'static> { }
             pub struct TRIGGERED15W;
             impl TRIGGERED15W { }
             pub struct _TRIGGERED15W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED15W<'a> { }
+            impl _TRIGGERED15W<'static> { }
             impl R { }
             impl W { }
         }
@@ -2123,67 +2122,67 @@ pub mod nrf52810_pac {
             pub struct TRIGGERED0W ;
             impl TRIGGERED0W { }
             pub struct _TRIGGERED0W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED0W<'a> { }
+            impl _TRIGGERED0W<'static> { }
             pub struct TRIGGERED1W ;
             impl TRIGGERED1W { }
             pub struct _TRIGGERED1W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED1W<'a> { }
+            impl _TRIGGERED1W<'static> { }
             pub struct TRIGGERED2W ;
             impl TRIGGERED2W { }
             pub struct _TRIGGERED2W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED2W<'a> { }
+            impl _TRIGGERED2W<'static> { }
             pub struct TRIGGERED3W ;
             impl TRIGGERED3W { }
             pub struct _TRIGGERED3W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED3W<'a> { }
+            impl _TRIGGERED3W<'static> { }
             pub struct TRIGGERED4W ;
             impl TRIGGERED4W { }
             pub struct _TRIGGERED4W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED4W<'a> { }
+            impl _TRIGGERED4W<'static> { }
             pub struct TRIGGERED5W ;
             impl TRIGGERED5W { }
             pub struct _TRIGGERED5W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED5W<'a> { }
+            impl _TRIGGERED5W<'static> { }
             pub struct TRIGGERED6W ;
             impl TRIGGERED6W { }
             pub struct _TRIGGERED6W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED6W<'a> { }
+            impl _TRIGGERED6W<'static> { }
             pub struct TRIGGERED7W ;
             impl TRIGGERED7W { }
             pub struct _TRIGGERED7W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED7W<'a> { }
+            impl _TRIGGERED7W<'static> { }
             pub struct TRIGGERED8W ;
             impl TRIGGERED8W { }
             pub struct _TRIGGERED8W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED8W<'a> { }
+            impl _TRIGGERED8W<'static> { }
             pub struct TRIGGERED9W ;
             impl TRIGGERED9W { }
             pub struct _TRIGGERED9W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED9W<'a> { }
+            impl _TRIGGERED9W<'static> { }
             pub struct TRIGGERED10W ;
             impl TRIGGERED10W { }
             pub struct _TRIGGERED10W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED10W<'a> { }
+            impl _TRIGGERED10W<'static> { }
             pub struct TRIGGERED11W ;
             impl TRIGGERED11W { }
             pub struct _TRIGGERED11W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED11W<'a> { }
+            impl _TRIGGERED11W<'static> { }
             pub struct TRIGGERED12W ;
             impl TRIGGERED12W { }
             pub struct _TRIGGERED12W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED12W<'a> { }
+            impl _TRIGGERED12W<'static> { }
             pub struct TRIGGERED13W ;
             impl TRIGGERED13W { }
             pub struct _TRIGGERED13W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED13W<'a> { }
+            impl _TRIGGERED13W<'static> { }
             pub struct TRIGGERED14W ;
             impl TRIGGERED14W { }
             pub struct _TRIGGERED14W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED14W<'a> { }
+            impl _TRIGGERED14W<'static> { }
             pub struct TRIGGERED15W ;
             impl TRIGGERED15W { }
             pub struct _TRIGGERED15W<'a> { w: &'a mut W, }
-            impl<'a> _TRIGGERED15W<'a> { }
+            impl _TRIGGERED15W<'static> { }
             impl R { }
             impl W { }
         }
@@ -2203,11 +2202,11 @@ pub mod nrf52810_pac {
                 pub struct CONNECTR;
                 impl CONNECTR { }
                 pub struct _PINW<'a> { w: &'a mut W, }
-                impl<'a> _PINW<'a> { }
+                impl _PINW<'static> { }
                 pub struct CONNECTW ;
                 impl CONNECTW { }
                 pub struct _CONNECTW<'a> { w: &'a mut W, }
-                impl<'a> _CONNECTW<'a> { }
+                impl _CONNECTW<'static> { }
                 impl R { }
                 impl W { }
 
@@ -2220,7 +2219,7 @@ pub mod nrf52810_pac {
             pub struct TASKS_SEQSTARTW;
             impl TASKS_SEQSTARTW { }
             pub struct _TASKS_SEQSTARTW<'a> { w: &'a mut W, }
-            impl<'a> _TASKS_SEQSTARTW<'a> { }
+            impl _TASKS_SEQSTARTW<'static> { }
             impl W { }
         }
         pub struct TASKS_NEXTSTEP;
@@ -2230,7 +2229,7 @@ pub mod nrf52810_pac {
             pub struct TASKS_NEXTSTEPW;
             impl TASKS_NEXTSTEPW { }
             pub struct _TASKS_NEXTSTEPW<'a> { w: &'a mut W, }
-            impl<'a> _TASKS_NEXTSTEPW<'a> { }
+            impl _TASKS_NEXTSTEPW<'static> { }
             impl W { }
         }
         pub struct EVENTS_STOPPED;
@@ -2244,7 +2243,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_STOPPEDW;
             impl EVENTS_STOPPEDW { }
             pub struct _EVENTS_STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_STOPPEDW<'a> { }
+            impl _EVENTS_STOPPEDW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2259,7 +2258,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_SEQSTARTEDW;
             impl EVENTS_SEQSTARTEDW { }
             pub struct _EVENTS_SEQSTARTEDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_SEQSTARTEDW<'a> { }
+            impl _EVENTS_SEQSTARTEDW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2274,7 +2273,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_SEQENDW;
             impl EVENTS_SEQENDW { }
             pub struct _EVENTS_SEQENDW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_SEQENDW<'a> { }
+            impl _EVENTS_SEQENDW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2289,7 +2288,7 @@ pub mod nrf52810_pac {
             pub struct EVENTS_LOOPSDONEW;
             impl EVENTS_LOOPSDONEW { }
             pub struct _EVENTS_LOOPSDONEW<'a> { w: &'a mut W, }
-            impl<'a> _EVENTS_LOOPSDONEW<'a> { }
+            impl _EVENTS_LOOPSDONEW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2322,31 +2321,31 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW;
             impl STOPPEDW { }
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { }
+            impl _STOPPEDW<'static> { }
             pub struct SEQSTARTED0W;
             impl SEQSTARTED0W { }
             pub struct _SEQSTARTED0W<'a> { w: &'a mut W, }
-            impl<'a> _SEQSTARTED0W<'a> { }
+            impl _SEQSTARTED0W<'static> { }
             pub struct SEQSTARTED1W;
             impl SEQSTARTED1W { }
             pub struct _SEQSTARTED1W<'a> { w: &'a mut W, }
-            impl<'a> _SEQSTARTED1W<'a> { }
+            impl _SEQSTARTED1W<'static> { }
             pub struct SEQEND0W;
             impl SEQEND0W { }
             pub struct _SEQEND0W<'a> { w: &'a mut W, }
-            impl<'a> _SEQEND0W<'a> { }
+            impl _SEQEND0W<'static> { }
             pub struct SEQEND1W;
             impl SEQEND1W { }
             pub struct _SEQEND1W<'a> { w: &'a mut W, }
-            impl<'a> _SEQEND1W<'a> { }
+            impl _SEQEND1W<'static> { }
             pub struct PWMPERIODENDW;
             impl PWMPERIODENDW { }
             pub struct _PWMPERIODENDW<'a> { w: &'a mut W, }
-            impl<'a> _PWMPERIODENDW<'a> { }
+            impl _PWMPERIODENDW<'static> { }
             pub struct LOOPSDONEW;
             impl LOOPSDONEW { }
             pub struct _LOOPSDONEW<'a> { w: &'a mut W, }
-            impl<'a> _LOOPSDONEW<'a> { }
+            impl _LOOPSDONEW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2379,31 +2378,31 @@ pub mod nrf52810_pac {
             pub struct STOPPEDW;
             impl STOPPEDW { }
             pub struct _STOPPEDW<'a> { w: &'a mut W, }
-            impl<'a> _STOPPEDW<'a> { }
+            impl _STOPPEDW<'static> { }
             pub struct SEQSTARTED0W;
             impl SEQSTARTED0W { }
             pub struct _SEQSTARTED0W<'a> { w: &'a mut W, }
-            impl<'a> _SEQSTARTED0W<'a> { }
+            impl _SEQSTARTED0W<'static> { }
             pub struct SEQSTARTED1W;
             impl SEQSTARTED1W { }
             pub struct _SEQSTARTED1W<'a> { w: &'a mut W, }
-            impl<'a> _SEQSTARTED1W<'a> { }
+            impl _SEQSTARTED1W<'static> { }
             pub struct SEQEND0W;
             impl SEQEND0W { }
             pub struct _SEQEND0W<'a> { w: &'a mut W, }
-            impl<'a> _SEQEND0W<'a> { }
+            impl _SEQEND0W<'static> { }
             pub struct SEQEND1W;
             impl SEQEND1W { }
             pub struct _SEQEND1W<'a> { w: &'a mut W, }
-            impl<'a> _SEQEND1W<'a> { }
+            impl _SEQEND1W<'static> { }
             pub struct PWMPERIODENDW;
             impl PWMPERIODENDW { }
             pub struct _PWMPERIODENDW<'a> { w: &'a mut W, }
-            impl<'a> _PWMPERIODENDW<'a> { }
+            impl _PWMPERIODENDW<'static> { }
             pub struct LOOPSDONEW;
             impl LOOPSDONEW { }
             pub struct _LOOPSDONEW<'a> { w: &'a mut W, }
-            impl<'a> _LOOPSDONEW<'a> { }
+            impl _LOOPSDONEW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2418,7 +2417,7 @@ pub mod nrf52810_pac {
             pub struct UPDOWNW;
             impl UPDOWNW { }
             pub struct _UPDOWNW<'a> { w: &'a mut W, }
-            impl<'a> _UPDOWNW<'a> { }
+            impl _UPDOWNW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2433,7 +2432,7 @@ pub mod nrf52810_pac {
             pub struct PRESCALERW;
             impl PRESCALERW { }
             pub struct _PRESCALERW<'a> { w: &'a mut W, }
-            impl<'a> _PRESCALERW<'a> { }
+            impl _PRESCALERW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2448,7 +2447,7 @@ pub mod nrf52810_pac {
             pub struct CNTW;
             impl CNTW { }
             pub struct _CNTW<'a> { w: &'a mut W, }
-            impl<'a> _CNTW<'a> { }
+            impl _CNTW<'static> { }
             impl R { }
             impl W { }
         }
@@ -2474,7 +2473,7 @@ pub mod nrf52810_pac {
             pub struct ERASEUICRW;
             impl ERASEUICRW { }
             pub struct _ERASEUICRW<'a> { w: &'a mut W, }
-            impl<'a> _ERASEUICRW<'a> { }
+            impl _ERASEUICRW<'static> { }
             impl R { }
             impl W { }
         }
