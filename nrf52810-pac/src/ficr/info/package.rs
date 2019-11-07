@@ -1,6 +1,6 @@
 pub struct R;
-impl super::PACKAGE { }
+impl super::PACKAGE { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct PACKAGER;
-impl PACKAGER { }
-impl R { }
+impl PACKAGER { } 
+impl R { } 

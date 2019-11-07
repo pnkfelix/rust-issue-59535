@@ -1,5 +1,5 @@
 pub struct R;
-impl super::DEVICEADDR { }
+impl super::DEVICEADDR { } 
 pub struct DEVICEADDRR;
-impl DEVICEADDRR { }
-impl R { }
+impl DEVICEADDRR { } 
+impl R { } 

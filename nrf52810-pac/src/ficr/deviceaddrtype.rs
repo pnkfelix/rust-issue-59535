@@ -1,6 +1,6 @@
 pub struct R;
-impl super::DEVICEADDRTYPE { }
+impl super::DEVICEADDRTYPE { } 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct DEVICEADDRTYPER;
-impl DEVICEADDRTYPER { }
-impl R { }
+impl DEVICEADDRTYPER { } 
+impl R { } 

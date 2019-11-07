@@ -1,5 +1,5 @@
 pub struct R;
-impl super::IR { }
+impl super::IR { } 
 pub struct IRR;
-impl IRR { }
-impl R { }
+impl IRR { } 
+impl R { } 
