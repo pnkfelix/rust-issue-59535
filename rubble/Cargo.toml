@@ -10,10 +10,6 @@ version = "0.1.0"
 
 [dependencies]
 nrf52810-hal = { path = "../nrf52810-hal/" }
-# nrf52810-hal = { path = "../nrf52-hal/nrf52810-hal/" }
-# nrf52810-pac = { path = "../nrf52810-pac/" }
-# panic-semihosting = "0.5.1"
-panic-semihosting = { path = "../panic-semihosting" }
 
 [profile.dev]
 opt-level = "s"
