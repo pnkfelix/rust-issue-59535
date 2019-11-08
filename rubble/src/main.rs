@@ -3,9 +3,9 @@
 
 mod ble {
     pub mod link {
+        #[cfg(not_now)]
         pub fn process_data_packet() {}
 
-        #[cfg(not_now)]
         pub fn process_data_packet() {
             use core::fmt::Write;
             fn get() -> crate::ble::Duration {
@@ -17,7 +17,7 @@ mod ble {
 
     use core::fmt::{self, Debug, Display};
 
-    pub struct Duration(u32);
+    pub struct Duration(pub u32);
 
     impl Display for Duration {
         fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -48,7 +48,7 @@ struct Logger;
 
 impl Write for Logger {
     fn write_str(&mut self, _s: &str) -> fmt::Result {
-        Ok(())
+        loop { }
     }
 }
 
