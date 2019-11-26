@@ -13,6 +13,10 @@ RUBBLE_RUSTC_LOG=rustc_mir::monomorphize::partitioning,rustc_mir::monomorphize::
 # RUBBLE_ZFLAGS="-Z incremental-info -Z incremental-dont-internalize-symbols -Z query-dep-graph -Z no-parallel-llvm "
 RUBBLE_ZFLAGS="-Z incremental-info -Z query-dep-graph -Z no-parallel-llvm  -Z print-mono-items=lazy -Z human-readable-cgu-names -Zsymbol-mangling-version=v0 "
 RUSTC=/home/pnkfelix/Dev/Mozilla/rust.git/objdir-dbgopt/build/x86_64-unknown-linux-gnu/stage1/bin/rustc
+
+# RUBBLE_LLVM_ARGS=-C llvm-args=-print-import-failures
+RUBBLE_LLVM_ARGS="-Cllvm-args=-debug-only=function-import,-print-import-failures,-print-imports"
+
 # RUSTC="rustc +nightly"
 # RUBBLE_ZFLAGS="-Z incremental-info -Z query-dep-graph"
 # RUSTC="rustc +nightly-2019-01-01"
@@ -45,13 +49,13 @@ $RUSTC --edition=2018 --crate-name nrf52810_hal nrf52810-hal/src/lib.rs --crate-
 
 cp rubble/src/main.rs.v1 rubble/src/main.rs
 
-RUSTC_LOG=$RUBBLE_RUSTC_LOG $RUSTC --crate-name rubble rubble/src/main.rs --crate-type bin --emit=mir,link -C save-temps -C opt-level=s --out-dir $RUBBLE1_OUT_DIR --target thumbv7em-none-eabi -C incremental=$INCREMENTAL_DIR -L dependency=$CORTEX_OUT_DIR --extern nrf52810_hal=$NRFHAL_OUT_DIR/libnrf52810_hal.rlib -C link-arg=-Tlink.x.in -L $MEMORY_X_DIR -L $LINK_X_DIR  -C linker-flavor=ld.lld -C codegen-units=2 $RUBBLE_ZFLAGS > /tmp/rubble1.log 2>&1
+RUSTC_LOG=$RUBBLE_RUSTC_LOG $RUSTC --crate-name rubble rubble/src/main.rs --crate-type bin --emit=mir,link -C save-temps -C opt-level=s --out-dir $RUBBLE1_OUT_DIR --target thumbv7em-none-eabi -C incremental=$INCREMENTAL_DIR -L dependency=$CORTEX_OUT_DIR --extern nrf52810_hal=$NRFHAL_OUT_DIR/libnrf52810_hal.rlib -C link-arg=-Tlink.x.in -L $MEMORY_X_DIR -L $LINK_X_DIR  -C linker-flavor=ld.lld -C codegen-units=2 $RUBBLE_LLVM_ARGS $RUBBLE_ZFLAGS > /tmp/rubble1.log 2>&1
 
 cp rubble/src/main.rs.v2 rubble/src/main.rs
 cp -a $INCREMENTAL_DIR $INCREMENTAL_DIR.v1
 
 # RUSTC_LOG=$RUBBLE_RUSTC_LOG $RUSTC --crate-name rubble rubble/src/main.rs --crate-type bin --emit=mir,link -C save-temps -C opt-level=s --out-dir $RUBBLE2_OUT_DIR --target thumbv7em-none-eabi -C incremental=$INCREMENTAL_DIR -L dependency=$CORTEX_OUT_DIR --extern nrf52810_hal=$NRFHAL_OUT_DIR/libnrf52810_hal.rlib -C link-arg=-Tlink.x.in -L $MEMORY_X_DIR -L $LINK_X_DIR  -C linker-flavor=ld.lld -C codegen-units=2 $RUBBLE_ZFLAGS -C llvm-args=-debug  > /tmp/rubble2.log 2>&1
-RUSTC_LOG=$RUBBLE_RUSTC_LOG $RUSTC --crate-name rubble rubble/src/main.rs --crate-type bin --emit=mir,link -C save-temps -C opt-level=s --out-dir $RUBBLE2_OUT_DIR --target thumbv7em-none-eabi -C incremental=$INCREMENTAL_DIR -L dependency=$CORTEX_OUT_DIR --extern nrf52810_hal=$NRFHAL_OUT_DIR/libnrf52810_hal.rlib -C link-arg=-Tlink.x.in -L $MEMORY_X_DIR -L $LINK_X_DIR  -C linker-flavor=ld.lld -C codegen-units=2 $RUBBLE_ZFLAGS  > /tmp/rubble2.log 2>&1
+RUSTC_LOG=$RUBBLE_RUSTC_LOG $RUSTC --crate-name rubble rubble/src/main.rs --crate-type bin --emit=mir,link -C save-temps -C opt-level=s --out-dir $RUBBLE2_OUT_DIR --target thumbv7em-none-eabi -C incremental=$INCREMENTAL_DIR -L dependency=$CORTEX_OUT_DIR --extern nrf52810_hal=$NRFHAL_OUT_DIR/libnrf52810_hal.rlib -C link-arg=-Tlink.x.in -L $MEMORY_X_DIR -L $LINK_X_DIR  -C linker-flavor=ld.lld -C codegen-units=2 $RUBBLE_LLVM_ARGS $RUBBLE_ZFLAGS  > /tmp/rubble2.log 2>&1
 
 tail /tmp/rubble2.log
 
